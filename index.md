@@ -12,7 +12,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Header 1
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+The Teatro Massimo Vittorio Emanuele of Palermo stands as one of the most iconic and architecturally significant opera houses in Europe. Inaugurated in 1897, it is not only the largest opera house in Italy but also a symbol of cultural and artistic excellence in the Mediterranean region. This project explores the architectural, historical, and cultural dimensions of the Teatro Massimo, focusing on its Neoclassical design enriched by elements of Eclecticism and early Art Nouveau (Liberty).
 
 ## Header 2
 
