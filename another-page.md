@@ -5,6 +5,6 @@ title: methodology
 
 ## Welcome to another page
 
-_yay_
+_yas_
 
 [back](./)
