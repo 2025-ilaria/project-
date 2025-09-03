@@ -5,7 +5,7 @@ title: Methodology
 
 # Methodology
 
-Benvenuto nella pagina Methodology.
+Benvenuto nella pagina Methodology
 
 _Testo di esempio…_
 
