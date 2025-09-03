@@ -31,6 +31,3 @@ Puoi ad esempio inserire:
 
 ```js
 // codice JavaScript
-
-```js
-// codice JavaScript
