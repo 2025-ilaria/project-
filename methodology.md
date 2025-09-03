@@ -1,8 +1,13 @@
 ---
 layout: default
-title: methodology
+title: Methodology
 ---
 
 # Methodology
 
-We talk about the methodology
+Benvenuto nella pagina Methodology.
+
+_Testo di esempio…_
+
+[⬅️ Torna alla home]({{ '/' | relative_url }})
+
