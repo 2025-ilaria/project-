@@ -6,6 +6,9 @@ title: Topic
 
 # Topic
 
+
+---
+
 ![Teatro Massimo di Palermo](https://images.pexels.com/photos/12615316/pexels-photo-12615316.jpeg)
 
 [Teatro Massimo di Palermo](https://it.wikipedia.org/wiki/Teatro_Massimo_Vittorio_Emanuele) is the largest [opera house](https://en.wikipedia.org/wiki/Opera_house) in [Italy](https://en.wikipedia.org/wiki/Italy) and one of the most renowned in [Europe](https://en.wikipedia.org/wiki/Europe). Inaugurated in [1897](https://en.wikipedia.org/wiki/1897), it is celebrated for its grand [Neoclassical architecture](https://en.wikipedia.org/wiki/Neoclassical_architecture), monumental size, and exceptional [acoustics](https://en.wikipedia.org/wiki/Acoustics). 
