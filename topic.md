@@ -18,6 +18,9 @@ Located in the heart of [Palermo](https://en.wikipedia.org/wiki/Palermo), [Sicil
 Its iconic staircase, majestic columns, and richly decorated interiors make it a masterpiece of [19th-century](https://en.wikipedia.org/wiki/19th_century) architecture and a landmark of [Italian opera](https://en.wikipedia.org/wiki/Italian_opera) culture.
 
 
+---
+
+
 # Why we chose this topic
 We chose to focus on the Teatro Massimo di Palermo because, despite being **the largest opera house in Italy** and one of the most important in Europe, it lacks meaningful descriptive data in the [ArCo Knowledge Graph](https://dati.beniculturali.it/arco/index.php). 
 
