@@ -8,7 +8,7 @@ title: Home
 <!-- Navigazione personalizzata -->
 <nav style="margin-bottom: 30px;">
   <a href="{{ '/' | relative_url }}" style="padding:10px 15px; border:1px solid #ccc; border-radius:6px; margin-right:8px; text-decoration:none; background-color:#f8f8f8;">Home</a>
-  <a href="{{ '/topi' | relative_url }}" style="padding:10px 15px; border:1px solid #ccc; border-radius:6px; margin-right:8px; text-decoration:none; background-color:#f8f8f8;">Topic</a>
+  <a href="{{ '/topic' | relative_url }}" style="padding:10px 15px; border:1px solid #ccc; border-radius:6px; margin-right:8px; text-decoration:none; background-color:#f8f8f8;">Topic</a>
   <a href="{{ '/methodology' | relative_url }}" style="padding:10px 15px; border:1px solid #ccc; border-radius:6px; margin-right:8px; text-decoration:none; background-color:#f8f8f8;">Methodology</a>
   <a href="{{ '/sparql-queries' | relative_url }}" style="padding:10px 15px; border:1px solid #ccc; border-radius:6px; margin-right:8px; text-decoration:none; background-color:#f8f8f8;">SPARQL Queries</a>
   <a href="{{ '/rdf-triples' | relative_url }}" style="padding:10px 15px; border:1px solid #ccc; border-radius:6px; margin-right:8px; text-decoration:none; background-color:#f8f8f8;">RDF Triples</a>
