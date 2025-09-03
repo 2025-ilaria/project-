@@ -5,6 +5,9 @@ title: SPARQL queries
 
 # SPARQL queries
 
+
+---
+
 Benvenuto nella pagina SPARQL queries.
 
 _Testo di esempio…_
