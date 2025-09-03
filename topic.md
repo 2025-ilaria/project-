@@ -16,9 +16,9 @@ Its iconic staircase, majestic columns, and richly decorated interiors make it a
 
 
 # Why we chose this topic
-We chose to focus on the Teatro Massimo di Palermo because, despite being the largest opera house in Italy and one of the most important in Europe, it lacks meaningful descriptive data in the [ArCo Knowledge Graph](https://dati.beniculturali.it/arco/index.php). 
+We chose to focus on the Teatro Massimo di Palermo because, despite being **the largest opera house in Italy** and one of the most important in Europe, it lacks meaningful descriptive data in the [ArCo Knowledge Graph](https://dati.beniculturali.it/arco/index.php). 
 
-This gap was particularly striking given the theatre’s cultural, architectural, and historical significance. 
+This gap was particularly striking given the theatre’s **cultural, architectural, and historical significance**. 
 
 By enriching the graph with structured data about the Teatro Massimo, we aimed to contribute to a more complete and inclusive representation of Italy’s cultural heritage within the semantic web.
 
