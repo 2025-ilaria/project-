@@ -1,9 +1,3 @@
-
----
-
-## 🔧 Ecco il tuo file sistemato
-
-```markdown
 ---
 layout: default
 title: Home
@@ -34,6 +28,9 @@ The Teatro Massimo Vittorio Emanuele of Palermo stands as one of the most iconic
 > Puoi continuare con i tuoi paragrafi, immagini, codice, liste ecc. come nel file originale.
 
 Puoi ad esempio inserire:
+
+```js
+// codice JavaScript
 
 ```js
 // codice JavaScript
