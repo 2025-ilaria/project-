@@ -1,3 +1,9 @@
+
+---
+
+## 🔧 Ecco il tuo file sistemato
+
+```markdown
 ---
 layout: default
 title: Home
@@ -31,5 +37,3 @@ Puoi ad esempio inserire:
 
 ```js
 // codice JavaScript
-
-```
