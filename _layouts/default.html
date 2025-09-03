@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="UTF-8">
-
     {% seo %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+    <style>
+      .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 15px;
+        padding: 10px 0;
+        background-color: transparent;
+      }
+
+      .main-nav a {
+        padding: 10px 15px;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #0366d6;
+      }
+
+      .main-nav a:hover {
+        background-color: #e0e0e0;
+      }
+    </style>
   </head>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
     <header class="page-header" role="banner">
-      <h1 class="project-name"> Teatro Massimo di Palermo</h1>
-      <h2 class="project-tagline">{{ page.description | default: "" }}</h2>
-
-      {% if site.github.is_project_page %}
-      <div class="custom-menu">
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      </div>
-      {% endif %}
+      <h1 class="project-name">Teatro Massimo di Palermo</h1>
+      <nav class="main-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/topic' | relative_url }}">Topic</a>
+        <a href="{{ '/methodology' | relative_url }}">Methodology</a>
+        <a href="{{ '/sparql-queries' | relative_url }}">SPARQL Queries</a>
+        <a href="{{ '/rdf-triples' | relative_url }}">RDF Triples</a>
+        <a href="{{ '/conclusion' | relative_url }}">Conclusion</a>
+      </nav>
     </header>
 
     <main id="content" class="main-content" role="main">
@@ -32,8 +52,7 @@
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner">
-            <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>
-            is maintained by
+            <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by 
             <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
           </span>
         {% endif %}
@@ -44,3 +63,4 @@
     </main>
   </body>
 </html>
+
