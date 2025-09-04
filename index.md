@@ -26,9 +26,13 @@ The Teatro Massimo Vittorio Emanuele of Palermo stands as one of the most iconic
 
 
 
+---
 
+## Key objectives
 
-## Out team
+---
+
+## Our team
 
 > Puoi continuare con i tuoi paragrafi, immagini, codice, liste ecc. come nel file originale.
 
