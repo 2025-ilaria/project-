@@ -13,7 +13,7 @@ title: Home
 ---
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Il_Teatro_Massimo_di_Palermo.jpg" 
      alt="Teatro Massimo di Palermo" 
-     width="500">
+     width="800">
 
 ## About the project
 
