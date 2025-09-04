@@ -12,13 +12,13 @@ title: Home
 
 ---
 
-## Il Teatro Massimo di Palermo
+## About the project
 
 The Teatro Massimo Vittorio Emanuele of Palermo stands as one of the most iconic and architecturally significant opera houses in Europe. Inaugurated in 1897, it is not only the largest opera house in Italy but also a symbol of cultural and artistic excellence in the Mediterranean region. This project explores the architectural, historical, and cultural dimensions of the Teatro Massimo, focusing on its Neoclassical design enriched by elements of Eclecticism and early Art Nouveau (Liberty)
 
 ---
 
-## Contenuti aggiuntivi (facoltativi)
+## Tools
 
 > Puoi continuare con i tuoi paragrafi, immagini, codice, liste ecc. come nel file originale.
 
@@ -26,3 +26,12 @@ Puoi ad esempio inserire:
 
 ```js
 // codice JavaScript
+
+
+---
+
+## Out team 
+
+
+
+
