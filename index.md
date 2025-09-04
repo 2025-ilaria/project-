@@ -20,6 +20,13 @@ The Teatro Massimo Vittorio Emanuele of Palermo stands as one of the most iconic
 
 ## Tools
 
+
+
+
+
+
+## Out team
+
 > Puoi continuare con i tuoi paragrafi, immagini, codice, liste ecc. come nel file originale.
 
 Puoi ad esempio inserire:
@@ -30,7 +37,7 @@ Puoi ad esempio inserire:
 
 ---
 
-## Out team 
+
 
 
 
