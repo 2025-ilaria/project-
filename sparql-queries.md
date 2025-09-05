@@ -73,17 +73,17 @@ ORDER BY DESC(?property)
 **📊 Results** 
 The query generated a long list of predicates related to various theatres. We used it as reference. 
 
-**🔍 Gaps identified**
+## 🔍 Gaps identified
 <ul>
   <li>📛 The full name</li>
-  <li👷‍♂️> The architects</li>
+  <li>👷‍♂️ The architects</li>
   <li>🎭 Events and performances hosted by the theatre</li>
   <li>🛠️ Restorations and interventions</li>
   <li>🏛️ Typology of architecture</li>
   <li>🔗 Wikidata link</li>
   <li>📝 Description</li>
   <li>📍 Latitude and longitude</li>
-  <li>📷 Photo</li>
+  <li>📷 Official Photo</li>
 </ul>
 
 
