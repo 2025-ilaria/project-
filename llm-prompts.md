@@ -14,7 +14,7 @@ Missing information: the full official name
 
 Using a zero-shot technique, we prompted ChatGPT and Gemini to retrieve information regarding the full official name of the Teatro Massimo in Palermo.
 CHAT GPT:
-main
+<img width="602" height="303" alt="image" src="https://github.com/user-attachments/assets/bdf58daf-0813-41ba-b2b1-c5ef62ffd808" />
 
 
 
