@@ -10,6 +10,50 @@ title: LLM Prompts
 
 In this project, we explore the use of Large Language Models (LLMs), specifically ChatGPT and Google Gemini, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
+```rdf
+📌 **ZERO-SHOT PROMPTING TECHNIQUE**                      
+
+•No examples needed
+
+•Flexible use
+
+•Saves time
+
+•Generalizes knowledge
+
+•Direct interaction
+
+•Quick testing
+
+
+📌 **FEW-SHOT PROMPTING TECHNIQUE**
+
+• Provides examples – Shows the AI a few examples of the desired input-output behavior.
+
+• Improves accuracy – Helps the AI understand the task better than zero-shot prompting.
+
+• Guides style and format – Ensures outputs follow a specific tone or structure.
+
+• Reduces ambiguity – Clarifies what the user expects from the AI.
+
+• Flexible learning – Works even without full model retraining.
+
+• Good for complex tasks – Useful when tasks are too nuanced for zero-shot prompts.
+
+📌 **CHAIN-OF-THOUGHT PROMPTING TECHNIQUE**
+
+• Step-by-step reasoning – Encourages the AI to break down problems into intermediate steps before giving a final answer.
+
+• Improves complex problem solving – Useful for math, logic, or multi-step reasoning tasks.
+
+• Reduces errors – Makes the AI less likely to jump to an incorrect conclusion.
+
+• Transparent thinking – Shows the reasoning process, not just the answer.
+
+• Better accuracy – Often leads to more precise and reliable outputs.
+
+• Supports learning and debugging – Helps users understand how the AI reached its conclusion.
+```
 
 
 1️⃣  **Missing information: the full official name**
