@@ -10,19 +10,6 @@ title: LLM Prompts
 
 In this project, we explore the use of Large Language Models (LLMs), specifically ChatGPT and Google Gemini, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
-📌 **ZERO-SHOT PROMPT TECHNIQUE**
-
-•No examples needed
-
-•Flexible use
-
-•Saves time
-
-•Generalizes knowledge
-
-•Direct interaction
-
-•Quick testing
 
 
 1️⃣  **Missing information: the full official name**
@@ -63,19 +50,6 @@ Using a zero-shot technique, we prompted ChatGPT to retrieve information about t
 
 Both ChatGPT and Gemini provided accurate and reliable information, including the names of the two architects who designed the Teatro Massimo in Palermo, as well as two key dates: the start of construction and the inauguration date.
 
-📌**FEW-SHOT PROMPT TECHNIQUE**
-
-• Provides examples – Shows the AI a few examples of the desired input-output behavior.
-
-• Improves accuracy – Helps the AI understand the task better than zero-shot prompting.
-
-• Guides style and format – Ensures outputs follow a specific tone or structure.
-
-• Reduces ambiguity – Clarifies what the user expects from the AI.
-
-• Flexible learning – Works even without full model retraining.
-
-• Good for complex tasks – Useful when tasks are too nuanced for zero-shot prompts.
 
 
 3️⃣ **Missing information: cultural events hosted by Teatro Massimo**
@@ -112,24 +86,9 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 
 
 
-📌 **CHAIN-OF-THOUGHT (CoT) PROMPTING TECHNIQUE**
-
-• Step-by-step reasoning – Encourages the AI to break down problems into intermediate steps before giving a final answer.
-
-• Improves complex problem solving – Useful for math, logic, or multi-step reasoning tasks.
-
-• Reduces errors – Makes the AI less likely to jump to an incorrect conclusion.
-
-• Transparent thinking – Shows the reasoning process, not just the answer.
-
-• Better accuracy – Often leads to more precise and reliable outputs.
-
-• Supports learning and debugging – Helps users understand how the AI reached its conclusion.
-
-
 4️⃣**Missing information: restoration and intervention**
 
- It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
+Using the Chain-of-Thought technique, the question asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -158,6 +117,27 @@ Does not strictly follow a chronological sequence, prioritizing a storytelling a
 
 
 -**Overall**: ChatGPT’s approach is historical and factual, whereas Gemini’s is narrative and culturally rich.
+
+5️⃣ **Missing information: Type of architecture**
+
+Property dc: type
+Using a few-shot prompting technique, I asked both ChatGPT and Gemini which would be the best description under the property dc:type,  considering the example of Teatro comunale di Bologna
+
+### [ChatGPT](https://chat.openai.com/)
+
+<img width="602" height="440" alt="image" src="https://github.com/user-attachments/assets/a824ef8c-f9a2-435e-8bfd-bd95446e48fa" />
+
+### [Gemini](https://gemini.google.com/)
+
+<img width="602" height="404" alt="image" src="https://github.com/user-attachments/assets/6c5e5d16-9331-4727-ab05-160f8c95953b" />
+
+✅**LLMS comparison**
+
+Considering both answers I thought the best description to add was “architettura civile”. 
+
+
+
+
 
 
 
