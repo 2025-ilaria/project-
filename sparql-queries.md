@@ -7,7 +7,7 @@ title: SPARQL queries
 
 
 ---
-## 1) Checking the presence of Teatro Massimo di Palermo in ArCo
+## 1️⃣ Checking the presence of Teatro Massimo di Palermo in ArCo
 One of the theatres we checked was Teatro Massimo di Palermo:
 
 ```sparql
