@@ -3,7 +3,7 @@ layout: default
 title: Methodology
 ---
 
-# Methodology
+# <strong>Methodology<strong>
 
 
 This project focuses on the Teatro Massimo Vittorio Emanuele in Palermo, with the main goal of enriching the cultural heritage data available in the ArCo knowledge graph. The methodology combines the structured information already provided by ArCo with the generative capabilities of Large Language Models (LLMs), such as ChatGPT and Gemini.
