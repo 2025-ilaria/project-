@@ -74,6 +74,7 @@ ORDER BY DESC(?property)
 The query generated a long list of predicates related to various theatres. We used it as reference. 
 
 ## 🔍 Gaps identified
+Considering the results of Query 2 and Query 3 the gaps we think can be added to enrich Teatro Massimo are: 
 <ul>
   <li>📛 The full name</li>
   <li>👷‍♂️ The architects</li>
