@@ -97,58 +97,6 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
 </section>
 
 
----
-
-
-<h2>Our Team</h2>
-<p>This project was collaboratively developed by:</p>
-
-<div class="team-container">
-  <div class="team-member">
-    <span class="emoji">👩🏻</span>
-    <span class="name">Macheda Ilaria</span>
-  </div>
-  <div class="team-member">
-    <span class="emoji">👩🏻</span>
-    <span class="name">Sinopoli Sendy</span>
-  </div>
-  <div class="team-member">
-    <span class="emoji">👩🏻</span>
-    <span class="name">Tsingos Matilde</span>
-  </div>
-</div>
-
-<p>Students of the Master’s Degree in Language, Society and Communication at the University of Bologna.</p>
-
-<style>
-  .team-container {
-    display: flex;
-    gap: 1em; /* spazio tra le card */
-    flex-wrap: wrap; /* si adattano se lo schermo è piccolo */
-  }
-
-  .team-member {
-    background-color: #e0f7e9; /* sfondo leggero verde */
-    padding: 1em;
-    border-radius: 10px;
-    text-align: center;
-    width: 150px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    font-family: Arial, sans-serif;
-  }
-
-  .emoji {
-    font-size: 2em;
-    display: block;
-    margin-bottom: 0.5em;
-  }
-
-  .name {
-    font-weight: bold;
-    font-size: 1em;
-    display: block;
-  }
-</style>
 
 
 ---
