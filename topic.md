@@ -4,7 +4,7 @@ title: Topic
 ---
 
 
-# Topic
+# <strong>Topic<strong>
 ---
 
 # *Teatro Massimo di Palermo*
