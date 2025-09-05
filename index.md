@@ -88,7 +88,6 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
 
 ---
 
-## Our team
 
 <h2>Our Team</h2>
 <p>This project was collaboratively developed by:</p>
