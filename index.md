@@ -16,27 +16,23 @@ title: Home
      width="900">
 
 
-
 <h2>About the Project</h2>
 <p>
-This project was developed within the framework of the <strong>KE4H (Knowledge Engineering for the Humanities)</strong> course at the <strong>University of Bologna</strong>.<br>
-Our focus was the <strong>Teatro Massimo di Palermo</strong>, one of the most iconic <strong>opera houses in Italy</strong> and the <strong>largest in the country</strong>. Despite its <strong>cultural, historical, and artistic importance</strong>, we noticed that the Teatro Massimo is only <strong>partially represented in ArCo</strong>, the knowledge graph of the <strong>Italian Ministry of Culture</strong>.
+This project was developed within the framework of the <strong>KE4H (Knowledge Engineering for the Humanities)</strong> course at the University of Bologna.<br>
+Our focus was the <strong>Teatro Massimo di Palermo</strong>, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in <strong>ArCo</strong>, the knowledge graph of Italian Cultural Heritage.
 </p>
 
 <p>
-The aim of our work was to <strong>investigate how information about this landmark is modeled in ArCo</strong>, <strong>identify missing or incomplete data</strong>, and <strong>propose semantic enrichments</strong>. To achieve this, we combined <strong>SPARQL querying techniques</strong> with the use of <strong>Large Language Models (LLMs)</strong>, which allowed us to <strong>generate RDF triples consistent with ArCo’s ontology</strong>.
+The aim of our work was to investigate how information about this landmark is modeled in ArCo, identify missing or incomplete data, and propose semantic enrichments. To achieve this, we combined <strong>SPARQL querying techniques</strong> with the use of <strong>Large Language Models (LLMs)</strong>, which allowed us to generate <strong>RDF triples</strong> consistent with ArCo’s ontology.
 </p>
 
 <p>
-Through this process, we explored how <strong>AI-assisted semantic modeling</strong> can <strong>improve the representation of cultural heritage in structured datasets</strong>, <strong>bridging gaps and expanding knowledge accessibility</strong>.
+Through this process, we explored how <strong>AI-assisted semantic modeling</strong> can improve the representation of cultural heritage in structured datasets, bridging gaps and expanding knowledge accessibility.
 </p>
 
 
 
 ---
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
   .objectives-list {
@@ -60,15 +56,14 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
   .objectives-list li:nth-child(4) { animation-delay: 0.8s; }
   .objectives-list li:nth-child(5) { animation-delay: 1s; }
 
-  .objectives-list i {
-    color: green;
+  .objectives-list .emoji {
     margin-right: 10px;
+    font-size: 1.3em;
     transition: transform 0.3s ease;
   }
 
-  .objectives-list li:hover i {
+  .objectives-list li:hover .emoji {
     transform: scale(1.3) rotate(10deg);
-    color: #2ecc71;
   }
 
   @keyframes fadeIn {
@@ -81,28 +76,13 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
 
 <h2>Key Objectives</h2>
 <ul class="objectives-list">
-  <li><i class="fa-solid fa-circle-check"></i> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
-  <li><i class="fa-solid fa-circle-check"></i> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
-  <li><i class="fa-solid fa-circle-check"></i> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
-  <li><i class="fa-solid fa-circle-check"></i> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
-  <li><i class="fa-solid fa-circle-check"></i> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
+  <li><span class="emoji">✅</span> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
+  <li><span class="emoji">✅</span> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
+  <li><span class="emoji">✅</span> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
+  <li><span class="emoji">✅</span> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
+  <li><span class="emoji">✅</span> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
 </ul>
 
-
----
-
-
-<!-- Assicurati di includere Font Awesome nel tuo <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<h2>Key Objectives</h2>
-<ul>
-  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
-  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
-  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
-  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
-  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
-</ul>
 
 
 
@@ -110,12 +90,55 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
 
 ## Our team
 
-> Puoi continuare con i tuoi paragrafi, immagini, codice, liste ecc. come nel file originale.
+<h2>Our Team</h2>
+<p>This project was collaboratively developed by:</p>
 
-Puoi ad esempio inserire:
+<div class="team-container">
+  <div class="team-member">
+    <span class="emoji">👩🏻</span>
+    <span class="name">Macheda Ilaria</span>
+  </div>
+  <div class="team-member">
+    <span class="emoji">👩🏻</span>
+    <span class="name">Sinopoli Sendy</span>
+  </div>
+  <div class="team-member">
+    <span class="emoji">👩🏻</span>
+    <span class="name">Tsingos Matilde</span>
+  </div>
+</div>
 
-```js
-// codice JavaScript
+<p>Students of the Master’s Degree in Language, Society and Communication at the University of Bologna.</p>
+
+<style>
+  .team-container {
+    display: flex;
+    gap: 1em; /* spazio tra le card */
+    flex-wrap: wrap; /* si adattano se lo schermo è piccolo */
+  }
+
+  .team-member {
+    background-color: #e0f7e9; /* sfondo leggero verde */
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  .emoji {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+  }
+</style>
 
 
 ---
