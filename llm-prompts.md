@@ -42,6 +42,7 @@ Here below there are the three prompting technique that we have used in order to
 
 • Good for complex tasks – Useful when tasks are too nuanced for zero-shot prompts.
 
+
 📌 CHAIN-OF-THOUGHT PROMPTING TECHNIQUE
 
 • Step-by-step reasoning – Encourages the AI to break down problems into intermediate steps before giving a final answer.
@@ -78,6 +79,7 @@ Using a zero-shot technique, we prompted ChatGPT and Gemini to retrieve informat
 ✅**LLMS comparison**:
 
 Chat GPT gave us a more precise answer, but both provided the information that we were looking for. 
+
 
 2️⃣ **Missing information: the architects' names**
 
@@ -164,10 +166,12 @@ Does not strictly follow a chronological sequence, prioritizing a storytelling a
 
 -**Overall**: ChatGPT’s approach is historical and factual, whereas Gemini’s is narrative and culturally rich.
 
+
 5️⃣ **Missing information: Type of architecture**
 
 Property dc: type
-Using a few-shot prompting technique, I asked both ChatGPT and Gemini which would be the best description under the property dc:type,  considering the example of Teatro comunale di Bologna
+
+Using a few-shot prompting technique, we asked both ChatGPT and Gemini which would be the best description under the property dc:type,  considering the example of Teatro comunale di Bologna
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -179,13 +183,14 @@ Using a few-shot prompting technique, I asked both ChatGPT and Gemini which woul
 
 ✅**LLMS comparison**
 
-Considering both answers I thought the best description to add was “architettura civile”. 
+Considering both answers, we thought the best description to add was “architettura civile”. 
+
 
 6️⃣ **Missing information: wikidata link**
 
 Property owl:sameAs
 
-I asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di Palermo existed, using a zero-shot prompting technique.
+We asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di Palermo existed, using a zero-shot prompting technique.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -217,10 +222,10 @@ We decided to write under this property some architectural information; we first
 
 ✅**LLMS comparison**
 
-They both provided the most important and relevant features, but ChatGPT was more precise and offered more details. I also checked some information on Wikipedia, but the results were the same as those provided by the two LLMs.
-Then I decided to compare and combine all information into a single text. 
+They both provided the most important and relevant features, but ChatGPT was more precise and offered more details. We also checked some information on Wikipedia, but the results were the same as those provided by the two LLMs.
+Then we decided to compare and combine all information into a single text. 
 
-Another thing I asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. I asked ChatGPT, which would be the best option, using a chain-of-thought technique:
+Another thing we asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. We asked ChatGPT, which would be the best option, using a chain-of-thought technique:
 
 <img width="602" height="544" alt="image" src="https://github.com/user-attachments/assets/3426f095-07b4-476d-9755-9224b9e1935b" />
 <img width="560" height="454" alt="image" src="https://github.com/user-attachments/assets/aebfcd9f-0403-4cbf-8e88-3069aa60d9d1" />
@@ -241,7 +246,7 @@ We asked both ChatGPT and Gemini for information about the latitude and longitud
 
 ✅**LLMS comparison**
 
-They both gave the exact same answer, but Chat GPT was more precise giving also the sources from which it gathered information (Outdooractive and Mapcarta). For this reason, I decided to proceed with ChatGPT when creating the RDF triples.
+They both gave the exact same answer, but Chat GPT was more precise giving also the sources from which it gathered information (Outdooractive and Mapcarta). For this reason, we decided to proceed with ChatGPT when creating the RDF triples.
 
 9️⃣ **Missing information: photographic representation**
 
