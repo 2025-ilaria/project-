@@ -22,8 +22,8 @@ The step-by-step process includes:
 
 🕵️ **Gap Confirmation**: Validated the gaps by running the generated SPARQL queries and confirming the absence of certain cultural, architectural, and historical details.
 
-💡 **LLM-Assisted Knowledge Retrieval**: Designed targeted prompts (zero-shot, few-shot, and chain-of-thought inspired) to gather missing information from ChatGPT[ChatGPT](https://chatgpt.com/)
- and Gemini.[Gemini](https://gemini.google.com/app)
+💡 **LLM-Assisted Knowledge Retrieval**: Designed targeted prompts (zero-shot, few-shot, and chain-of-thought inspired) to gather missing information from [ChatGPT](https://chatgpt.com/)
+ and [Gemini](https://gemini.google.com/app)
 
 
 ⚖️ **Cross-Model Comparison**: Compared and validated the outputs from both LLMs to ensure reliability and completeness of the new cultural data.
