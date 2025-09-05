@@ -41,11 +41,9 @@ typed as `arco:CulturalInstituteOrSite`
 *it is a literal with an italian language tag*
 
 ---
-
 2️⃣ **RDF Triple for the architects** 
 
 🔍We asked ChatGPT to create a RDF Triple using the **chain-of-thought prompt**
-
 
 ![Screenshot](assets/css/Screenshot%20chat%20prompt%20architects.png) 
 
@@ -85,7 +83,6 @@ typed as `arco:CulturalInstituteOrSite`
 *two architects as separate resources*
 
 ---
-
 3️⃣ **RDF Triple for cultural events** 
 
 🔍We asked ChatGPT to create a RDF Triple using a **zero-shot technique**:
@@ -184,7 +181,6 @@ We asked Chat to create it using the following information:
 >**Object**: ex:OperaProduction, ex:TheaterPerformance, ex:OrchestralConcert, ex:BalletDance, ex:FestivalEvent
 
 ---
-
 4️⃣**RDF Triple for restoration and intervention**
 
 🔍We asked CHAT GPT to create a RDF triple using the **zero-shot prompt**: 
@@ -226,10 +222,33 @@ We asked Chat to create it using the following information:
 ➡️Object: It is declared as `arco:hasIntervention` and provided with `rdfs:label` describing the intervention.
 
 ---
-
 5️⃣ **RDF Triple for type of architecture**
 
-Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple with this information:
+🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple with this information:
+
+![Screenshot](assets/css/Screenshot%20prompt%20dc%20type%20triple.png)
+
+Here the result➡️
+
+```rdf
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix arco: <https://w3id.org/arco/ontology/core/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    rdfs:label "Teatro Massimo Vittorio Emanuele, Palermo"@it ;
+    dc:type "architettura civile"@it .
+```
+---
+We asked Chat to create it using the following information: 
+
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `dc:type`   
+> **Object:** architettura civile.
+
+---
+6️⃣**RDF Triple for wikidata link**
+
 
 
 
