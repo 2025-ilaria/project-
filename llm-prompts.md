@@ -11,6 +11,7 @@ title: LLM Prompts
 In this project, we explore the use of Large Language Models (LLMs), specifically ChatGPT and Google Gemini, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
 📌 **ZERO-SHOT PROMPT**
+
 •No examples needed
 
 •Flexible use
