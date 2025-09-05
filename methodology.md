@@ -79,6 +79,7 @@ LLMs, or Large Language Models, are a type of artificial intelligence (AI) that 
 We used CHATGPT and GEMINI⬇️
 
 ChatGPT is an AI-powered conversational model created by OpenAI, built on the GPT (Generative Pretrained Transformer) architecture. It’s designed to interpret and produce human-like text. Trained on a wide range of textual data, it can engage in dialogue, create content, and support a variety of tasks.
+
 Gemini is a collection of AI models developed by Google DeepMind, aimed at combining the strengths of large language models with advanced reasoning and problem-solving skills. It leverages state-of-the-art techniques to improve the model’s capacity to generate nuanced, context-aware responses across a wide range of topics.
 
 # <strong>AND FINALLY, WHAT IS GITHUB?<strong>
