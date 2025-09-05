@@ -8,7 +8,8 @@ title: LLM Prompts
 
 ---
 
-Benvenuto nella pagina RDF Triples.
+In this project, we explore the use of Large Language Models (LLMs), specifically ChatGPT and Google Gemini, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
+The case study focuses on the Teatro Massimo Vittorio Emanuele in Palermo, one of the most iconic opera houses in Italy.
 
 _Testo di esempio…_
 
