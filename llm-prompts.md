@@ -111,6 +111,7 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 -**Gemini**: Highlights the theater’s wider cultural role, including fundraising events, tours, and other theatrical productions.
 
 
+
 📌 **CHAIN-OF-THOUGHT (CoT) PROMPTING TECHNIQUE**
 
 • Step-by-step reasoning – Encourages the AI to break down problems into intermediate steps before giving a final answer.
@@ -125,6 +126,20 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 
 • Supports learning and debugging – Helps users understand how the AI reached its conclusion.
 
+
+4️⃣**Missing information: restoration and intervention**
+
+ It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
+
+### [ChatGPT](https://chat.openai.com/)
+
+<img width="602" height="653" alt="image" src="https://github.com/user-attachments/assets/916b4c12-574d-4ca9-bfb7-0f2446403817" />
+<img width="602" height="717" alt="image" src="https://github.com/user-attachments/assets/cddefc9e-f4c2-4178-b519-abc3434d2bb6" />
+
+### [Gemini](https://gemini.google.com/)
+
+<img width="602" height="621" alt="image" src="https://github.com/user-attachments/assets/1d0bdd97-33c7-41e4-8c44-c8fb2053ed6a" />
+<img width="602" height="549" alt="image" src="https://github.com/user-attachments/assets/e477746e-744d-4e82-989f-3c4c5626d771" />
 
 
 
