@@ -141,7 +141,23 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 <img width="602" height="621" alt="image" src="https://github.com/user-attachments/assets/1d0bdd97-33c7-41e4-8c44-c8fb2053ed6a" />
 <img width="602" height="549" alt="image" src="https://github.com/user-attachments/assets/e477746e-744d-4e82-989f-3c4c5626d771" />
 
+✅**LLMS comparison** ➡️ Cheching on Wikipedia, we noticed that both provided right answers, but:
 
+
+-**ChatGPT**: Adds an image; presents a chronological and technical structure (it follows the timeline from construction, decline, restoration, to reopening)
+emphasizing structural issues, bureaucracy, and modernization. It is more complete and historically constructed compared to Gemini. It follows more faithfully the structure given by the Chain-of-thought prompt. It includes details such as names and specific interventions. 
+
+-**Gemini**: Uses a thematic and narrative structure, organizing information around social, cultural, and political context.
+Emphasizes symbolic and civic aspects, like the fight against the Mafia and the city’s cultural revival.
+Does not strictly follow a chronological sequence, prioritizing a storytelling approach with cultural meaning.
+
+-**ChatGPT**: Focuses on architectural and acoustic preservation.
+
+
+-**Gemini**: Frames the reopening as a civic triumph and connects it to popular culture.
+
+
+-**Overall**: ChatGPT’s approach is historical and factual, whereas Gemini’s is narrative and culturally rich.
 
 
 
