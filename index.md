@@ -34,7 +34,6 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
 
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
