@@ -18,7 +18,7 @@ title: Home
 ## About the project
 
 This project was developed within the framework of the KE4H (Knowledge Engineering for the Humanities) course at the University of Bologna.
-Our focus was the Teatro Massimo di Palermo, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in ArCo, the knowledge graph of the Italian Ministry of Culture.
+Our focus was the Teatro Massimo di Palermo, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in ArCo, the knowledge graph of the Italian Cultural Heritage.
 
 The aim of our work was to investigate how information about this landmark is modeled in ArCo, identify missing or incomplete data, and propose semantic enrichments. To achieve this, we combined SPARQL querying techniques with the use of Large Language Models (LLMs), which allowed us to generate RDF triples consistent with ArCo’s ontology.
 
