@@ -15,14 +15,23 @@ title: Home
      alt="Teatro Massimo di Palermo" 
      width="900">
 
-## About the project
 
-This project was developed within the framework of the KE4H (Knowledge Engineering for the Humanities) course at the University of Bologna.
-Our focus was the Teatro Massimo di Palermo, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in ArCo, the knowledge graph of the Italian Cultural Heritage.
 
-The aim of our work was to investigate how information about this landmark is modeled in ArCo, identify missing or incomplete data, and propose semantic enrichments. To achieve this, we combined SPARQL querying techniques with the use of Large Language Models (LLMs), which allowed us to generate RDF triples consistent with ArCo’s ontology.
+<h2>About the Project</h2>
+<p>
+This project was developed within the framework of the <strong style="color:green;">KE4H (Knowledge Engineering for the Humanities)</strong> course at the <strong style="color:green;">University of Bologna</strong>.<br>
+Our focus was the <strong style="color:green;">Teatro Massimo di Palermo</strong>, one of the most iconic <strong style="color:green;">opera houses in Italy</strong> and the <strong style="color:green;">largest in the country</strong>. Despite its <strong style="color:green;">cultural, historical, and artistic importance</strong>, we noticed that the Teatro Massimo is only <strong style="color:green;">partially represented in ArCo</strong>, the knowledge graph of the <strong style="color:green;">Italian Ministry of Culture</strong>.
+</p>
 
-Through this process, we explored how AI-assisted semantic modeling can improve the representation of cultural heritage in structured datasets, bridging gaps and expanding knowledge accessibility.
+<p>
+The aim of our work was to <strong style="color:green;">investigate how information about this landmark is modeled in ArCo</strong>, <strong style="color:green;">identify missing or incomplete data</strong>, and <strong style="color:green;">propose semantic enrichments</strong>. To achieve this, we combined <strong style="color:green;">SPARQL querying techniques</strong> with the use of <strong style="color:green;">Large Language Models (LLMs)</strong>, which allowed us to <strong style="color:green;">generate RDF triples consistent with ArCo’s ontology</strong>.
+</p>
+
+<p>
+Through this process, we explored how <strong style="color:green;">AI-assisted semantic modeling</strong> can <strong style="color:green;">improve the representation of cultural heritage in structured datasets</strong>, <strong style="color:green;">bridging gaps and expanding knowledge accessibility</strong>.
+</p>
+
+
 
 
 ---
