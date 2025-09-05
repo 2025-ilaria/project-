@@ -3,7 +3,7 @@ layout: default
 title: SPARQL queries
 ---
 
-# SPARQL queries
+# <strong>SPARQL queries<strong>
 
 
 ---
