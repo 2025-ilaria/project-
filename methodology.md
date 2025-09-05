@@ -40,7 +40,7 @@ Let's take a closer look at the specific tools we used throughout the project:
 
 # <strong>ArCo and ArCo SPARQL endpoint: WHAT ARE THEY?<strong>
 
-The ArCo Knowledge Graph is a structured and semantically enriched representation of the Italian cultural heritage, developed by the Italian Institute of Cultural Heritage (ICCD) and the Italian Ministry of Culture.
+The **ArCo Knowledge Graph** is a structured and semantically enriched representation of the Italian cultural heritage, developed by the Italian Institute of Cultural Heritage (ICCD) and the Italian Ministry of Culture.
 It is built using Linked Open Data (LOD) principles and the Resource Description Framework (RDF), and it is based on a set of domain-specific ontologies (the ArCo Ontologies) that formally describe cultural heritage entities, such as artworks, monuments, archaeological sites, museums, archives, and their relationships.
 
 The main goal of ArCo is to transform the vast catalog of Italian cultural heritage into a machine-readable, interoperable, and reusable knowledge graph. 
@@ -49,7 +49,7 @@ In short, the ArCo Knowledge Graph is the largest open knowledge graph on Italia
 
 ---
 
-ArCo SPARQL refers to the SPARQL endpoint of the ArCo knowledge graph. It is the official query service that allows users to interrogate and retrieve data from ArCo using the SPARQL query language (the W3C standard for querying RDF data).
+**ArCo SPARQL** refers to the SPARQL endpoint of the ArCo knowledge graph. It is the official query service that allows users to interrogate and retrieve data from ArCo using the SPARQL query language (the W3C standard for querying RDF data).
 
 Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can:
 
