@@ -135,6 +135,18 @@ Using a few-shot prompting technique, I asked both ChatGPT and Gemini which woul
 
 Considering both answers I thought the best description to add was “architettura civile”. 
 
+6️⃣ **Missing information: wikidata link**
+
+Property owl:sameAs
+I asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di Palermo existed, using a zero-shot prompting technique.
+
+### [ChatGPT](https://chat.openai.com/)
+
+<img width="514" height="372" alt="image" src="https://github.com/user-attachments/assets/0a77cbf7-5bff-484b-812e-76cafae012e2" />
+
+### [Gemini](https://gemini.google.com/)
+
+
 
 
 
