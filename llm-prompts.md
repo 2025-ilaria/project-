@@ -10,8 +10,10 @@ title: LLM Prompts
 
 In this project, we explore the use of Large Language Models (LLMs), specifically ChatGPT and Google Gemini, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
+Here below there are the three prompting technique that we have used in order to interrogate AI⬇️
+
 ```rdf
-📌 **ZERO-SHOT PROMPTING TECHNIQUE**                      
+📌 ZERO-SHOT PROMPTING TECHNIQUE                      
 
 •No examples needed
 
@@ -26,7 +28,7 @@ In this project, we explore the use of Large Language Models (LLMs), specificall
 •Quick testing
 
 
-📌 **FEW-SHOT PROMPTING TECHNIQUE**
+📌 FEW-SHOT PROMPTING TECHNIQUE
 
 • Provides examples – Shows the AI a few examples of the desired input-output behavior.
 
@@ -40,7 +42,7 @@ In this project, we explore the use of Large Language Models (LLMs), specificall
 
 • Good for complex tasks – Useful when tasks are too nuanced for zero-shot prompts.
 
-📌 **CHAIN-OF-THOUGHT PROMPTING TECHNIQUE**
+📌 CHAIN-OF-THOUGHT PROMPTING TECHNIQUE
 
 • Step-by-step reasoning – Encourages the AI to break down problems into intermediate steps before giving a final answer.
 
