@@ -249,6 +249,9 @@ We asked Chat to create it using the following information:
 ---
 6️⃣**RDF Triple for wikidata link**
 
+![Screnshot]()
+
+
 
 
 
