@@ -27,8 +27,6 @@ Through this process, we explored how AI-assisted semantic modeling can improve 
 
 ---
 
-## Tools
-
 <section id="tools" style="margin-top: 50px;">
   <h2>Tools</h2>
   <ul>
@@ -43,7 +41,20 @@ Through this process, we explored how AI-assisted semantic modeling can improve 
 
 ---
 
-## Key objectives
+
+<!-- Assicurati di includere Font Awesome nel tuo <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<h2>Key Objectives</h2>
+<ul>
+  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
+  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
+  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
+  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
+  <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
+</ul>
+
+
 
 ---
 
