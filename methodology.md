@@ -32,7 +32,8 @@ The step-by-step process includes:
 
 🌐 **Knowledge Graph Enrichment**: Proposed structured triples in Turtle syntax to extend the ArCo knowledge graph, ensuring semantic coherence and adherence to cultural heritage standards.
 
-🖥️ **Website and Presentation Development**: Built a GitHub-based website and project presentation to document the methodology, results, and the role of LLMs in enriching a cultural heritage knowledge graph.
+🖥️ **Website and Presentation Development**: Built a GitHub-based website [GitHub-based website](https://github.com/2025-ilaria/project-)
+and project presentation to document the methodology, results, and the role of LLMs in enriching a cultural heritage knowledge graph.
 
 
 Let's take a closer look at the specific tools we used throughout the project: 
@@ -48,7 +49,17 @@ In short, the ArCo Knowledge Graph is the largest open knowledge graph on Italia
 
 ---
 
-# and ArCo 
+ArCo SPARQL refers to the SPARQL endpoint of the ArCo knowledge graph. It is the official query service that allows users to interrogate and retrieve data from ArCo using the SPARQL query language (the W3C standard for querying RDF data).
+
+Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can:
+
+-Write queries to extract structured information (e.g., cultural sites, artworks, architects, restoration interventions).
+
+-Explore relationships among cultural heritage entities defined in the ArCo ontology.
+
+-Identify data gaps and enrichments needed for cultural heritage representation.
+
+In short, ArCo SPARQL is the interface that connects users to the ArCo knowledge graph, enabling semantic search and data analysis.
 
 
 
