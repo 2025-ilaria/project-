@@ -42,6 +42,10 @@ typed as `arco:CulturalInstituteOrSite`
 
 # RDF Triple for the architects 
 We asked ChatGPT to create a RDF Triple using the **chain-of-thought prompt**
+
+
+![Screenshot](assets/css/Screenshot2025-09-05121529.png)
+
 __
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
