@@ -224,7 +224,7 @@ We asked Chat to create it using the following information:
 ---
 5️⃣ **RDF Triple for type of architecture**
 
-🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple with this information:
+🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
 
 ![Screenshot](assets/css/Screenshot%20prompt%20dc%20type%20triple.png)
 
@@ -249,9 +249,32 @@ We asked Chat to create it using the following information:
 ---
 6️⃣**RDF Triple for wikidata link**
 
-![Screnshot]()
+🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
 
+![Screnshot](assets/css/Screenshot%20wikida%20triple%20prompt.png)
 
+Here the result➡️
+
+```rdf
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix arco: <https://w3id.org/arco/ontology/core/> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    rdfs:label "Teatro Massimo Vittorio Emanuele, Palermo"@it ;
+    owl:sameAs <https://www.wikidata.org/entity/Q261439> .
+```
+
+We asked Chat to create it using the following information:
+
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `owl:sameAs`   
+> **Object:** <https://www.wikidata.org/entity/Q261439>. 
+
+---
+7️⃣**RDF Triple for description**
+
+🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
 
 
 
