@@ -138,6 +138,7 @@ Considering both answers I thought the best description to add was “architettu
 6️⃣ **Missing information: wikidata link**
 
 Property owl:sameAs
+
 I asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di Palermo existed, using a zero-shot prompting technique.
 
 ### [ChatGPT](https://chat.openai.com/)
@@ -151,6 +152,80 @@ I asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di 
 ✅**LLMS comparison**
 
 They both provided the correct ID for Teatro Massimo.
+
+7️⃣ **Missing information: architectural description**
+
+Property: l0:description
+
+We decided to write under this property some architectural information; we first started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using the zero-shot prompting technique: 
+
+### [ChatGPT](https://chat.openai.com/)
+
+<img width="602" height="601" alt="image" src="https://github.com/user-attachments/assets/c5caf7e3-deca-4d32-9569-e3f8409b69bf" />
+<img width="602" height="603" alt="image" src="https://github.com/user-attachments/assets/fb9513af-bd0b-40d8-8e0c-ee3f0c450063" />
+
+### [Gemini](https://gemini.google.com/)
+
+<img width="602" height="417" alt="image" src="https://github.com/user-attachments/assets/8b22d416-28ab-4d98-9471-c103c8084c35" />
+<img width="602" height="287" alt="image" src="https://github.com/user-attachments/assets/f10eb756-1b20-447f-ba2e-6b9598b63e3c" />
+
+✅**LLMS comparison**
+
+They both provided the most important and relevant features, but ChatGPT was more precise and offered more details. I also checked some information on Wikipedia, but the results were the same as those provided by the two LLMs.
+Then I decided to compare and combine all information into a single text. 
+
+Another thing I asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. I asked ChatGPT, which would be the best option, using a chain-of-thought technique:
+
+<img width="602" height="544" alt="image" src="https://github.com/user-attachments/assets/3426f095-07b4-476d-9755-9224b9e1935b" />
+<img width="560" height="454" alt="image" src="https://github.com/user-attachments/assets/aebfcd9f-0403-4cbf-8e88-3069aa60d9d1" />
+
+In conclusion, we opted for l0:description because we thought it was the most appropriate choice given the kind of description we wanted to add. 
+
+8️⃣ **Missing information: latitude and longitude**
+
+We asked both ChatGPT and Gemini for information about the latitude and longitude of the Teatro Massimo di Palermo, using the zero-shot prompting technique:
+
+### [ChatGPT](https://chat.openai.com/)
+
+<img width="602" height="263" alt="image" src="https://github.com/user-attachments/assets/7637d69d-96d2-40a2-b0ae-f880102444de" />
+
+### [Gemini](https://gemini.google.com/)
+
+<img width="602" height="240" alt="image" src="https://github.com/user-attachments/assets/bb73b291-5eda-4a87-862a-468bb479972a" />
+
+✅**LLMS comparison**
+
+They both gave the exact same answer, but Chat GPT was more precise giving also the sources from which it gathered information (Outdooractive and Mapcarta). For this reason, I decided to proceed with ChatGPT when creating the RDF triples.
+
+9️⃣ **Missing information: photographic representation**
+
+We asked both ChatGPT and Gemini for the URL of a picture of the Teatro di Palermo using the few-shot prompting technique, giving it an example. 
+
+### [ChatGPT](https://chat.openai.com/)
+
+<img width="558" height="358" alt="image" src="https://github.com/user-attachments/assets/792ece84-6aea-4414-8307-9e1d73b66d50" />
+<img width="602" height="375" alt="image" src="https://github.com/user-attachments/assets/ef3af9a4-3360-42d3-8d5a-78b7ee68f592" />
+
+### [Gemini](https://gemini.google.com/)
+
+<img width="602" height="323" alt="image" src="https://github.com/user-attachments/assets/2a3c3b23-cec6-4174-a14d-ca76d76dee18" />
+
+✅**LLMS comparison**
+
+Checking the information reported by both the LLMs we noticed that while ChatGPT was accurate, Gemini presented a discrepancy. In fact, the Author stated by Gemini (Iacopo Nuti) did not correspond to the Autor written in Wikidata (Vitoparisi92): 
+
+<img width="226" height="76" alt="image" src="https://github.com/user-attachments/assets/30531dba-9124-4852-8529-ed46114823fa" />
+
+For this reason, we decided to proceed with ChatGPT for creating the triples. 
+
+
+
+
+
+
+
+
+
 
 
 
