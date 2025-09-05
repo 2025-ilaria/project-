@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Home
+# <strong>Home<strong>
 
 <!-- Navigazione personalizzata -->
 <nav style="margin-bottom: 30px;">
