@@ -44,6 +44,10 @@ Using a zero-shot technique, we prompted ChatGPT to retrieve information about t
 
 Both ChatGPT and Gemini provided accurate and reliable information, including the names of the two architects who designed the Teatro Massimo in Palermo, as well as two key dates: the start of construction and the inauguration date.
 
+3️⃣ **Missing information: cultural events hosted by Teatro Massimo**
+
+This prompt uses a few-shot technique by providing CHAT GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
+
 
 
 
