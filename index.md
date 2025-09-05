@@ -18,12 +18,12 @@ title: Home
 
 <h2>About the Project</h2>
 <p>
-This project was developed within the framework of the <strong>KE4H (Knowledge Engineering for the Humanities)</strong> course at the <a href="https://www.unibo.it/">Università di Bologna</a>.<br>
-Our focus was the <strong>Teatro Massimo di Palermo</strong>, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in <strong>ArCo</strong>, the knowledge graph of Italian Cultural Heritage.
+This project was developed within the framework of the <strong>KE4H (Knowledge Engineering for the Humanities)</strong> course at the <a href="https://www.unibo.it/">University of Bologna</a>.<br>
+Our focus was the <strong>Teatro Massimo di Palermo</strong>, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in <a href="https://dati.beniculturali.it/arco/index.php"><strong>ArCo</strong>, the knowledge graph of Italian Cultural Heritage.
 </p>
 
 <p>
-The aim of our work was to investigate how information about this landmark is modeled in ArCo, identify missing or incomplete data, and propose semantic enrichments. To achieve this, we combined <strong>SPARQL querying techniques</strong> with the use of <strong>Large Language Models (LLMs)</strong>, which allowed us to generate <strong>RDF triples</strong> consistent with ArCo’s ontology.
+The aim of our work was to investigate how information about this landmark is modeled in ArCo, identify missing or incomplete data, and propose semantic enrichments. To achieve this, we combined <a href="https://en.wikipedia.org/wiki/SPARQL"><strong>SPARQL</strong> querying techniques with the use of <a href="https://en.wikipedia.org/wiki/Large_language_model"><strong>Large Language Models (LLMs)</strong>, which allowed us to generate <strong>RDF triples</strong> consistent with ArCo’s ontology.
 </p>
 
 <p>
