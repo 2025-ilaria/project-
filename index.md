@@ -17,14 +17,29 @@ title: Home
 
 ## About the project
 
-The Teatro Massimo Vittorio Emanuele of Palermo stands as one of the most iconic and architecturally significant opera houses in Europe. Inaugurated in 1897, it is not only the largest opera house in Italy but also a symbol of cultural and artistic excellence in the Mediterranean region. This project explores the architectural, historical, and cultural dimensions of the Teatro Massimo, focusing on its Neoclassical design enriched by elements of Eclecticism and early Art Nouveau (Liberty)
+This project was developed within the framework of the KE4H (Knowledge Engineering for the Humanities) course at the University of Bologna.
+Our focus was the Teatro Massimo di Palermo, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in ArCo, the knowledge graph of the Italian Ministry of Culture.
+
+The aim of our work was to investigate how information about this landmark is modeled in ArCo, identify missing or incomplete data, and propose semantic enrichments. To achieve this, we combined SPARQL querying techniques with the use of Large Language Models (LLMs), which allowed us to generate RDF triples consistent with ArCo’s ontology.
+
+Through this process, we explored how AI-assisted semantic modeling can improve the representation of cultural heritage in structured datasets, bridging gaps and expanding knowledge accessibility.
+
 
 ---
 
 ## Tools
 
-
-
+<section id="tools" style="margin-top: 50px;">
+  <h2>Tools</h2>
+  <ul>
+    <li><a href="http://wit.istc.cnr.it/arco/" target="_blank"><strong>ArCo</strong></a></li>
+    <li><a href="https://dati.cultura.gov.it/sparql" target="_blank"><strong>ArCo SPARQL endpoint</strong></a></li>
+    <li><a href="https://chat.openai.com/" target="_blank"><strong>ChatGPT</strong></a></li>
+    <li><a href="https://gemini.google.com/?hl=it" target="_blank"><strong>Gemini</strong></a></li>
+    <li><a href="https://github.com/" target="_blank"><strong>GitHub</strong></a></li>
+    
+  </ul>
+</section>
 
 ---
 
