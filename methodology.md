@@ -30,7 +30,24 @@ The step-by-step process includes:
 
 🖥️ **Website and Presentation Development**: Built a GitHub-based website and project presentation to document the methodology, results, and the role of LLMs in enriching a cultural heritage knowledge graph.
 
+# Let's take a closer look at the specific tools we used throughout the project: 
+
 # <strong>ARCO: WHAT IS IT?<strong>
+
+The ArCo Knowledge Graph is a structured and semantically enriched representation of the Italian cultural heritage, developed by the Italian Institute of Cultural Heritage (ICCD) and the Italian Ministry of Culture.
+It is built using Linked Open Data (LOD) principles and the Resource Description Framework (RDF), and it is based on a set of domain-specific ontologies (the ArCo Ontologies) that formally describe cultural heritage entities, such as artworks, monuments, archaeological sites, museums, archives, and their relationships.
+
+The main goal of ArCo is to transform the vast catalog of Italian cultural heritage into a machine-readable, interoperable, and reusable knowledge graph. This allows for:
+
+Interoperability across different cultural heritage datasets, following Semantic Web standards.
+
+Data integration with external knowledge graphs such as Wikidata and DBpedia.
+
+Enrichment and querying of cultural heritage information through SPARQL endpoints, enabling advanced exploration and reasoning over cultural data.
+
+Preservation and accessibility, ensuring that cultural knowledge is openly available for research, education, and technological applications (e.g., digital humanities, AI, cultural tourism).
+
+In short, the ArCo Knowledge Graph is the largest open knowledge graph on Italian cultural heritage, designed to make cultural data FAIR (Findable, Accessible, Interoperable, Reusable) and to support semantic enrichment, AI-based analysis, and innovative digital services
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
 
