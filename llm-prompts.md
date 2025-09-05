@@ -59,7 +59,7 @@ Here below there are the three prompting techniques that we have used in order t
 ```
 
 
-1️⃣  **Missing information: the full official name**
+## 1️⃣  **Missing information: the full official name**
 
 
 Using a zero-shot technique, we prompted ChatGPT and Gemini to retrieve information regarding the full official name of the Teatro Massimo in Palermo, without offering any example.
