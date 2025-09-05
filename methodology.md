@@ -61,17 +61,28 @@ Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can
 
 RDF triples are the fundamental building blocks of the Resource Description Framework (RDF), a standard model for representing structured data on the Semantic Web. Each triple expresses a single fact or statement about a resource and is composed of three parts:
 
--Subject – the resource being described, usually represented as a URI.
+-**Subject** – the resource being described, usually represented as a URI.
 
--Predicate – the property or type of relationship connecting the subject to the object (in our case case from the ArCo ontology)
+-**Predicate** – the property or type of relationship connecting the subject to the object (in our case case from the ArCo ontology)
 
--Object – the value or target of the property. It can be another URI (another resource) or a literal value (string, number, date).
+-**Object** – the value or target of the property. It can be another URI (another resource) or a literal value (string, number, date).
 
 Purpose of creation: By encoding information as triples, data becomes structured, linkable, and queryable, forming a knowledge graph that machines can reason over and humans can explore.
 
 
 # <strong>WHAT ABOUT LLMs (Large Language Models)?<strong>
 
+LLMs, or Large Language Models, are a type of artificial intelligence (AI) that are trained on enormous datasets of text and code to understand, generate, and process human-like language. These deep learning models, often based on the transformer architecture, can perform tasks like translation, summarization, question answering, content creation, and code generation, making them powerful tools for various natural language processing applications. 
+
+---
+
+We used CHATGPT and GEMINI⬇️
+
+ChatGPT is an AI-powered conversational model created by OpenAI, built on the GPT (Generative Pretrained Transformer) architecture. It’s designed to interpret and produce human-like text. Trained on a wide range of textual data, it can engage in dialogue, create content, and support a variety of tasks.
+Gemini is a collection of AI models developed by Google DeepMind, aimed at combining the strengths of large language models with advanced reasoning and problem-solving skills. It leverages state-of-the-art techniques to improve the model’s capacity to generate nuanced, context-aware responses across a wide range of topics.
+
+# <strong>AND FINALLY, WHAT IS GITHUB?<strong>
+GitHub is an online platform that allows developers to store, manage, and collaborate on code projects using a system called Git, which tracks changes to files over time. It functions as both a repository and a social workspace, letting programmers work together on the same project without overwriting each other’s work. Every change is recorded, so previous versions can be reviewed or restored, making it easier to manage complex projects. GitHub also enables collaboration through features like branching, pull requests, and issue tracking, which allow multiple contributors to propose changes, discuss improvements, and merge updates safely.
 
 
 
