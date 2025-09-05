@@ -30,7 +30,7 @@ The step-by-step process includes:
 
 🖥️ **Website and Presentation Development**: Built a GitHub-based website and project presentation to document the methodology, results, and the role of LLMs in enriching a cultural heritage knowledge graph.
 
-_Testo di esempio…_
+# <strong>ARCO: WHAT IS IT?<strong>
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
 
