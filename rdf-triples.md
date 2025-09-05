@@ -14,7 +14,7 @@ In this section there are all **RDF Triples** generated for each gap.
 We asked CHAT GPT to create a triple using the **zero-shot prompt**:
 
 
-![Screenshot](https://github.com/2025-ilaria/project-/blob/master/assets/css/Screenshot%20Chat%20prompt%20name%20triple.png)
+![Screenshot](assets/css/Screenshot%20Chat%20prompt%20name%20triple.png)
 
 Here the result
 
