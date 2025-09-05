@@ -34,42 +34,68 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
 
 ---
 
-<style>
-  .objectives-list {
-    list-style: none;
-    padding: 0;
-  }
-
-
-  
-  .objectives-list .emoji {
-    margin-right: 10px;
-    font-size: 1.2em;
-    transition: transform 0.3s ease;
-  }
-
-  .objectives-list li:hover .emoji {
-    transform: scale(1.3) rotate(10deg);
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-      transform: translateX(0);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Objectives</title>
+  <style>
+    .objectives-list {
+      list-style: none;
+      padding: 0;
     }
-  }
-</style>
 
-<h2>Key Objectives</h2>
-<ul class="objectives-list">
-  <li><span class="emoji">✅</span> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
-  <li><span class="emoji">✅</span> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
-  <li><span class="emoji">✅</span> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
-  <li><span class="emoji">✅</span> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
-  <li><span class="emoji">✅</span> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
-</ul>
+    .objectives-list li {
+      margin: 12px 0;
+      font-size: 1.0em;
+      display: flex;
+      align-items: center;
+    }
+
+    .objectives-list .emoji {
+      margin-right: 12px;
+      font-size: 1.3em;
+      color: #28a745; /* verde */
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .objectives-list li:hover .emoji {
+      transform: scale(1.4) rotate(20deg);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Key Objectives</h2>
+  <ul class="objectives-list">
+    <li><span class="emoji">✅</span> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
+    <li><span class="emoji">✅</span> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
+    <li><span class="emoji">✅</span> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
+    <li><span class="emoji">✅</span> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
+    <li><span class="emoji">✅</span> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
+  </ul>
+
+</body>
+</html>
 
 
+
+
+
+---
+
+<section id="tools" style="margin-top: 50px;">
+  <h2>Tools</h2>
+  <ul>
+    <li><a href="http://wit.istc.cnr.it/arco/" target="_blank"><strong>ArCo</strong></a></li>
+    <li><a href="https://dati.cultura.gov.it/sparql" target="_blank"><strong>ArCo SPARQL endpoint</strong></a></li>
+    <li><a href="https://chat.openai.com/" target="_blank"><strong>ChatGPT</strong></a></li>
+    <li><a href="https://gemini.google.com/?hl=it" target="_blank"><strong>Gemini</strong></a></li>
+    <li><a href="https://github.com/" target="_blank"><strong>GitHub</strong></a></li>
+  </ul>
+</section>
 
 
 ---
