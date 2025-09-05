@@ -47,6 +47,8 @@ WHERE {
 
 ```
 **📊 Results**
+
+
 In this case, the description was richer compared to Teatro Massimo.
 
 ## Query 3️⃣: Investigating for the properties in other theatres
@@ -71,22 +73,26 @@ ORDER BY DESC(?property)
 
 ```
 **📊 Results** 
+
+
 The query generated a long list of predicates related to various theatres. We used it as reference. 
 
 ## 🔍 Gaps identified
 Considering the results of Query 2 and Query 3 the gaps we think can be added to enrich Teatro Massimo are: 
 <ul>
-  <li>🏷️ The full name</li>
-  <li>👷‍♂️ The architects</li>
-  <li>🎭 Events and performances hosted by the theatre</li>
-  <li>🛠️ Restorations and interventions</li>
-  <li>🏛️ Typology of architecture</li>
-  <li>🔗 Wikidata link</li>
-  <li>📝 Description</li>
-  <li>📍 Latitude and longitude</li>
-  <li>📷 Official Photo</li>
+  <li>🏷️ <strong>The full name<strong></li>
+  <li>👷‍♂️ <strong>The architects<strong></li>
+  <li>🎭 <strong>Events and performances hosted by the theatre<strong></li>
+  <li>🛠️ <strong>Restorations and interventions<strong></li>
+  <li>🏛️ <strong>Typology of architecture<strong></li>
+  <li>🔗 <strong>Wikidata link<strong></li>
+  <li>📝 <strong>Description<strong></li>
+  <li>📍 <strong>Latitude and longitude<strong></li>
+  <li>📷 <strong>Official Photo<strong></li>
 </ul>
+Then we run some queries to ensure these information were actually not present in ArCo.
 
+## Query 🔍:
 
 _Testo di esempio…_
 
