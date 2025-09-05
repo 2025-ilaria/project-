@@ -302,6 +302,25 @@ We asked Chat to create it using the following information:
 
 We asked ChatGPT to create a triple for latitude using the **few-shot technique**, giving it an example:
 
+![Screenshot](assets/css/Screenshot%20latlong%20prompt%20triple.png)
+
+It generated the following triple➡️
+
+```rdf
+It generated the following triple:
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    geo:lat "38.120167" .
+```
+
+We used the following information:
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `geo:lat`   
+> **Object:**  38.120167  
+
+Then we asked ChatGPT to do the same thing with longitude:
+
 
 
 _
