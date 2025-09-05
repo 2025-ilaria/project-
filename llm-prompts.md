@@ -24,6 +24,7 @@ In this project, we explore the use of Large Language Models (LLMs), specificall
 
 •Quick testing
 
+
 1️⃣  **Missing information: the full official name**
 
 
@@ -41,7 +42,7 @@ Using a zero-shot technique, we prompted ChatGPT and Gemini to retrieve informat
 
 <img width="602" height="169" alt="image" src="https://github.com/user-attachments/assets/155e8df5-a588-4ccc-9af1-c8080f49f2bb" />
 
-✅**LLMS comparisons**:
+✅**LLMS comparison**:
 
 Chat GPT gave us a more precise answer, but both provided the information that we were looking for. 
 
@@ -58,7 +59,7 @@ Using a zero-shot technique, we prompted ChatGPT to retrieve information about t
 
 <img width="602" height="240" alt="image" src="https://github.com/user-attachments/assets/c822882a-d1bd-42cf-931d-8c08be0fe85c" />
 
-✅**LLMS comparisons**: 
+✅**LLMS comparison**: 
 
 Both ChatGPT and Gemini provided accurate and reliable information, including the names of the two architects who designed the Teatro Massimo in Palermo, as well as two key dates: the start of construction and the inauguration date.
 
@@ -76,9 +77,11 @@ Both ChatGPT and Gemini provided accurate and reliable information, including th
 
 • Good for complex tasks – Useful when tasks are too nuanced for zero-shot prompts.
 
+
 3️⃣ **Missing information: cultural events hosted by Teatro Massimo**
 
 This prompt uses a few-shot technique by providing CHAT GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
+
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -106,6 +109,21 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 
 
 -**Gemini**: Highlights the theater’s wider cultural role, including fundraising events, tours, and other theatrical productions.
+
+
+📌 ##**CHAIN-OF-THOUGHT (CoT) PROMPTING TECHNIQUE**
+
+• Step-by-step reasoning – Encourages the AI to break down problems into intermediate steps before giving a final answer.
+
+• Improves complex problem solving – Useful for math, logic, or multi-step reasoning tasks.
+
+• Reduces errors – Makes the AI less likely to jump to an incorrect conclusion.
+
+• Transparent thinking – Shows the reasoning process, not just the answer.
+
+• Better accuracy – Often leads to more precise and reliable outputs.
+
+• Supports learning and debugging – Helps users understand how the AI reached its conclusion.
 
 
 
