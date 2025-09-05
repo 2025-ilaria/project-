@@ -7,7 +7,7 @@ title: SPARQL queries
 
 
 ---
-## 1️⃣ Checking the presence of Teatro Massimo di Palermo in ArCo
+## Query 1️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo
 One of the theatres we checked was Teatro Massimo di Palermo:
 
 ```sparql
@@ -29,7 +29,7 @@ While the first and the second links refer to “Archivio” and “Biblioteca�
 We noticed that for Teatro Massimo in Palermo only very limited information was provided. This observation became the starting point of our investigation.
 
 
-## 2️⃣ Checking the information of another theatre to compare 
+## Query 2️⃣: Checking the information of another theatre to compare 
 We run the exact same query as Query 1 for other theatres, like the Teatro Comunale di Bologna, to compare the results with Teatro Massimo di Palermo and identify possibile gaps: 
 
 ```sparql
@@ -49,7 +49,7 @@ WHERE {
 **📊 Results**
 In this case, the description was richer compared to Teatro Massimo.
 
-## 3️⃣ Investigating for the properties in other theatres
+## Query 3️⃣: Investigating for the properties in other theatres
 Other than comparing to a specific theatre, we checked for the properties generally used to describe a “teatro” in ArCo:
 
 ```sparql
