@@ -111,7 +111,7 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 -**Gemini**: Highlights the theater’s wider cultural role, including fundraising events, tours, and other theatrical productions.
 
 
-📌 ##**CHAIN-OF-THOUGHT (CoT) PROMPTING TECHNIQUE**
+📌 **CHAIN-OF-THOUGHT (CoT) PROMPTING TECHNIQUE**
 
 • Step-by-step reasoning – Encourages the AI to break down problems into intermediate steps before giving a final answer.
 
