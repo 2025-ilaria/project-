@@ -10,6 +10,14 @@ title: LLM Prompts
 
 In this project, we explore the use of Large Language Models (LLMs), specifically ChatGPT and Google Gemini, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
+📌 **ZERO-SHOT PROMPT**
+-No examples needed
+-Flexible use
+-Saves time
+-Generalizes knowledge
+-Direct interaction
+-Quick testing
+
 1️⃣  **Missing information: the full official name**
 
 
@@ -47,6 +55,22 @@ Both ChatGPT and Gemini provided accurate and reliable information, including th
 3️⃣ **Missing information: cultural events hosted by Teatro Massimo**
 
 This prompt uses a few-shot technique by providing CHAT GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
+
+### [ChatGPT](https://chat.openai.com/)
+
+<img width="501" height="411" alt="image" src="https://github.com/user-attachments/assets/4789fd65-16b9-4411-918f-16054fcba49c" />
+<img width="455" height="308" alt="image" src="https://github.com/user-attachments/assets/f381198b-0b90-40e1-99cb-cb3482ac491c" />
+<img width="450" height="289" alt="image" src="https://github.com/user-attachments/assets/ab0bbfba-efc1-4ead-9f98-c6720a748c57" />
+<img width="454" height="326" alt="image" src="https://github.com/user-attachments/assets/c0703584-70d9-4df7-b4a4-a6be7ef89a37" />
+<img width="488" height="189" alt="image" src="https://github.com/user-attachments/assets/62a5a8d2-c368-47a0-811a-895fd86fa25c" />
+
+### [Gemini](https://gemini.google.com/)
+
+<img width="602" height="629" alt="image" src="https://github.com/user-attachments/assets/2d3b9e97-301c-453e-ad01-00467a5deeeb" />
+<img width="602" height="458" alt="image" src="https://github.com/user-attachments/assets/ab9341d3-4ecc-4c21-9af2-1d4d9a762cc7" />
+
+
+
 
 
 
