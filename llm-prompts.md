@@ -146,6 +146,11 @@ I asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di 
 
 ### [Gemini](https://gemini.google.com/)
 
+<img width="576" height="436" alt="image" src="https://github.com/user-attachments/assets/7bf13c12-e657-4bd9-afc3-8d74d36d706e" />
+
+✅**LLMS comparison**
+
+They both provided the correct ID for Teatro Massimo.
 
 
 
