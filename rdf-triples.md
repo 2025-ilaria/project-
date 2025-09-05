@@ -300,7 +300,7 @@ We asked Chat to create it using the following information:
 ---
 # 8️⃣Triple for latitude and longitude
 
-We asked ChatGPT to create a triple for latitude using the **few-shot technique**, giving it an example:
+🔍We asked ChatGPT to create a triple for latitude using the **few-shot technique**, giving it an example:
 
 ![Screenshot](assets/css/Screenshot%20latlong%20prompt%20triple.png)
 
@@ -321,6 +321,51 @@ We used the following information:
 
 Then we asked ChatGPT to do the same thing with longitude:
 
+![Screnshot](assets/css/Screenshot%20prompt%20long%20triple.png)
+
+Here the result➡️
+
+```rdf
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    geo:long "13.357151" .
+```
+
+We used the following information:
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `geo:long`   
+> **Object:**   13.357151
+  
+Then, we asked chatGPT to merge them in one compact RDF description➡️
+
+```rdf
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    geo:lat "38.120167" ;
+    geo:long "13.357151" .
+```
+
+As a final step, we manually added
+1. **prefix** `arco`
+2. **type** to explicitly type the resource as an **ARCO Cultural Institute or Site**.
+
+The resulting and final triple for **latitude** and **longitude** therefore is: 
+
+```rdf
+@prefix arco: <https://w3id.org/arco/ontology/arco/> . 
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> . 
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+ a arco:CulturalInstituteOrSite ; 
+geo:lat "38.120167" ; 
+geo:long "13.357151" .
+```
+
+---
+## 9️⃣RDF Triple for official image 
+
+We noticed the predicate used for Teatro Comunale di Bologna for adding a picture was `foaf:depiction`. Chat suggested a more specific predicate for ArCo: `arco:hasRepresentative` and explained us the difference between the two: 
 
 
 _
