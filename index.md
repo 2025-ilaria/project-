@@ -47,7 +47,6 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
     align-items: center;
     opacity: 0;
     transform: translateX(-20px);
-    animation: fadeIn 0.6s ease forwards;
   }
 
   
