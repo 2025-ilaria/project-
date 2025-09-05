@@ -50,11 +50,7 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
     animation: fadeIn 0.6s ease forwards;
   }
 
-  .objectives-list li:nth-child(1) { animation-delay: 0.2s; }
-  .objectives-list li:nth-child(2) { animation-delay: 0.4s; }
-  .objectives-list li:nth-child(3) { animation-delay: 0.6s; }
-  .objectives-list li:nth-child(4) { animation-delay: 0.8s; }
-  .objectives-list li:nth-child(5) { animation-delay: 1s; }
+  
 
   .objectives-list .emoji {
     margin-right: 10px;
