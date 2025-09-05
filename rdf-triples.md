@@ -3,12 +3,12 @@ layout: default
 title: RDF Triples
 ---
 
-# **RDF Triples**
+# <strong> **RDF Triples** <strong>
 
 In this section there are all **RDF Triples** generated for each gap.  
 
 ---
-1️⃣ **RDF Triple Full Name** 
+## 1️⃣RDF Triple Full Name 
 
 🔍We asked CHAT GPT to create a triple using the **zero-shot prompt**
 
@@ -28,20 +28,17 @@ Here the result ➡️
 ---
 We asked Chat to create it using the following information: 
 
-> **Subject**:Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
-
-typed as `arco:CulturalInstituteOrSite`
-
-> **Predicate** : `cis:institutionalCISName`
-
-*adds the full official name of the theatre*
-
->**Object** : "Teatro Massimo Vittorio Emanuele"@it"
-
-*it is a literal with an italian language tag*
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `cis:institutionalCISName`  
+> **Object:**  "Teatro Massimo Vittorio Emanuele"@it. 
+>
+> 📌   
+> - Subject typed as `arco:CulturalInstituteOrSite`
+> - Predicate adss the full official name of the theatre.  
+> - Object: it is literal with an italian language tag.
 
 ---
-2️⃣ **RDF Triple for the architects** 
+## 2️⃣RDF Triple for the architects
 
 🔍We asked ChatGPT to create a RDF Triple using the **chain-of-thought prompt**
 
@@ -69,21 +66,17 @@ It generated the following triple ➡️
 
 We asked Chat to create it using the following information: 
 
-> **Subject**:Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
-
-typed as `arco:CulturalInstituteOrSite`
-
-> **Predicate** : `arco:hasArchitect`
-
-*it's the right property to link a cultural institute or site to its architect(s).*
-
->**Object** : 
-<http://dati.beniculturali.it/resource/Person/Giovan_Battista_Filippo_Basile> and <http://dati.beniculturali.it/resource/Person/Ernesto_Basile>
-
-*two architects as separate resources*
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `arco:hasArchitect`  
+> **Object:**  <http://dati.beniculturali.it/resource/Person/Giovan_Battista_Filippo_Basile> and <http://dati.beniculturali.it/resource/Person/Ernesto_Basile>
+>
+> 📌   
+> - Subject typed as `arco:CulturalInstituteOrSite`
+> - Predicate: it's the right property to link a cultural institute or site to its architect(s).
+> - Object: two architects as separate resources
 
 ---
-3️⃣ **RDF Triple for cultural events** 
+## 3️⃣RDF Triple for cultural events
 
 🔍We asked ChatGPT to create a RDF Triple using a **zero-shot technique**:
 
@@ -174,14 +167,12 @@ ex:FestivalEvent
 
 We asked Chat to create it using the following information:
 
->**Subject**: Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
-
->**Predicate**: `arco:hasEvent`
-
->**Object**: ex:OperaProduction, ex:TheaterPerformance, ex:OrchestralConcert, ex:BalletDance, ex:FestivalEvent
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `arco:hasEvent`  
+> **Object:**  ex:OperaProduction, ex:TheaterPerformance, ex:OrchestralConcert, ex:BalletDance, ex:FestivalEvent
 
 ---
-4️⃣**RDF Triple for restoration and intervention**
+## 4️⃣RDF Triple for restoration and intervention
 
 🔍We asked CHAT GPT to create a RDF triple using the **zero-shot prompt**: 
 
@@ -216,13 +207,14 @@ We asked Chat to create it using the following information:
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasIntervention`   
 > **Object:** Intervention/TeatroMassimo_1974_1975, etc.
-
-➡️Subject: typed as `arco:CulturalInstituteOrSite`.
-➡️Predicate: it links the theatre to three distinct restoration interventions.
-➡️Object: It is declared as `arco:hasIntervention` and provided with `rdfs:label` describing the intervention.
+>
+> 📌
+> - Subject typed as `arco:CulturalInstituteOrSite`
+> - Predicate: it links the theatre to three distinct restoration interventions.
+> - Object: it is declared as `arco:hasIntervention` and provided with `rdfs:label` describing the interven
 
 ---
-5️⃣ **RDF Triple for type of architecture**
+## 5️⃣RDF Triple for type of architecture
 
 🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
 
@@ -247,7 +239,7 @@ We asked Chat to create it using the following information:
 > **Object:** architettura civile.
 
 ---
-6️⃣**RDF Triple for wikidata link**
+## 6️⃣RDF Triple for wikidata link
 
 🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
 
@@ -272,7 +264,7 @@ We asked Chat to create it using the following information:
 > **Object:** <https://www.wikidata.org/entity/Q261439>. 
 
 ---
-7️⃣**RDF Triple for description**
+## 7️⃣RDF Triple for description
 
 🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
 
@@ -298,7 +290,7 @@ We asked Chat to create it using the following information:
 > **Object:**  It features Neoclassical architecture (...) liberty aesthetics.  
 
 ---
-# 8️⃣Triple for latitude and longitude
+## 8️⃣Triple for latitude and longitude
 
 🔍We asked ChatGPT to create a triple for latitude using the **few-shot technique**, giving it an example:
 
@@ -379,8 +371,17 @@ We used the following information:
 
 As a final step, We asked ChatGPT to create a triple for the photographic representation.
 
+![Screnshot](assets/css/Screenshot%20prompt%20iamge%20triple.png)
 
 Here the result➡️
+
+```rdf
+@prefix arco: <https://w3id.org/arco/ontology/arco/> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    a arco:CulturalInstituteOrSite ;
+    arco:hasRepresentative <https://upload.wikimedia.org/wikipedia/commons/0/0c/Teatro_Massimo_in_Palermo.jpg> .
+```
 
 
 
