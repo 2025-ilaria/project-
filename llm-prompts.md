@@ -3,7 +3,7 @@ layout: default
 title: LLM Prompts
 ---
 
-# LLM Prompts
+# <strong>LLM Prompts<strong>
 
 
 ---
