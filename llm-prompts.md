@@ -19,6 +19,10 @@ CHAT GPT:
 
 <img width="602" height="303" alt="image" src="https://github.com/user-attachments/assets/bdf58daf-0813-41ba-b2b1-c5ef62ffd808" />
 
+GEMINI:
+
+
+
 
 
 
