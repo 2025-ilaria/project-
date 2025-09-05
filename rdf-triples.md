@@ -30,21 +30,59 @@ Here the result
 ---
 We asked Chat to create it using the following information: 
 
-> **Subject**:[<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>]
+> **Subject**:Teatro Massimo di Palermo, URI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+
 typed as `arco:CulturalInstituteOrSite`
 
 > **Predicate** : `cis:institutionalCISName`
+
 *adds the full official name of the theatre*
 
 >**Object** : "Teatro Massimo Vittorio Emanuele"@it"
-*is a literal with an italian language tag*
+
+*it is a literal with an italian language tag*
 
 
 # RDF Triple for the architects 
 We asked ChatGPT to create a RDF Triple using the **chain-of-thought prompt**
 
 
-![Screenshot](assets/css/Screenshot2025-09-05121529.png)
+![Screenshot](assets/css/Screenshot%20chat%20prompt%20architects.png) 
+
+It generated the following triple:
+
+```rdf
+@prefix arco: <https://w3id.org/arco/ontology/arco/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    a arco:CulturalInstituteOrSite ;
+    arco:hasArchitect <http://dati.beniculturali.it/resource/Person/Giovan_Battista_Filippo_Basile>,
+                      <http://dati.beniculturali.it/resource/Person/Ernesto_Basile> .
+
+<http://dati.beniculturali.it/resource/Person/Giovan_Battista_Filippo_Basile>
+    a arco:Person ;
+    rdfs:label "Giovan Battista Filippo Basile"@it .
+
+<http://dati.beniculturali.it/resource/Person/Ernesto_Basile>
+    a arco:Person ;
+    rdfs:label "Ernesto Basile"@it .
+```
+
+We asked Chat to create it using the following information: 
+
+> **Subject**:Tetaro Massimo di Palermo, URI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+
+typed as `arco:CulturalInstituteOrSite`
+
+> **Predicate** : `arco:hasArchitect`
+
+*it's the right property to link a cultural institute or site to its architect(s).*
+
+>**Object** : 
+<http://dati.beniculturali.it/resource/Person/Giovan_Battista_Filippo_Basile> and <http://dati.beniculturali.it/resource/Person/Ernesto_Basile>
+
+*two architects as separate resources*
 
 __
 
