@@ -92,6 +92,7 @@ typed as `arco:CulturalInstituteOrSite`
 
 🔍We asked ChatGPT to create a RDF Triple using a **zero-shot technique**
 
+![Screenshot]()
 __
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
