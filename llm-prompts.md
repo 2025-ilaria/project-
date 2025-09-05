@@ -10,7 +10,7 @@ title: LLM Prompts
 
 In this project, we explore the use of Large Language Models (LLMs), specifically ChatGPT and Google Gemini, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
-📌 **ZERO-SHOT PROMPT TECHNIQUE USED FOR THE FIRST TWO MISSING INFORMATION**
+📌 **ZERO-SHOT PROMPT TECHNIQUE**
 
 •No examples needed
 
@@ -57,6 +57,20 @@ Using a zero-shot technique, we prompted ChatGPT to retrieve information about t
 <img width="602" height="240" alt="image" src="https://github.com/user-attachments/assets/c822882a-d1bd-42cf-931d-8c08be0fe85c" />
 
 Both ChatGPT and Gemini provided accurate and reliable information, including the names of the two architects who designed the Teatro Massimo in Palermo, as well as two key dates: the start of construction and the inauguration date.
+
+📌**FEW-SHOT PROMPT TECHNIQUE**
+
+• Provides examples – Shows the AI a few examples of the desired input-output behavior.
+
+• Improves accuracy – Helps the AI understand the task better than zero-shot prompting.
+
+• Guides style and format – Ensures outputs follow a specific tone or structure.
+
+• Reduces ambiguity – Clarifies what the user expects from the AI.
+
+• Flexible learning – Works even without full model retraining.
+
+• Good for complex tasks – Useful when tasks are too nuanced for zero-shot prompts.
 
 3️⃣ **Missing information: cultural events hosted by Teatro Massimo**
 
