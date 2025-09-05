@@ -5,11 +5,9 @@ title: RDF Triples
 
 # RDF Triples
 
-
----
-
 In this section there are all **RDF Triples** generated for each gap.  
 
+---
 1️⃣ **RDF Triple Full Name** 
 
 🔍We asked CHAT GPT to create a triple using the **zero-shot prompt**
@@ -73,7 +71,7 @@ It generated the following triple ➡️
 
 We asked Chat to create it using the following information: 
 
-> **Subject**:Tetaro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+> **Subject**:Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
 
 typed as `arco:CulturalInstituteOrSite`
 
@@ -190,6 +188,51 @@ We asked Chat to create it using the following information:
 4️⃣**RDF Triple for restoration and intervention**
 
 🔍We asked CHAT GPT to create a RDF triple using the **zero-shot prompt**: 
+
+![Screnshot](assets/css/Screenshot%20prompt%20restoration%20triple.png)
+
+It generated the following triple➡️
+
+```rdf
+@prefix arco: <https://w3id.org/arco/ontology/arco/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    a arco:CulturalInstituteOrSite ;
+    arco:hasIntervention <http://dati.beniculturali.it/resource/Intervention/TeatroMassimo_1974_1975> ,
+                         <http://dati.beniculturali.it/resource/Intervention/TeatroMassimo_1975_1980s> ,
+                         <http://dati.beniculturali.it/resource/Intervention/TeatroMassimo_1980s_1997> .
+
+<http://dati.beniculturali.it/resource/Intervention/TeatroMassimo_1974_1975>
+    a arco:Intervention ;
+    rdfs:label "Closure and initial surveys for restoration (1974–1975)"@en .
+
+<http://dati.beniculturali.it/resource/Intervention/TeatroMassimo_1975_1980s>
+    a arco:Intervention ;
+    rdfs:label "Structural consolidation and interior restoration (late 1970s–1980s)"@en .
+
+<http://dati.beniculturali.it/resource/Intervention/TeatroMassimo_1980s_1997>
+    a arco:Intervention ;
+    rdfs:label "Reopening and modernization completed (1980s–1997)"@en .
+```
+We asked Chat to create it using the following information:
+
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `arco:hasIntervention`   
+> **Object:** Intervention/TeatroMassimo_1974_1975, etc.
+
+➡️Subject: typed as `arco:CulturalInstituteOrSite`.
+➡️Predicate: it links the theatre to three distinct restoration interventions.
+➡️Object: It is declared as `arco:hasIntervention` and provided with `rdfs:label` describing the intervention.
+
+---
+
+5️⃣ **RDF Triple for type of architecture**
+
+Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple with this information:
+
+
+
 _
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
