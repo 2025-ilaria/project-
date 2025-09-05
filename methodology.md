@@ -45,8 +45,6 @@ It is built using Linked Open Data (LOD) principles and the Resource Description
 
 The main goal of ArCo is to transform the vast catalog of Italian cultural heritage into a machine-readable, interoperable, and reusable knowledge graph. 
 
-In short, the ArCo Knowledge Graph is the largest open knowledge graph on Italian cultural heritage, designed to make cultural data FAIR (Findable, Accessible, Interoperable, Reusable) and to support semantic enrichment, AI-based analysis, and innovative digital services.
-
 ---
 
 **ArCo SPARQL** refers to the SPARQL endpoint of the ArCo knowledge graph. It is the official query service that allows users to interrogate and retrieve data from ArCo using the SPARQL query language (the W3C standard for querying RDF data).
@@ -59,7 +57,22 @@ Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can
 
 -Identify data gaps and enrichments needed for cultural heritage representation.
 
-In short, ArCo SPARQL is the interface that connects users to the ArCo knowledge graph, enabling semantic search and data analysis.
+# <strong>AND RDF TRIPLES: WHAT ARE THEY?<strong>
+
+RDF triples are the fundamental building blocks of the Resource Description Framework (RDF), a standard model for representing structured data on the Semantic Web. Each triple expresses a single fact or statement about a resource and is composed of three parts:
+
+-Subject – the resource being described, usually represented as a URI.
+
+-Predicate – the property or type of relationship connecting the subject to the object (in our case case from the ArCo ontology)
+
+-Object – the value or target of the property. It can be another URI (another resource) or a literal value (string, number, date).
+
+Purpose of creation: By encoding information as triples, data becomes structured, linkable, and queryable, forming a knowledge graph that machines can reason over and humans can explore.
+
+
+# <strong>WHAT ABOUT LLMs (Large Language Models)?<strong>
+
+
 
 
 
