@@ -76,7 +76,7 @@ The query generated a long list of predicates related to various theatres. We us
 ## 🔍 Gaps identified
 Considering the results of Query 2 and Query 3 the gaps we think can be added to enrich Teatro Massimo are: 
 <ul>
-  <li>📛 The full name</li>
+  <li>🏷️ The full name</li>
   <li>👷‍♂️ The architects</li>
   <li>🎭 Events and performances hosted by the theatre</li>
   <li>🛠️ Restorations and interventions</li>
