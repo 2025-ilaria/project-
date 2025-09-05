@@ -40,6 +40,8 @@ typed as `arco:CulturalInstituteOrSite`
 *is a literal with an italian language tag*
 
 
+# RDF Triple for the architects 
+We asked ChatGPT to create a RDF Triple using the **chain-of-thought prompt**
 __
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
