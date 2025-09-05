@@ -80,9 +80,6 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
 </html>
 
 
-
-
-
 ---
 
 <section id="tools" style="margin-top: 50px;">
@@ -95,8 +92,6 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
     <li><a href="https://github.com/" target="_blank"><strong>GitHub</strong></a></li>
   </ul>
 </section>
-
-
 
 
 ---
@@ -157,10 +152,4 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
     display: block;
   }
 </style>
-
----
-
-
-
-
 
