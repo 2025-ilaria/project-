@@ -367,6 +367,22 @@ geo:long "13.357151" .
 
 We noticed the predicate used for Teatro Comunale di Bologna for adding a picture was `foaf:depiction`. Chat suggested a more specific predicate for ArCo: `arco:hasRepresentative` and explained us the difference between the two: 
 
+![Screenshot](assets/css/Screenshot%20prompt%20image.png)
+
+➡️Therefore, we decided to use `arco:hasReprentative`as predicate. 
+
+We used the following information: 
+
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `arco:hasRepresentative`   
+> **Object:** The URL of the image hosted on Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Teatro_Massimo_in_Palermo.jpg) 
+
+As a final step, We asked ChatGPT to create a triple for the photographic representation.
+
+
+Here the result➡️
+
+
 
 _
 
