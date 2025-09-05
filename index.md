@@ -40,17 +40,8 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
     padding: 0;
   }
 
-  .objectives-list li {
-    margin: 10px 0;
-    font-size: 1.0em;
-    display: flex;
-    align-items: center;
-    opacity: 0;
-    transform: translateX(-20px);
-  }
 
   
-
   .objectives-list .emoji {
     margin-right: 10px;
     font-size: 1.2em;
