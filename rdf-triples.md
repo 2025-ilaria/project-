@@ -3,7 +3,7 @@ layout: default
 title: RDF Triples
 ---
 
-# RDF Triples
+# **RDF Triples**
 
 In this section there are all **RDF Triples** generated for each gap.  
 
@@ -275,6 +275,32 @@ We asked Chat to create it using the following information:
 7️⃣**RDF Triple for description**
 
 🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
+
+![Screenshot](assets/css/Screenshot%20prompt%20descrp%20triple.png)
+
+Here the result➡️
+
+```rdf
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+    l0:description """It features Neoclassical architecture enriched with Eclectic and early Art Nouveau (Liberty) influences. The exterior includes a grand staircase leading to a portico supported by six Corinthian columns. Two bronze lions guard the entrance, symbolizing tragedy and lyric poetry. The dome, made of iron and bronze, spans 28.7 meters and includes a mechanism to adapt to thermal expansion. The auditorium, in a horseshoe shape, accommodates around 1,300–1,400 spectators across five tiers and a gallery. It is celebrated for its perfect acoustics and clear sightlines from every seat.
+
+The symbolic wooden ceiling consists of 11 panels that open like petals for natural ventilation. Interior decorations include red velvet, gilded woodwork, mirrors, stuccoes, and frescoes. The furnishings were designed by Vittorio Ducrot under the direction of Ernesto Basile. Notable rooms include the mahogany-and-brocade Royal Box, the Mirror Room, and the Pompeian Hall, all reflecting classical and liberty aesthetics."""@en .
+```
+
+We asked Chat to create it using the following information:
+
+> **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
+> **Predicate:** `l0:description`   
+> **Object:**  It features Neoclassical architecture (...) liberty aesthetics.  
+
+---
+# 8️⃣Triple for latitude and longitude
+
+We asked ChatGPT to create a triple for latitude using the **few-shot technique**, giving it an example:
 
 
 
