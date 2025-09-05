@@ -41,6 +41,8 @@ Using a zero-shot technique, we prompted ChatGPT and Gemini to retrieve informat
 
 <img width="602" height="169" alt="image" src="https://github.com/user-attachments/assets/155e8df5-a588-4ccc-9af1-c8080f49f2bb" />
 
+✅**LLMS comparisons**:
+
 Chat GPT gave us a more precise answer, but both provided the information that we were looking for. 
 
 2️⃣ **Missing information: the architects' names**
@@ -55,6 +57,8 @@ Using a zero-shot technique, we prompted ChatGPT to retrieve information about t
 ### [Gemini](https://gemini.google.com/)
 
 <img width="602" height="240" alt="image" src="https://github.com/user-attachments/assets/c822882a-d1bd-42cf-931d-8c08be0fe85c" />
+
+✅**LLMS comparisons**: 
 
 Both ChatGPT and Gemini provided accurate and reliable information, including the names of the two architects who designed the Teatro Massimo in Palermo, as well as two key dates: the start of construction and the inauguration date.
 
@@ -88,6 +92,20 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 
 <img width="602" height="629" alt="image" src="https://github.com/user-attachments/assets/2d3b9e97-301c-453e-ad01-00467a5deeeb" />
 <img width="602" height="458" alt="image" src="https://github.com/user-attachments/assets/ab9341d3-4ecc-4c21-9af2-1d4d9a762cc7" />
+
+✅**LLMS comparison** ➡️ Both provided right answers, but:
+
+-ChatGPT: Focuses on specific events and examples, mentioning exact opera productions with dates, notable premieres, and concrete instances of ballet and concerts.
+
+
+-Gemini: Adopts a broader approach, categorizing the theater’s offerings—opera, ballet, concerts, educational programs, and festivals—without dates, highlighting repertoire variety, youth initiatives, and special activities like guided tours and immersive productions.
+
+
+-ChatGPT: Emphasizes performing arts activities, including conferences and workshops.
+
+
+-Gemini: Highlights the theater’s wider cultural role, including fundraising events, tours, and other theatrical productions.
+
 
 
 
