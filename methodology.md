@@ -12,14 +12,13 @@ In this section, we present the methodology employed in the study of the Teatro 
 ## Step-by-step process: 
 🌐 **Initial Online Research**: we searched online for the most famous and important theaters in Italy, and one of them was the Teatro Massimo di Palermo.
 
-🔍 **Exploration on ArCo**: we asked LLMs (<a href="https://chatgpt.com/">ChatGPT</a> and <a href="https://gemini.google.com/app">Gemini</a>) to generate SPARQL queries targeting the [ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)
-, in order to verify the presence of Teatro Massimo on <a href="https://dati.beniculturali.it/arco/index.php">ArCo</a>. Even though it was present, we noticed that there was very little information available.
+🔍 **Exploration on ArCo**: we executed a SPARQL query on the [ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql), in order to verify the presence of Teatro Massimo on <a href="https://dati.beniculturali.it/arco/index.php">ArCo</a>. Even though it was present, we noticed that there was very little information available.
 
 📊 **Comparison and Gap Identification**: we explored other theaters on ArCo for comparison and saw that, for example, the Teatro Comunale in Bologna had much more information, allowing us to identify the possible gaps.
 
 🕵️ **Gap Confirmation**: we verified the validity of these possible gaps by running SPARQL queries that allowed us to confirm that this information was not present in ArCo. confirming the absence of certain cultural, architectural, and historical details.
 
-💡 **LLM-Assisted Knowledge Retrieval**: we designed targeted prompts (zero-shot, few-shot, and chain-of-thought inspired) to gather missing information from Chat GPT and Gemini.
+💡 **LLM-Assisted Knowledge Retrieval**: we designed targeted prompts (zero-shot, few-shot, and chain-of-thought inspired) to gather missing information from <a href="https://chatgpt.com/">ChatGPT</a> and <a href="https://gemini.google.com/app">Gemini</a>.
 
 ⚖️ **Cross-Model Comparison**: we compared and validated the outputs from both LLMs to ensure reliability and completeness of the new cultural data.
 
