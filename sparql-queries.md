@@ -104,11 +104,12 @@ LIMIT 20
 
 **📊 Results**:
 
-foto 
+![Immagine arch](assets/css/Immagine%20arch.jpeg)
 
 While the first and the second links refer to “Archivio” and “Biblioteca”, the third link is the correct one for the Teatro Massimo and we identified it as the IRI.
 
 <a href="http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo"><strong>📍IRI of Teatro Massimo</strong></a> 
+
 We noticed that only very limited information about this theatre was provided. This observation became the starting point of our investigation.
 
 
@@ -132,6 +133,9 @@ WHERE {
 
 ```
 **📊 Results**:
+
+![Immagine comunale](assets/css/Immagine%20comunale.jpeg)
+
 
 <a href="http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/107941"><strong>📍IRI of Teatro Comunale di Bologna</strong></a> 
 
@@ -162,7 +166,8 @@ ORDER BY DESC(?property)
 ```
 **📊 Results**: 
 
-foto 
+![Immagine properties](assets/css/Immagine%20properties.jpeg)
+
 
 The query generated a long list of predicates related to various theatres. We used it as reference. 
 
