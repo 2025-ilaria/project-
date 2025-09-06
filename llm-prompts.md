@@ -62,7 +62,7 @@ Presented below are the three prompting techniques we used to interrogate AI: �
 ## 1️⃣  Missing information: the full official name
 
 
-Using a **zero-shot technique**, we prompted ChatGPT and Gemini to retrieve information regarding the full official name of the Teatro Massimo in Palermo, without offering any example.
+Using the **zero-shot prompting technique**, we prompted ChatGPT and Gemini to retrieve information regarding the full official name of the Teatro Massimo in Palermo, without offering any example.
 
 
 ### [ChatGPT](https://chat.openai.com/)
@@ -83,7 +83,7 @@ ChatGPT gave us a more precise answer, but both provided the information that we
 
 ## 2️⃣ Missing information: the architects' names
 
-Using a **zero-shot technique**, we prompted ChatGPT to retrieve information about the architects who designed the Teatro Massimo di Palermo.
+Using the **zero-shot prompting technique**, we prompted ChatGPT to retrieve information about the architects who designed the Teatro Massimo di Palermo.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -102,7 +102,7 @@ Both ChatGPT and Gemini provided accurate and reliable information, including th
 
 ## 3️⃣ Missing information: cultural events hosted by Teatro Massimo
 
-The prompt we wrote uses a **few-shot technique** by providing Chat GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
+The prompt we wrote uses the **few-shot technique** by providing Chat GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
 
 
 ### [ChatGPT](https://chat.openai.com/)
@@ -138,7 +138,7 @@ The prompt we wrote uses a **few-shot technique** by providing Chat GPT and Gemi
 
 ## 4️⃣ Missing information: restoration and intervention
 
-Using a **Chain-of-Thought** technique, the question we wrote asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
+Using the **Chain-of-Thought prompting technique**, the question we wrote asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -177,7 +177,7 @@ Overall ⬇️:
 
 ## 5️⃣ Missing information: type of architecture
 
-Using a **few-shot prompting technique**, we asked both ChatGPT and Gemini which would be the best description under the property **`dc:type`**, considering the example of Teatro comunale di Bologna.
+Using the **few-shot prompting technique**, we asked both ChatGPT and Gemini which would be the best description under the property **`dc:type`**, considering the example of Teatro comunale di Bologna.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -194,7 +194,7 @@ Considering both answers, we thought the best description to add was “architet
 
 ## 6️⃣ Missing information: wikidata link
 
-We asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di Palermo existed, using a **zero-shot prompting technique** .
+We asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di Palermo existed, using the **zero-shot prompting technique** .
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -249,7 +249,7 @@ In conclusion, we opted for l0:description because we thought it was the most ap
 
 ## 8️⃣ Missing information: latitude and longitude
 
-We asked both ChatGPT and Gemini for information about the latitude and longitude of the Teatro Massimo di Palermo, using a **zero-shot prompting technique**:
+We asked both ChatGPT and Gemini for information about the latitude and longitude of the Teatro Massimo di Palermo, using the **zero-shot prompting technique**:
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -265,7 +265,7 @@ They both gave the exact same answer, but Chat GPT was more precise giving also 
 
 ## 9️⃣ Missing information: official image
 
-We asked both ChatGPT and Gemini for the URL of a picture of the Teatro di Palermo using the few-shot prompting technique, giving it an example. 
+We asked both ChatGPT and Gemini for the URL of a picture of the Teatro di Palermo using the **few-shot prompting technique**, giving it an example. 
 
 ### [ChatGPT](https://chat.openai.com/)
 
