@@ -38,7 +38,7 @@ We asked ChatGPT to generate this triple using the following information:
 > - Object: it is literal with an italian language tag.
 
 ---
-## 2️⃣ RDF Triple for architects' names
+## 2️⃣ RDF Triple for the architects' names
 
 🔍 We asked ChatGPT to create a RDF Triple using the **chain-of-thought prompting technique**:
 
@@ -216,7 +216,7 @@ We asked ChatGPT to generate this triple using the following information:
 ---
 ## 5️⃣ RDF Triple for the type of architecture
 
-🔍Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
+🔍 Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
 
 ![Screenshot](assets/css/Screenshot%20prompt%20dc%20type%20triple.png)
 
@@ -241,7 +241,7 @@ We asked Chat to create it using the following information:
 ---
 ## 6️⃣ RDF Triple for wikidata link
 
-🔍Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
+🔍 Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
 
 ![Screnshot](assets/css/Screenshot%20wikida%20triple%20prompt.png)
 
@@ -266,7 +266,7 @@ We asked ChatGPT to generate this triple using the following information:
 ---
 ## 7️⃣ RDF Triple for architectural description
 
-🔍Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
+🔍 Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
 
 ![Screenshot](assets/css/Screenshot%20prompt%20descrp%20triple.png)
 
