@@ -8,7 +8,7 @@ title: LLM Prompts
 
 ---
 
-In this project, we explore the use of **Large Language Models (LLMs)**, specifically **ChatGPT** and **Google Gemini**, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
+In this section, we explore the use of **Large Language Models (LLMs)**, specifically **ChatGPT** and **Google Gemini**, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
 Here below there are the three prompting techniques that we have used in order to interrogate AI: ⬇️
 
