@@ -57,7 +57,7 @@ Presented below is an explanation of the **SPARQL keywords** employed in the que
 ## Query 1️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo
 We run a query to check if Teatro Massimo di Palermo was present on ArCo. 
 
-🔍 **🔍 Query**:
+**🔍 Query**:
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -82,6 +82,8 @@ Using **`arco:HistoricOrArtisticProperty`** as class, we noticed that the result
 ## Query 2️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo using another class
 
 We changed from **`arco:HistoricOrArtisticProperty`** to **`cis:CulturalInstituteOrSite`**.
+
+**🔍 Query**:
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -109,7 +111,9 @@ We noticed that only very limited information about this theatre was provided. T
 
 
 ## Query 3️⃣: Checking the information of another theatre to compare 
-We run the exact same query as Query 2 for other theatres, like the <a href= "https://it.wikipedia.org/wiki/Teatro_Comunale_(Bologna)">Teatro Comunale di Bologna</a>, to compare the results with Teatro Massimo di Palermo and identify possibile gaps: 
+We run the exact same query as Query 2 for other theatres, like the <a href= "https://it.wikipedia.org/wiki/Teatro_Comunale_(Bologna)">Teatro Comunale di Bologna</a>, to compare the results with Teatro Massimo di Palermo and identify possibile gaps.
+
+**🔍 Query**:
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -132,7 +136,9 @@ WHERE {
 In this case, the description was richer compared to Teatro Massimo.
 
 ## Query 4️⃣: Investigating for the properties in other theatres
-Other than comparing to a specific theatre, we checked for the properties generally used to describe a “teatro” in ArCo:
+Other than comparing to a specific theatre, we checked for the properties generally used to describe a “teatro” in ArCo.
+
+**🔍 Query**:
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
@@ -154,6 +160,7 @@ ORDER BY DESC(?property)
 ```
 **📊 Results** 
 
+foto 
 
 The query generated a long list of predicates related to various theatres. We used it as reference. 
 
