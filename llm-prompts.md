@@ -102,7 +102,7 @@ Both ChatGPT and Gemini provided accurate and reliable information, including th
 
 ## 3️⃣ Missing information: cultural events hosted by Teatro Massimo
 
-The prompt we wrote uses the **few-shot technique** by providing Chat GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
+The prompt we wrote uses the **few-shot prompting technique** by providing Chat GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
 
 
 ### [ChatGPT](https://chat.openai.com/)
@@ -211,7 +211,7 @@ They both provided the correct ID for Teatro Massimo.
 ## 7️⃣ Missing information: architectural description
 
 
-We decided to write under the property **`l0:description`** some architectural information; we first started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using a **zero-shot prompting technique**: 
+We decided to write under the property **`l0:description`** some architectural information; we first started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using the **zero-shot prompting technique**: 
 
 ### [ChatGPT](https://chat.openai.com/)
 
