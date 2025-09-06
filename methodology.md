@@ -81,6 +81,7 @@ Gemini is a collection of AI models developed by Google DeepMind, aimed at combi
 **GitHub** is an online platform that allows developers to store, manage, and collaborate on code projects using a system called Git, which tracks changes to files over time. It functions as both a repository and a social workspace, letting programmers work together on the same project without overwriting each other’s work. Every change is recorded, so previous versions can be reviewed or restored, making it easier to manage complex projects. GitHub also enables collaboration through features like branching, pull requests, and issue tracking, which allow multiple contributors to propose changes, discuss improvements, and merge updates safely.
 
 
+_
 
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
