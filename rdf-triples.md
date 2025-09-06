@@ -369,11 +369,11 @@ We used the following information:
 > **Predicate:** `arco:hasRepresentative`   
 > **Object:** The URL of the image hosted on Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Teatro_Massimo_in_Palermo.jpg) 
 
-As a final step, We asked ChatGPT to create a triple for the photographic representation.
+🔍 As a final step, we asked ChatGPT to create a triple for the official image using the **zero shot prompting technique**.
 
 ![Screnshot](assets/css/Screenshot%20prompt%20iamge%20triple.png)
 
-Here the result ➡️
+Here the result: ➡️
 
 ```rdf
 @prefix arco: <https://w3id.org/arco/ontology/arco/> .
