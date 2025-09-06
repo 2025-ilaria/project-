@@ -82,7 +82,6 @@ The retrieved knowledge was transformed into **RDF triples** aligned with ArCo o
 This not only helps close existing data gaps but also paves the way for more inclusive and representative cultural heritage knowledge graphs.
 
 
-
 _
 
 [⬅️ Torna alla Home]({{ '/' | relative_url }})
