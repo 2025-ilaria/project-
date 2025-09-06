@@ -7,12 +7,9 @@ title: Topic
 # <strong>Topic<strong>
 
 
+
 ---
-
 ## Teatro Massimo di Palermo
-
-
-![Teatro Massimo di Palermo](https://images.pexels.com/photos/12615316/pexels-photo-12615316.jpeg)
 
 <img src="https://images.pexels.com/photos/12615316/pexels-photo-12615316.jpeg" 
      alt="Teatro Massimo di Palermo"
