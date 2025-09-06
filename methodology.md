@@ -35,6 +35,7 @@ The step-by-step process includes:
 🖥️ **Website and Presentation Development**: Built a [GitHub-based website](https://github.com/2025-ilaria/project-)
 and project presentation to document the methodology, results, and the role of LLMs in enriching a cultural heritage knowledge graph.
 
+---
 
 📌  _Let's take a closer look at the specific tools we used throughout the project_ :📌 
 
