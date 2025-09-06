@@ -7,7 +7,7 @@ title: RDF Triples
 
 ---
 
-This section presents the **RDF Triples** generated for each identified gap.  
+This section presents the **RDF Triples** we generated for each identified gap.  
 
 
 ## 1️⃣ RDF Triple for the full official name 
