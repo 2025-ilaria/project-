@@ -190,7 +190,7 @@ The next step was to run some queries to ensure these information were actually 
 
 ## Query 5️⃣: Verifying the absence of the full name of the Teatro Massimo  
 
-As part of the enrichment of the ArCo knowledge graph, we submitted a SPARQL query to verify whether it contained information about the full name of the Teatro Massimo in Palermo (Teatro Massimo Vittorio Emanuele). This step was aimed at assessing the completeness of the dataset, since the graph often records only the shortened name (Teatro Massimo).
+As part of the enrichment of the ArCo knowledge graph, we submitted a SPARQL query to verify whether it contained information about the full name of the Teatro Massimo in Palermo: **Teatro Massimo Vittorio Emanuele**. This step was aimed at assessing the completeness of the dataset, since the graph often records only the shortened name (Teatro Massimo).
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -222,6 +222,18 @@ LIMIT 50
 ```
 
 📝 **Analysing the query**
+
+<ul>
+  <li><span style="color: #1f77b4; font-weight: bold;">VALUES</span> → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">?theater ?property ?value .</span> → Retrieves all direct properties and their corresponding values of the theater.</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">OPTIONAL</span> → Retrieves <code>rdfs:label</code> and <code>cis:institutionalCISName</code> if they exist, but the query will not fail if they are missing.</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">SELECT</span> → Specifies which variables (<code>?label</code>, <code>?institutionalName</code>) are returned.</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") REGEX(LCASE(STR(?value)), "emanuele", "i") )</span> → Filters results for values containing “massimo” or “emanuele” (case-insensitive).</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">ORDER BY ?property</span> → Sorts results by property.</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">LIMIT 50</span> → Limits the results to 50 rows.</li>
+</ul>
+
+
 1) VALUES → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.
 
 2) ?theater ?property ?value . → retrieves all direct properties and their corresponding values of the theater
@@ -230,7 +242,7 @@ LIMIT 50
 
 4) SELECT → specifies which variables (?label, ?institutionalName) are returned.
 
-5) FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") || REGEX(LCASE(STR(?value)), "emanuele", "i") ) → filters results for values containing “massimo” or “emanuele” (case-insensitive)
+5) FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") REGEX(LCASE(STR(?value)), "emanuele", "i") ) → filters results for values containing “massimo” or “emanuele” (case-insensitive)
 
 6) ORDER BY ?property → sorts results by property
 
@@ -274,6 +286,15 @@ LIMIT 10
 
 ```
 📝 **Analysing the query**
+
+<ul>
+  <li><span style="color: #1f77b4; font-weight: bold;">DISTINCT</span> → Avoids duplicate architects if linked multiple times.</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">VALUES</span> → Sets Teatro Massimo as the subject.</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">FILTER( !BOUND(?architectLabel) REGEX(LCASE(STR(?architectLabel)), "basile", "i") )</span> → Filters results to include only architects whose label contains “basile” (case-insensitive), or allows results where the label is not defined (<code>!BOUND(?architectLabel)</code>).</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">OPTIONAL { ?theatre arco:hasArchitect ?architect . OPTIONAL { ?architect rdfs:label ?architectLabel . } }</span> → Optionally retrieves the architect linked to the theater (<code>arco:hasArchitect</code>) and, if available, the architect’s label (<code>rdfs:label</code>). The query does not fail if this information is missing.</li>
+  <li><span style="color: #1f77b4; font-weight: bold;">ORDER BY</span> → Sorts the results alphabetically by name.</li>
+</ul>
+
 
 DISTINCT → avoids duplicate architects if linked multiple times.
 
