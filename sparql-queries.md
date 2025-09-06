@@ -224,13 +224,13 @@ LIMIT 50
 📝 **Analysing the query**
 
 <ul>
-  <li><span style="color: #1f77b4; font-weight: bold;">VALUES</span> → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">?theater ?property ?value .</span> → Retrieves all direct properties and their corresponding values of the theater.</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">OPTIONAL</span> → Retrieves <code>rdfs:label</code> and <code>cis:institutionalCISName</code> if they exist, but the query will not fail if they are missing.</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">SELECT</span> → Specifies which variables (<code>?label</code>, <code>?institutionalName</code>) are returned.</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") REGEX(LCASE(STR(?value)), "emanuele", "i") )</span> → Filters results for values containing “massimo” or “emanuele” (case-insensitive).</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">ORDER BY ?property</span> → Sorts results by property.</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">LIMIT 50</span> → Limits the results to 50 rows.</li>
+  <li>VALUES → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.</li>
+  <li>?theater ?property ?value . → retrieves all direct properties and their corresponding values of the theater.</li>
+  <li>OPTIONAL → retrieves rdfs:label and cis:institutionalCISName if they exist, but the query will not fail if they are missing.</li>
+  <li>SELECT → specifies which variables (?label, ?institutionalName) are returned.</li>
+  <li>FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") REGEX(LCASE(STR(?value)), "emanuele", "i") ) → filters results for values containing “massimo” or “emanuele” (case-insensitive).</li>
+  <li>ORDER BY ?property → sorts results by property.</li>
+  <li>LIMIT 50 → limits the results to 50 rows.</li>
 </ul>
 
 
