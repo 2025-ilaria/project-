@@ -240,6 +240,7 @@ Overall⬇️:
 
 **ChatGPT** → Modular, visually engaging, detailed, and skimmable; stronger for presentations, quick reading, and broader coverage.
 
+
 Another thing we asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. We asked ChatGPT, which would be the best option, using a chain-of-thought technique:
 
 <img width="602" height="544" alt="image" src="https://github.com/user-attachments/assets/3426f095-07b4-476d-9755-9224b9e1935b" />
