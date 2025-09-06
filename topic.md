@@ -7,7 +7,7 @@ title: Topic
 # <strong>Topic<strong>
 ---
 
-# *Teatro Massimo di Palermo*
+## Teatro Massimo di Palermo
 
 
 ![Teatro Massimo di Palermo](https://images.pexels.com/photos/12615316/pexels-photo-12615316.jpeg)
@@ -22,7 +22,7 @@ Its iconic staircase, majestic columns, and richly decorated interiors make it a
 ---
 
 
-# Why we chose this topic
+## Why we chose this topic
 We chose to focus on the Teatro Massimo di Palermo because, despite being **the largest opera house in Italy** and one of the most important in Europe, it lacks meaningful descriptive data in the [ArCo Knowledge Graph](https://dati.beniculturali.it/arco/index.php). 
 
 This gap was particularly striking given the theatre’s **cultural, architectural, and historical significance**. 
