@@ -173,7 +173,7 @@ Overall ⬇️:
 
 ## 5️⃣ Missing information: Type of architecture
 
-Using a **few-shot prompting technique**, we asked both ChatGPT and Gemini which would be the best description under the property dc:type, considering the example of Teatro comunale di Bologna.
+Using a **few-shot prompting technique**, we asked both ChatGPT and Gemini which would be the best description under the property **`dc:type`**, considering the example of Teatro comunale di Bologna.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -207,7 +207,7 @@ They both provided the correct ID for Teatro Massimo.
 ## 7️⃣ Missing information: architectural description
 
 
-We decided to write under the property l0:description some architectural information; we first started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using a **zero-shot prompting technique**: 
+We decided to write under the property **`l0:description`** some architectural information; we first started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using a **zero-shot prompting technique**: 
 
 ### [ChatGPT](https://chat.openai.com/)
 
