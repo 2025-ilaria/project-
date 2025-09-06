@@ -32,11 +32,12 @@ The step-by-step process includes:
 
 🌐 **Knowledge Graph Enrichment**: Proposed structured triples in Turtle syntax to extend the ArCo knowledge graph, ensuring semantic coherence and adherence to cultural heritage standards.
 
-🖥️ **Website and Presentation Development**: Built a GitHub-based website [GitHub-based website](https://github.com/2025-ilaria/project-)
+🖥️ **Website and Presentation Development**: Built a [GitHub-based website](https://github.com/2025-ilaria/project-)
 and project presentation to document the methodology, results, and the role of LLMs in enriching a cultural heritage knowledge graph.
 
 
-Let's take a closer look at the specific tools we used throughout the project: 
+📌Let's take a closer look at the specific tools we used throughout the project:📌 
+
 
 # <strong>ArCo and ArCo SPARQL endpoint: WHAT ARE THEY?<strong>
 
