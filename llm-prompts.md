@@ -166,9 +166,9 @@ Does not strictly follow a chronological sequence, prioritizing a storytelling a
 
 Overall⬇️: 
 
-**ChatGPT**’→ its approach is historical and factual.
+**ChatGPT**→ its approach is historical and factual.
 
-**Gemini**’→ it is narrative and culturally rich.
+**Gemini**→ it is narrative and culturally rich.
 
 
 ## 5️⃣ Missing information: Type of architecture
