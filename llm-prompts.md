@@ -282,7 +282,7 @@ Checking the information reported by both the LLMs we noticed that while ChatGPT
 
 <img width="226" height="76" alt="image" src="https://github.com/user-attachments/assets/30531dba-9124-4852-8529-ed46114823fa" />
 
-_
+
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
 
