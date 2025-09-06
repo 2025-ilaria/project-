@@ -36,7 +36,7 @@ The step-by-step process includes:
 and project presentation to document the methodology, results, and the role of LLMs in enriching a cultural heritage knowledge graph.
 
 
-📌Let's take a closer look at the specific tools we used throughout the project:📌 
+📌  _Let's take a closer look at the specific tools we used throughout the project_ :📌 
 
 
 # <strong>ArCo and ArCo SPARQL endpoint: WHAT ARE THEY?<strong>
