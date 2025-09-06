@@ -75,8 +75,7 @@ LIMIT 20
 ```
 **📊 Results**
 
-![Immagine artistic](assets/Immagine%20artistic.jpeg)
-![Immagine artistic](assets/Immagine_artistic.jpeg)
+![Immagine artistic](assets/css/Immagine%20artistic.jpeg)
 
 
 
