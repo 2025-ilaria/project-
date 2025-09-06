@@ -18,21 +18,21 @@ Presented below is an explanation of the SPARQL keywords employed in the queries
   <thead>
     <tr>
       <th style="background:#e0f7e9;text-align:left;padding:8px;width:18%;">Keyword</th>
-      <th style="text-align:left;padding:8px;">Explanation</th>
+      <th style="background:#e0f7e9;text-align:left;padding:8px;">Explanation</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="padding:8px;font-weight:700;">DISTINCT</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Removes duplicate results from the query output, ensuring each row is unique.</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Ensures that the results returned are unique (no duplicates).</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">FILTER</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Restricts results based on conditions (e.g., only labels in English).</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Restricts the results to those that satisfy a certain condition.</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">REGEX</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">A type of filter for matching text using regular expressions (e.g., find labels containing "teatro massimo").</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">A type of filter for matching text using regular expressions.</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">OPTIONAL</td>
@@ -40,7 +40,7 @@ Presented below is an explanation of the SPARQL keywords employed in the queries
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">UNION</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Combines results from multiple patterns (logical OR between graph patterns).</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Combines results from multiple query patterns.</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">LIMIT</td>
@@ -48,12 +48,10 @@ Presented below is an explanation of the SPARQL keywords employed in the queries
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">ORDER BY</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Sorts results by a variable, either ascending (default) or descending.</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Sorts results by a variable.</td>
     </tr>
   </tbody>
 </table>
-
-
 
 
 ## Query 1️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo
