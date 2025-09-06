@@ -5,9 +5,11 @@ title: RDF Triples
 
 # <strong> **RDF Triples** <strong>
 
+---
+
 This section presents the **RDF Triples** generated for each identified gap.  
 
----
+
 ## 1️⃣ RDF Triple for the full official name 
 
 🔍 We asked Chat GPT to create a triple using the **zero-shot prompting technique**:
