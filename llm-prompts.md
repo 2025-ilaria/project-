@@ -8,9 +8,9 @@ title: LLM Prompts
 
 ---
 
-In this project, we explore the use of Large Language Models (LLMs), specifically ChatGPT and Google Gemini, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
+In this project, we explore the use of **Large Language Models (LLMs)**, specifically **ChatGPT** and **Google Gemini**, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
-Here below there are the three prompting techniques that we have used in order to interrogate AI⬇️
+Here below there are the three prompting techniques that we have used in order to interrogate AI: ⬇️
 
 ```rdf
 📌 ZERO-SHOT PROMPTING TECHNIQUE                      
@@ -62,7 +62,7 @@ Here below there are the three prompting techniques that we have used in order t
 ## 1️⃣  Missing information: the full official name
 
 
-Using a zero-shot technique, we prompted ChatGPT and Gemini to retrieve information regarding the full official name of the Teatro Massimo in Palermo, without offering any example.
+Using a **zero-shot technique**, we prompted ChatGPT and Gemini to retrieve information regarding the full official name of the Teatro Massimo in Palermo, without offering any example.
 
 
 ### [ChatGPT](https://chat.openai.com/)
@@ -76,14 +76,14 @@ Using a zero-shot technique, we prompted ChatGPT and Gemini to retrieve informat
 
 <img width="602" height="169" alt="image" src="https://github.com/user-attachments/assets/155e8df5-a588-4ccc-9af1-c8080f49f2bb" />
 
-✅**LLMS comparison**:
+✅ **LLMS comparison**:
 
-Chat GPT gave us a more precise answer, but both provided the information that we were looking for. 
+ChatGPT gave us a more precise answer, but both provided the information that we were looking for. 
 
 
 ## 2️⃣ Missing information: the architects' names
 
-Using a zero-shot technique, we prompted ChatGPT to retrieve information about the architects who designed the Teatro Massimo in Palermo.
+Using a **zero-shot technique**, we prompted ChatGPT to retrieve information about the architects who designed the Teatro Massimo di Palermo.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -94,15 +94,15 @@ Using a zero-shot technique, we prompted ChatGPT to retrieve information about t
 
 <img width="602" height="240" alt="image" src="https://github.com/user-attachments/assets/c822882a-d1bd-42cf-931d-8c08be0fe85c" />
 
-✅**LLMS comparison**: 
+✅ **LLMS comparison**: 
 
-Both ChatGPT and Gemini provided accurate and reliable information, including the names of the two architects who designed the Teatro Massimo in Palermo, as well as two key dates: the start of construction and the inauguration date.
+Both ChatGPT and Gemini provided accurate and reliable information, including the names of the two architects who designed the Teatro Massimo di Palermo, as well as two key dates: the start of construction and the inauguration date.
 
 
 
 ## 3️⃣ Missing information: cultural events hosted by Teatro Massimo
 
-This prompt uses a few-shot technique by providing CHAT GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
+This prompt uses a **few-shot technique** by providing Chat GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
 
 
 ### [ChatGPT](https://chat.openai.com/)
@@ -119,7 +119,7 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 <img width="602" height="458" alt="image" src="https://github.com/user-attachments/assets/ab9341d3-4ecc-4c21-9af2-1d4d9a762cc7" />
 
 
-✅**LLMS comparison** ➡️ Both provided right answers, but:
+✅ **LLMS comparison** ➡️ Both provided right answers, but:
 
 -**ChatGPT**: Focuses on specific events and examples, mentioning exact opera productions with dates, notable premieres, and concrete instances of ballet and concerts.
 
@@ -136,7 +136,7 @@ This prompt uses a few-shot technique by providing CHAT GPT and Gemini with exam
 
 ## 4️⃣ Missing information: restoration and intervention
 
-Using the Chain-of-Thought technique, the question asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
+Using a **Chain-of-Thought** technique, the question asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -148,7 +148,7 @@ Using the Chain-of-Thought technique, the question asks for a step-by-step accou
 <img width="602" height="621" alt="image" src="https://github.com/user-attachments/assets/1d0bdd97-33c7-41e4-8c44-c8fb2053ed6a" />
 <img width="602" height="549" alt="image" src="https://github.com/user-attachments/assets/e477746e-744d-4e82-989f-3c4c5626d771" />
 
-✅**LLMS comparison** ➡️ Cheching on Wikipedia, we noticed that both provided right answers, but:
+✅ **LLMS comparison** ➡️ Cheching on Wikipedia, we noticed that both provided right answers, but:
 
 
 -**ChatGPT**: Adds an image; presents a chronological and technical structure (it follows the timeline from construction, decline, restoration, to reopening)
@@ -164,7 +164,7 @@ Does not strictly follow a chronological sequence, prioritizing a storytelling a
 -**Gemini**: Frames the reopening as a civic triumph and connects it to popular culture.
 
 
-Overall⬇️: 
+Overall ⬇️: 
 
 **ChatGPT**→ its approach is historical and factual.
 
@@ -173,9 +173,7 @@ Overall⬇️:
 
 ## 5️⃣ Missing information: Type of architecture
 
-Property dc: type
-
-Using a few-shot prompting technique, we asked both ChatGPT and Gemini which would be the best description under the property dc:type,  considering the example of Teatro comunale di Bologna
+Using a **few-shot prompting technique**, we asked both ChatGPT and Gemini which would be the best description under the property dc:type, considering the example of Teatro comunale di Bologna.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -185,16 +183,14 @@ Using a few-shot prompting technique, we asked both ChatGPT and Gemini which wou
 
 <img width="602" height="404" alt="image" src="https://github.com/user-attachments/assets/6c5e5d16-9331-4727-ab05-160f8c95953b" />
 
-✅**LLMS comparison**
+✅ **LLMS comparison**
 
 Considering both answers, we thought the best description to add was “architettura civile”. 
 
 
 ## 6️⃣ Missing information: wikidata link
 
-Property owl:sameAs
-
-We asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di Palermo existed, using a zero-shot prompting technique.
+We asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di Palermo existed, using a **zero-shot prompting technique** .
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -204,15 +200,14 @@ We asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di
 
 <img width="576" height="436" alt="image" src="https://github.com/user-attachments/assets/7bf13c12-e657-4bd9-afc3-8d74d36d706e" />
 
-✅**LLMS comparison**
+✅ **LLMS comparison**
 
 They both provided the correct ID for Teatro Massimo.
 
 ## 7️⃣ Missing information: architectural description
 
-Property: l0:description
 
-We decided to write under this property some architectural information; we first started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using the zero-shot prompting technique: 
+We decided to write under the property l0:description some architectural information; we first started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using a **zero-shot prompting technique**: 
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -224,7 +219,7 @@ We decided to write under this property some architectural information; we first
 <img width="602" height="417" alt="image" src="https://github.com/user-attachments/assets/8b22d416-28ab-4d98-9471-c103c8084c35" />
 <img width="602" height="287" alt="image" src="https://github.com/user-attachments/assets/f10eb756-1b20-447f-ba2e-6b9598b63e3c" />
 
-✅**LLMS comparison**
+✅ **LLMS comparison**
 
 -**Gemini**: More text-heavy, with fluid prose and a narrative format. It separates into Exterior, Interior, and History & Significance, but the structure is less modular. Formatting is standard (bold/italics only) and it emphasizes historical background more.
 
@@ -234,14 +229,14 @@ We decided to write under this property some architectural information; we first
 
 -**ChatGPT**: Very accurate and detailed, often including precise data (e.g., dome diameter, materials). Covers more subtopics such as acoustics, restoration, mechanical ceiling, and decorative elements.
 
-Overall⬇️:
+Overall ⬇️:
 
 -**Gemini** → Narrative, context-driven, formal tone; stronger for historical explanations and structured essays.
 
 -**ChatGPT** → Modular, visually engaging, detailed, and skimmable; stronger for presentations, quick reading, and broader coverage.
 
 
-Another thing we asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. We asked ChatGPT, which would be the best option, using a chain-of-thought technique:
+Another thing we asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. We asked ChatGPT, which would be the best option, using a **chain-of-thought technique**:
 
 <img width="602" height="544" alt="image" src="https://github.com/user-attachments/assets/3426f095-07b4-476d-9755-9224b9e1935b" />
 <img width="560" height="454" alt="image" src="https://github.com/user-attachments/assets/aebfcd9f-0403-4cbf-8e88-3069aa60d9d1" />
@@ -250,7 +245,7 @@ In conclusion, we opted for l0:description because we thought it was the most ap
 
 ## 8️⃣ Missing information: latitude and longitude
 
-We asked both ChatGPT and Gemini for information about the latitude and longitude of the Teatro Massimo di Palermo, using the zero-shot prompting technique:
+We asked both ChatGPT and Gemini for information about the latitude and longitude of the Teatro Massimo di Palermo, using a **zero-shot prompting technique**:
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -260,11 +255,11 @@ We asked both ChatGPT and Gemini for information about the latitude and longitud
 
 <img width="602" height="240" alt="image" src="https://github.com/user-attachments/assets/bb73b291-5eda-4a87-862a-468bb479972a" />
 
-✅**LLMS comparison**
+✅ **LLMS comparison**
 
-They both gave the exact same answer, but Chat GPT was more precise giving also the sources from which it gathered information (Outdooractive and Mapcarta). For this reason, we decided to proceed with ChatGPT when creating the RDF triples.
+They both gave the exact same answer, but Chat GPT was more precise giving also the sources from which it gathered information (<a href="https://www.outdooractive.com/en/">Outdooractive</a> and <a href="https://mapcarta.com/">Mapcarta</a>).
 
-## 9️⃣ Missing information: photographic representation
+## 9️⃣ Missing information: official image
 
 We asked both ChatGPT and Gemini for the URL of a picture of the Teatro di Palermo using the few-shot prompting technique, giving it an example. 
 
@@ -277,13 +272,11 @@ We asked both ChatGPT and Gemini for the URL of a picture of the Teatro di Paler
 
 <img width="602" height="323" alt="image" src="https://github.com/user-attachments/assets/2a3c3b23-cec6-4174-a14d-ca76d76dee18" />
 
-✅**LLMS comparison**
+✅ **LLMS comparison**
 
 Checking the information reported by both the LLMs we noticed that while ChatGPT was accurate, Gemini presented a discrepancy. In fact, the Author stated by Gemini (Iacopo Nuti) did not correspond to the Autor written in Wikidata (Vitoparisi92): 
 
 <img width="226" height="76" alt="image" src="https://github.com/user-attachments/assets/30531dba-9124-4852-8529-ed46114823fa" />
-
-For this reason, we decided to proceed with ChatGPT for creating the triples. 
 
 
 
