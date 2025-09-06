@@ -65,7 +65,7 @@ Through this process, we explored how <strong>AI-assistants</strong> can improve
   <h2>Key Objectives</h2>
   <ul class="objectives-list">
     <li><span class="emoji">✅</span> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
-    <li><span class="emoji">✅</span> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
+    <li><span class="emoji">✅</span> Identify missing pieces of information (e.g., coordinates, images).</li>
     <li><span class="emoji">✅</span> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
     <li><span class="emoji">✅</span> Generate RDF triples to enrich the dataset using LLM-based assistants.</li>
     <li><span class="emoji">✅</span> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
