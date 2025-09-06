@@ -6,9 +6,6 @@ title: Topic
 
 # <strong>Topic<strong>
 
-<nav style="margin-bottom: 30px;">
-  
-</nav>
 ---
 ## Teatro Massimo di Palermo
 
