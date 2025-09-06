@@ -224,7 +224,7 @@ LIMIT 50
 📝 **Analysing the query**
 
 <ul>
-  <li>**`VALUES`** → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.</li>
+  <li>**`DISTINCT`**→ Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.</li>
   <li>**`?theater ?property ?value .`** → retrieves all direct properties and their corresponding values of the theater.</li>
   <li>**`OPTIONAL`** → retrieves rdfs:label and cis:institutionalCISName if they exist, but the query will not fail if they are missing.</li>
   <li>**`SELECT`** → specifies which variables (?label, ?institutionalName) are returned.</li>
