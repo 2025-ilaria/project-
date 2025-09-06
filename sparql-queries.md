@@ -8,6 +8,60 @@ title: SPARQL queries
 
 ---
 In this section, we examine all the <strong>queries<strong> employed in the study of the <strong>Teatro Massimo di Palermo<strong> within the <strong>ArCo knowledge graph<strong>.
+
+Presented below is an explanation of the SPARQL keywords employed in the queries:
+
+```html
+<h2>SPARQL Keywords Explained</h2>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+  <thead style="background-color: #e0f7e9;">
+    <tr>
+      <th style="text-align: left;">Keyword</th>
+      <th style="text-align: left;">Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>DISTINCT</b></td>
+      <td>Removes duplicate results from the query output, ensuring each row is unique.</td>
+    </tr>
+    <tr>
+      <td><b>FILTER</b></td>
+      <td>Restricts results based on conditions (e.g., only labels in English).</td>
+    </tr>
+    <tr>
+      <td><b>REGEX</b></td>
+      <td>A type of filter for matching text using regular expressions (e.g., find labels containing "teatro massimo").</td>
+    </tr>
+    <tr>
+      <td><b>OPTIONAL</b></td>
+      <td>Includes extra information if available, without excluding results when data is missing.</td>
+    </tr>
+    <tr>
+      <td><b>UNION</b></td>
+      <td>Combines results from multiple patterns (logical OR between graph patterns).</td>
+    </tr>
+    <tr>
+      <td><b>LIMIT</b></td>
+      <td>Restricts the maximum number of results returned by the query.</td>
+    </tr>
+    <tr>
+      <td><b>ORDER BY</b></td>
+      <td>Sorts results by a variable, either ascending (default) or descending.</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+✨ This will generate a **green-tinted header table** with two columns:
+
+* *Keyword*
+* *Explanation*
+
+Do you also want me to **add an example query row** for each keyword (like mini code snippets), or keep it as plain explanations?
+
+
 ## Query 1️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo
 One of the theatres we checked was Teatro Massimo di Palermo:
 
