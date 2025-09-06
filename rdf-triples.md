@@ -5,16 +5,16 @@ title: RDF Triples
 
 # <strong> **RDF Triples** <strong>
 
-In this section there are all **RDF Triples** generated for each gap.  
+This section presents all **RDF Triples** generated for each identified gap.  
 
 ---
-## 1️⃣RDF Triple Full Name 
+## 1️⃣ RDF Triple for the full official name 
 
-🔍We asked CHAT GPT to create a triple using the **zero-shot prompt**
+🔍 We asked Chat GPT to create a triple using the **zero-shot prompting technique**:
 
 ![Screenshot](assets/css/Screenshot%20Chat%20prompt%20name%20triple.png)
 
-Here the result ➡️
+Here the result: ➡️
 
 ```rdf
 @prefix arco: <https://w3id.org/arco/ontology/arco/> .
@@ -26,7 +26,7 @@ Here the result ➡️
     cis:institutionalCISName "Teatro Massimo Vittorio Emanuele"@it .
 ```
 ---
-We asked Chat to create it using the following information: 
+We asked ChatGPT to generate this triple using the following information: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `cis:institutionalCISName`  
@@ -38,13 +38,13 @@ We asked Chat to create it using the following information:
 > - Object: it is literal with an italian language tag.
 
 ---
-## 2️⃣RDF Triple for the architects
+## 2️⃣ RDF Triple for architects' names
 
-🔍We asked ChatGPT to create a RDF Triple using the **chain-of-thought prompt**
+🔍 We asked ChatGPT to create a RDF Triple using the **chain-of-thought prompting technique**:
 
 ![Screenshot](assets/css/Screenshot%20chat%20prompt%20architects.png) 
 
-It generated the following triple ➡️
+It generated the following triple: ➡️
 
 ```rdf
 @prefix arco: <https://w3id.org/arco/ontology/arco/> .
@@ -64,7 +64,7 @@ It generated the following triple ➡️
     rdfs:label "Ernesto Basile"@it .
 ```
 
-We asked Chat to create it using the following information: 
+We asked ChatGPT to generate this triple using the following information: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasArchitect`  
@@ -76,13 +76,13 @@ We asked Chat to create it using the following information:
 > - Object: two architects as separate resources
 
 ---
-## 3️⃣RDF Triple for cultural events
+## 3️⃣ RDF Triple for cultural events hosted by Teatro Massimo
 
-🔍We asked ChatGPT to create a RDF Triple using a **zero-shot technique**:
+🔍 We asked ChatGPT to create a RDF Triple using a **zero-shot prompting technique**:
 
 ![Screenshot](assets/css/Screenshot%20triple%20prompt%20cultural%20events.png)
 
-It generated the following triple➡️
+It generated the following triple: ➡️
 
 ```rdf
 @prefix arco: <https://w3id.org/arco/ontology/arco/> .
@@ -121,7 +121,7 @@ ex:FestivalEvent
     rdfs:label "Festival events"@en .
 ```
 
-📝Then we asked if it could add some information provided previously and it gave this triple ➡️
+📝 Next, we asked if it could add some information provided previously and it gave this triple: ➡️
 
 ```rdf
 @prefix arco: <https://w3id.org/arco/ontology/arco/> .
@@ -165,20 +165,20 @@ ex:FestivalEvent
     rdfs:comment "Seasonal festivals and special cultural events, including the Summer Programme at Teatro di Verdura and educational outreach programs such as Massimo's Young Musicians and Children at the Opera."@en .
 ```
 
-We asked Chat to create it using the following information:
+We asked ChatGPT to generate this triple using the following information: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasEvent`  
 > **Object:**  ex:OperaProduction, ex:TheaterPerformance, ex:OrchestralConcert, ex:BalletDance, ex:FestivalEvent
 
 ---
-## 4️⃣RDF Triple for restoration and intervention
+## 4️⃣ RDF Triple for restoration and intervention
 
-🔍We asked CHAT GPT to create a RDF triple using the **zero-shot prompt**: 
+🔍 We asked ChatGPT to create a RDF triple using the **zero-shot prompting technique**: 
 
 ![Screnshot](assets/css/Screenshot%20prompt%20restoration%20triple.png)
 
-It generated the following triple➡️
+It generated the following triple: ➡️
 
 ```rdf
 @prefix arco: <https://w3id.org/arco/ontology/arco/> .
@@ -202,7 +202,7 @@ It generated the following triple➡️
     a arco:Intervention ;
     rdfs:label "Reopening and modernization completed (1980s–1997)"@en .
 ```
-We asked Chat to create it using the following information:
+We asked ChatGPT to generate this triple using the following information: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasIntervention`   
@@ -214,13 +214,13 @@ We asked Chat to create it using the following information:
 > - Object: it is declared as `arco:hasIntervention` and provided with `rdfs:label` describing the intervention
 
 ---
-## 5️⃣RDF Triple for type of architecture
+## 5️⃣ RDF Triple for the type of architecture
 
-🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
+🔍Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
 
 ![Screenshot](assets/css/Screenshot%20prompt%20dc%20type%20triple.png)
 
-Here the result➡️
+Here the result: ➡️
 
 ```rdf
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -239,13 +239,13 @@ We asked Chat to create it using the following information:
 > **Object:** architettura civile.
 
 ---
-## 6️⃣RDF Triple for wikidata link
+## 6️⃣ RDF Triple for wikidata link
 
-🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
+🔍Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
 
 ![Screnshot](assets/css/Screenshot%20wikida%20triple%20prompt.png)
 
-Here the result➡️
+Here the result: ➡️
 
 ```rdf
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -257,20 +257,20 @@ Here the result➡️
     owl:sameAs <https://www.wikidata.org/entity/Q261439> .
 ```
 
-We asked Chat to create it using the following information:
+We asked ChatGPT to generate this triple using the following information: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `owl:sameAs`   
 > **Object:** <https://www.wikidata.org/entity/Q261439>. 
 
 ---
-## 7️⃣RDF Triple for description
+## 7️⃣ RDF Triple for architectural description
 
-🔍Using a **zero-shot prompt technique**, we asked ChatGPT to create a RDF Triple:
+🔍Using a **zero-shot prompting technique**, we asked ChatGPT to create a RDF Triple:
 
 ![Screenshot](assets/css/Screenshot%20prompt%20descrp%20triple.png)
 
-Here the result➡️
+Here the result: ➡️
 
 ```rdf
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
@@ -283,20 +283,20 @@ Here the result➡️
 The symbolic wooden ceiling consists of 11 panels that open like petals for natural ventilation. Interior decorations include red velvet, gilded woodwork, mirrors, stuccoes, and frescoes. The furnishings were designed by Vittorio Ducrot under the direction of Ernesto Basile. Notable rooms include the mahogany-and-brocade Royal Box, the Mirror Room, and the Pompeian Hall, all reflecting classical and liberty aesthetics."""@en .
 ```
 
-We asked Chat to create it using the following information:
+We asked ChatGPT to generate this triple using the following information: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `l0:description`   
 > **Object:**  It features Neoclassical architecture (...) liberty aesthetics.  
 
 ---
-## 8️⃣Triple for latitude and longitude
+## 8️⃣ Triple for latitude and longitude
 
-🔍We asked ChatGPT to create a triple for latitude using the **few-shot technique**, giving it an example:
+🔍 We asked ChatGPT to create a triple for latitude using the **few-shot prompting technique**, giving it an example:
 
 ![Screenshot](assets/css/Screenshot%20latlong%20prompt%20triple.png)
 
-It generated the following triple➡️
+It generated the following triple: ➡️
 
 ```rdf
 It generated the following triple:
@@ -306,7 +306,7 @@ It generated the following triple:
     geo:lat "38.120167" .
 ```
 
-We used the following information:
+We asked ChatGPT to generate this triple using the following information: 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `geo:lat`   
 > **Object:**  38.120167  
@@ -315,7 +315,7 @@ Then we asked ChatGPT to do the same thing with longitude:
 
 ![Screnshot](assets/css/Screenshot%20prompt%20long%20triple.png)
 
-Here the result➡️
+Here the result:➡️
 
 ```rdf
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
@@ -324,12 +324,12 @@ Here the result➡️
     geo:long "13.357151" .
 ```
 
-We used the following information:
+We asked ChatGPT to generate this triple using the following information: 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `geo:long`   
 > **Object:**   13.357151
   
-Then, we asked chatGPT to merge them in one compact RDF description➡️
+Then, we asked chatGPT to merge them in one compact RDF description: ➡️
 
 ```rdf
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
@@ -355,13 +355,13 @@ geo:long "13.357151" .
 ```
 
 ---
-## 9️⃣RDF Triple for official image 
+## 9️⃣ RDF Triple for official image 
 
 We noticed the predicate used for Teatro Comunale di Bologna for adding a picture was `foaf:depiction`. Chat suggested a more specific predicate for ArCo: `arco:hasRepresentative` and explained us the difference between the two: 
 
 ![Screenshot](assets/css/Screenshot%20prompt%20image.png)
 
-➡️Therefore, we decided to use `arco:hasReprentative`as predicate. 
+➡️ Therefore, we decided to use `arco:hasReprentative`as predicate. 
 
 We used the following information: 
 
@@ -373,7 +373,7 @@ As a final step, We asked ChatGPT to create a triple for the photographic repres
 
 ![Screnshot](assets/css/Screenshot%20prompt%20iamge%20triple.png)
 
-Here the result➡️
+Here the result ➡️
 
 ```rdf
 @prefix arco: <https://w3id.org/arco/ontology/arco/> .
