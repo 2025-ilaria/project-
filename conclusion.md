@@ -13,7 +13,7 @@ Starting from a striking data gap in the **ArCo knowledge graph**, we applied a 
 
 ---
 
-## ⚠️Challenges ##
+# ⚠️Challenges 
 
 **🔍 SPARQL AND SEMANTIC EXPLORATION**
 
