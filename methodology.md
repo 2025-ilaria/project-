@@ -40,7 +40,7 @@ and project presentation to document the methodology, results, and the role of L
 📌  _Let's take a closer look at the specific tools we used throughout the project_ :📌 
 
 
-# <strong>ArCo and ArCo SPARQL endpoint: WHAT ARE THEY?<strong>
+# 1️⃣ <strong>ArCo and ArCo SPARQL endpoint: WHAT ARE THEY?<strong>
 
 The **ArCo Knowledge Graph** is a structured and semantically enriched representation of the Italian cultural heritage, developed by the Italian Institute of Cultural Heritage (ICCD) and the Italian Ministry of Culture.
 It is built using Linked Open Data (LOD) principles and the Resource Description Framework (RDF), and it is based on a set of domain-specific ontologies (the ArCo Ontologies) that formally describe cultural heritage entities, such as artworks, monuments, archaeological sites, museums, archives, and their relationships.
@@ -59,7 +59,7 @@ Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can
 
 -Identify data gaps and enrichments needed for cultural heritage representation.
 
-# <strong>AND RDF TRIPLES: WHAT ARE THEY?<strong>
+# 2️⃣ <strong>AND RDF TRIPLES: WHAT ARE THEY?<strong>
 
 RDF triples are the fundamental building blocks of the Resource Description Framework (RDF), a standard model for representing structured data on the Semantic Web. Each triple expresses a single fact or statement about a resource and is composed of three parts:
 
@@ -72,7 +72,7 @@ RDF triples are the fundamental building blocks of the Resource Description Fram
 Purpose of creation: By encoding information as triples, data becomes structured, linkable, and queryable, forming a knowledge graph that machines can reason over and humans can explore.
 
 
-# <strong>WHAT ABOUT LLMs (Large Language Models)?<strong>
+# 3️⃣ <strong>WHAT ABOUT LLMs (Large Language Models)?<strong>
 
 LLMs, or Large Language Models, are a type of artificial intelligence (AI) that are trained on enormous datasets of text and code to understand, generate, and process human-like language. These deep learning models, often based on the transformer architecture, can perform tasks like translation, summarization, question answering, content creation, and code generation, making them powerful tools for various natural language processing applications. 
 
@@ -84,7 +84,7 @@ ChatGPT is an AI-powered conversational model created by OpenAI, built on the GP
 
 Gemini is a collection of AI models developed by Google DeepMind, aimed at combining the strengths of large language models with advanced reasoning and problem-solving skills. It leverages state-of-the-art techniques to improve the model’s capacity to generate nuanced, context-aware responses across a wide range of topics.
 
-# <strong>AND FINALLY, WHAT IS GITHUB?<strong>
+# 4️⃣ <strong>AND FINALLY, WHAT IS GITHUB?<strong>
 GitHub is an online platform that allows developers to store, manage, and collaborate on code projects using a system called Git, which tracks changes to files over time. It functions as both a repository and a social workspace, letting programmers work together on the same project without overwriting each other’s work. Every change is recorded, so previous versions can be reviewed or restored, making it easier to manage complex projects. GitHub also enables collaboration through features like branching, pull requests, and issue tracking, which allow multiple contributors to propose changes, discuss improvements, and merge updates safely.
 
 
