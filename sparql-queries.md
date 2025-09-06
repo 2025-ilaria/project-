@@ -12,17 +12,47 @@ In this section, we examine all the <strong>queries<strong> employed in the stud
 Presented below is an explanation of the SPARQL keywords employed in the queries:
 
 
-## SPARQL Keywords Explained
+<h2>SPARQL Keywords Explained</h2>
 
-| Keyword   | Explanation |
-|-----------|-------------|
-| **DISTINCT** | Removes duplicate results from the query output, ensuring each row is unique. |
-| **FILTER**   | Restricts results based on conditions (e.g., only labels in English). |
-| **REGEX**    | A type of filter for matching text using regular expressions (e.g., find labels containing "teatro massimo"). |
-| **OPTIONAL** | Includes extra information if available, without excluding results when data is missing. |
-| **UNION**    | Combines results from multiple patterns (logical OR between graph patterns). |
-| **LIMIT**    | Restricts the maximum number of results returned by the query. |
-| **ORDER BY** | Sorts results by a variable, either ascending (default) or descending. |
+<table style="width:100%;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">
+  <thead>
+    <tr>
+      <th style="background:#e0f7e9;text-align:left;padding:8px;width:18%;">Keyword</th>
+      <th style="text-align:left;padding:8px;">Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:8px;font-weight:700;">DISTINCT</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Removes duplicate results from the query output, ensuring each row is unique.</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;font-weight:700;">FILTER</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Restricts results based on conditions (e.g., only labels in English).</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;font-weight:700;">REGEX</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">A type of filter for matching text using regular expressions (e.g., find labels containing "teatro massimo").</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;font-weight:700;">OPTIONAL</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Includes extra information if available, without excluding results when data is missing.</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;font-weight:700;">UNION</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Combines results from multiple patterns (logical OR between graph patterns).</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;font-weight:700;">LIMIT</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Restricts the maximum number of results returned by the query.</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;font-weight:700;">ORDER BY</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Sorts results by a variable, either ascending (default) or descending.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
