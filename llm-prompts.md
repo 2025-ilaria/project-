@@ -222,8 +222,19 @@ We decided to write under this property some architectural information; we first
 
 ✅**LLMS comparison**
 
-They both provided the most important and relevant features, but ChatGPT was more precise and offered more details. We also checked some information on Wikipedia, but the results were the same as those provided by the two LLMs.
-Then we decided to compare and combine all information into a single text. 
+-**ChatGPT**: More text-heavy, with fluid prose and a narrative format. It separates into Exterior, Interior, and History & Significance, but the structure is less modular. Formatting is standard (bold/italics only) and it emphasizes historical background more.
+
+-**Gemini**: Well-structured with clear sections, headings, emojis, and bullet points — very skimmable. Breaks content into more modules (Exterior, Dome, Auditorium, Ceiling, Interior Decoration). Rich formatting (bold, italics, icons) highlights key ideas and details.
+
+-**ChatGPT**: Accurate but higher-level, focusing on providing context and storytelling. Works better for academic or essay-style explanations without visual frills.
+
+-**Gemini**: Very accurate and detailed, often including precise data (e.g., dome diameter, materials). Covers more subtopics such as acoustics, restoration, mechanical ceiling, and decorative elements.
+
+Overall⬇️:
+
+**ChatGPT** → Narrative, context-driven, formal tone; stronger for historical explanations and structured essays.
+
+**Gemini** → Modular, visually engaging, detailed, and skimmable; stronger for presentations, quick reading, and broader coverage.
 
 Another thing we asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. We asked ChatGPT, which would be the best option, using a chain-of-thought technique:
 
