@@ -138,7 +138,7 @@ The prompt we wrote uses a **few-shot technique** by providing Chat GPT and Gemi
 
 ## 4️⃣ Missing information: restoration and intervention
 
-Using a **chain-of-Thought** technique, the question we wrote asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
+Using a **Chain-of-Thought** technique, the question we wrote asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -175,7 +175,7 @@ Overall ⬇️:
 **Gemini**→ it is narrative and culturally rich.
 
 
-## 5️⃣ Missing information: Type of architecture
+## 5️⃣ Missing information: type of architecture
 
 Using a **few-shot prompting technique**, we asked both ChatGPT and Gemini which would be the best description under the property **`dc:type`**, considering the example of Teatro comunale di Bologna.
 
