@@ -10,7 +10,7 @@ title: LLM Prompts
 
 In this section, we explore the use of **Large Language Models (LLMs)**, specifically **ChatGPT** and **Google Gemini**, to support the process of enriching the ArCo Knowledge Graph with new cultural heritage data.
 
-Here below there are the three prompting techniques that we have used in order to interrogate AI: ⬇️
+Presented below are the three prompting techniques we used to interrogate AI: ⬇️
 
 ```rdf
 📌 ZERO-SHOT PROMPTING TECHNIQUE                      
@@ -102,7 +102,7 @@ Both ChatGPT and Gemini provided accurate and reliable information, including th
 
 ## 3️⃣ Missing information: cultural events hosted by Teatro Massimo
 
-This prompt uses a **few-shot technique** by providing Chat GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
+The prompt we wrote uses a **few-shot technique** by providing Chat GPT and Gemini with examples of other cultural institutions and the types of events they host. By showing these examples, the AI can better understand the expected answer format and the scope of information desired. The prompt clearly asks for a detailed and comprehensive list of events at the Teatro Massimo, including operas, concerts, ballet, and festivals, allowing the model to generate a structured and relevant response.
 
 
 ### [ChatGPT](https://chat.openai.com/)
@@ -136,7 +136,7 @@ This prompt uses a **few-shot technique** by providing Chat GPT and Gemini with 
 
 ## 4️⃣ Missing information: restoration and intervention
 
-Using a **Chain-of-Thought** technique, the question asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
+Using a **chain-of-Thought** technique, the question we wrote asks for a step-by-step account of the restoration and interventions at Teatro Massimo. It focuses on understanding when and why restorations occurred, the problems or challenges faced during the work, and the results or impact on the theater. The goal is to get a complete picture of the theater’s restoration history in a logical, chronological order.
 
 ### [ChatGPT](https://chat.openai.com/)
 
