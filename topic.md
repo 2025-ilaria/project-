@@ -5,12 +5,20 @@ title: Topic
 
 
 # <strong>Topic<strong>
+
+
 ---
 
 ## Teatro Massimo di Palermo
 
 
 ![Teatro Massimo di Palermo](https://images.pexels.com/photos/12615316/pexels-photo-12615316.jpeg)
+
+<img src="https://images.pexels.com/photos/12615316/pexels-photo-12615316.jpeg" 
+     alt="Teatro Massimo di Palermo"
+     width="900"
+     style="border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,0.15), 0 6px 12px rgba(0,0,0,0.10);">
+
 
 [Teatro Massimo di Palermo](https://it.wikipedia.org/wiki/Teatro_Massimo_Vittorio_Emanuele) is the largest [opera house](https://en.wikipedia.org/wiki/Opera_house) in [Italy](https://en.wikipedia.org/wiki/Italy) and one of the most renowned in [Europe](https://en.wikipedia.org/wiki/Europe). Inaugurated in [1897](https://en.wikipedia.org/wiki/1897), it is celebrated for its grand [Neoclassical architecture](https://en.wikipedia.org/wiki/Neoclassical_architecture), monumental size, and exceptional [acoustics](https://en.wikipedia.org/wiki/Acoustics). 
 
