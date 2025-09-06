@@ -236,9 +236,9 @@ We decided to write under this property some architectural information; we first
 
 Overall⬇️:
 
-**Gemini** → Narrative, context-driven, formal tone; stronger for historical explanations and structured essays.
+-**Gemini** → Narrative, context-driven, formal tone; stronger for historical explanations and structured essays.
 
-**ChatGPT** → Modular, visually engaging, detailed, and skimmable; stronger for presentations, quick reading, and broader coverage.
+-**ChatGPT** → Modular, visually engaging, detailed, and skimmable; stronger for presentations, quick reading, and broader coverage.
 
 
 Another thing we asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. We asked ChatGPT, which would be the best option, using a chain-of-thought technique:
