@@ -54,10 +54,10 @@ Presented below is an explanation of the **SPARQL keywords** employed in the que
 </table>
 
 
-## Query 1: Checking the presence of Teatro Massimo di Palermo in ArCo
-We run a query to check if Teatro Massimo di Palermo was present on ArCo 
+## Query 1️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo
+We run a query to check if Teatro Massimo di Palermo was present on ArCo. 
 
-Query:
+🔍 **🔍 Query**:
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -77,11 +77,12 @@ LIMIT 20
 
 foto 
 
-Using arco:HistoricOrArtisticProperty as class, we noticed that the results were only artistic representations of the theatre. To find the correct IRI of Teatro Massimo, we understood that we had to change class.
+Using **`arco:HistoricOrArtisticProperty`** as class, we noticed that the results were only artistic representations of the theatre. To find the correct IRI of Teatro Massimo, we understood that we had to change class.
 
-## Query 2: Checking the presence of Teatro Massimo di Palermo in ArCo using another class
+## Query 2️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo using another class
 
-We changed from arco: HistoricOrArtisticProperty to arco:CulturalInstituteOrSite.
+We changed from **`arco:HistoricOrArtisticProperty`** to **`cis:CulturalInstituteOrSite`**.
+
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX cis: <http://dati.beniculturali.it/cis/>
@@ -101,13 +102,14 @@ LIMIT 20
 
 foto 
 
-While the first and the second links refer to “Archivio” and “Biblioteca”, the third link is the correct one for the Teatro Massimo and we identified it as the IRI. 
-📍IRI of Teatro Massimo 
+While the first and the second links refer to “Archivio” and “Biblioteca”, the third link is the correct one for the Teatro Massimo and we identified it as the <a href="https://it.wikipedia.org/wiki/Internationalized_Resource_Identifier">IRI</a>.
+
+<a href="http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo"><strong>📍IRI of Teatro Massimo</strong></a> 
 We noticed that only very limited information about this theatre was provided. This observation became the starting point of our investigation.
 
 
-## Query 3: Checking the information of another theatre to compare 
-We run the exact same query as Query 1 for other theatres, like the Teatro Comunale di Bologna, to compare the results with Teatro Massimo di Palermo and identify possibile gaps: 
+## Query 3️⃣: Checking the information of another theatre to compare 
+We run the exact same query as Query 2 for other theatres, like the <a href= "https://it.wikipedia.org/wiki/Teatro_Comunale_(Bologna)">Teatro Comunale di Bologna</a>, to compare the results with Teatro Massimo di Palermo and identify possibile gaps: 
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -125,11 +127,11 @@ WHERE {
 ```
 **📊 Results**
 
-📍IRI of Teatro Comunale di Bologna 
+<a href="http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/107941"><strong>📍IRI of Teatro Comunale di Bologna</strong></a> 
 
 In this case, the description was richer compared to Teatro Massimo.
 
-## Query 4: Investigating for the properties in other theatres
+## Query 4️⃣: Investigating for the properties in other theatres
 Other than comparing to a specific theatre, we checked for the properties generally used to describe a “teatro” in ArCo:
 
 ```sparql
@@ -158,21 +160,20 @@ The query generated a long list of predicates related to various theatres. We us
 ## 🔍 Gaps identified
 Considering the results of Query 3 and Query 4 the gaps we thought could be added to enrich Teatro Massimo were: 
 <ul>
-  <li>🏷️ <strong>The full name<strong></li>
-  <li>👷‍♂️ <strong>The architects<strong></li>
-  <li>🎭 <strong>Events and performances hosted by the theatre<strong></li>
-  <li>🛠️ <strong>Restorations and interventions<strong></li>
-  <li>🏛️ <strong>Typology of architecture<strong></li>
-  <li>🔗 <strong>Wikidata link<strong></li>
-  <li>📝 <strong>Description<strong></li>
-  <li>📍 <strong>Latitude and longitude<strong></li>
-  <li>📷 <strong>Official image<strong></li>
+  <li>🏷️ <strong>The full name</strong></li>
+  <li>👷‍♂️ <strong>The architects</strong></li>
+  <li>🎭 <strong>Events and performances hosted by the theatre</strong></li>
+  <li>🛠️ <strong>Restorations and interventions</strong></li>
+  <li>🏛️ <strong>Typology of architecture</strong></li>
+  <li>🔗 <strong>Wikidata link</strong></li>
+  <li>📝 <strong>Description</strong></li>
+  <li>📍 <strong>Latitude and longitude</strong></li>
+  <li>📷 <strong>Official image</strong></li>
 </ul>
+
+    
 The next step was to run some queries to ensure these information were actually not present in ArCo.   
 
 
-## Query 🔍:
-
-_Testo di esempio…_
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
