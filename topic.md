@@ -32,5 +32,6 @@ This gap was particularly striking given the theatre’s **cultural, architectur
 
 By enriching the graph with structured data about the Teatro Massimo, we aimed to contribute to a more complete and inclusive representation of Italy’s cultural heritage within the semantic web.
 
+_
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
