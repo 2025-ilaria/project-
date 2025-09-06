@@ -13,8 +13,8 @@ Starting from a striking data gap in the **ArCo knowledge graph**, we applied a 
 
 ---
 
-# ⚠️Challenges 
----
+## ⚠️ Challenges 
+
 
 **🧠 CHOOSING OUR TOPIC**
 
@@ -22,7 +22,7 @@ One of the initial challenges we faced was identifying a **suitable topic** that
 While many well-known cultural heritage sites were already documented with detailed metadata, finding a meaningful gap required careful exploration. Discovering that 
 Teatro Massimo di Palermo, despite its status, lacked substantial structured data was both surprising and motivating. 
 
-**📌 How we overcame it**➡️Doing research and running SPARQL queries on ArCo
+**📌 How we overcame it** ➡️ Doing research and running SPARQL queries on ArCo.
 
 ---
 **🔍 SPARQL AND SEMANTIC EXPLORATION**
@@ -32,7 +32,7 @@ proved to be a powerful but **complex tool**: although it was initially difficul
 verify the availability of data. A significant part of the challenge also lay in identifying the correct **ArCo properties** to use, selecting the appropriate vocabulary
 often required careful analysis and a deep understanding of the ontology’s structure.
 
-**📌 How we overcame it**➡️ Reading documentation and analyzing existing SPARQL queries. 
+**📌 How we overcame it** ➡️ Reading documentation and analyzing existing SPARQL queries. 
 
 ---
 
@@ -40,14 +40,14 @@ often required careful analysis and a deep understanding of the ontology’s str
 
 It was not easy to find the right way to ask LLMs for structured data. We needed to experiment with **few-shot**, **zero-shot**, and **chain-of-thought** techniques.
 
-**📌 How we overcame it**➡️ learning prompt patterns.
+**📌 How we overcame it** ➡️ Learning prompt patterns.
 
 ---
 **🧩 RDF TRIPLES**
 
 Generating **RDF triples** also posed difficulties: identifying the correct **predicates** and crafting the right **prompts** required multiple iterations and a deepening understanding of both the ontology and the models. 
 
-**📌How we overcame it**➡️ Comparison, asking LLMs, analyzing existing triples.
+**📌How we overcame it** ➡️ Comparison, asking LLMs, analyzing existing triples.
 
 ---
 
@@ -56,11 +56,11 @@ Generating **RDF triples** also posed difficulties: identifying the correct **pr
 Another major challenge was building our website using **GitHub**. As first-time users, we needed time to understand how the platform works—how to organize files, use
 Markdown, and publish pages. Despite the initial learning curve, we successfully created a **functional** and **well-structured site** to present our work.
 
-**📌 How we overcame it**➡️ Experimentation and tutorials.
+**📌 How we overcame it** ➡️ Experimentation and tutorials.
 
 ---
 
-# 📍Final considerations 
+## 📍Final considerations 
 
 **🔸 SPARQL AND ONTOLOGICAL REASONING**
 
