@@ -8,7 +8,7 @@ title: Methodology
 ---
 This project focuses on the Teatro Massimo Vittorio Emanuele in Palermo, with the main goal of enriching the cultural heritage data available in the ArCo knowledge graph. The methodology combines the structured information already provided by ArCo with the generative capabilities of Large Language Models (LLMs), such as ChatGPT and Gemini.
 
-The step-by-step process includes: 
+##Step-by-step process: 
 
 🎯 **Topic Selection**: Defined the focus of the project on Teatro Massimo Vittorio Emanuele in Palermo, with the aim of enriching the ArCo knowledge graph by combining cultural heritage data with LLM-generated knowledge.
 
@@ -59,7 +59,7 @@ Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can
 
 -Identify data gaps and enrichments needed for cultural heritage representation.
 
-# 2️⃣ AND RDF TRIPLES: WHAT ARE THEY?
+## 2️⃣ AND RDF TRIPLES: WHAT ARE THEY?
 
 **RDF triples** are the fundamental building blocks of the Resource Description Framework (RDF), a standard model for representing structured data on the Semantic Web. Each triple expresses a single fact or statement about a resource and is composed of three parts:
 
@@ -74,11 +74,11 @@ Purpose of creation: By encoding information as triples, data becomes structured
 
 ## 3️⃣ WHAT ABOUT LLMs (Large Language Models)?
 
-LLMs, or Large Language Models, are a type of artificial intelligence (AI) that are trained on enormous datasets of text and code to understand, generate, and process human-like language. These deep learning models, often based on the transformer architecture, can perform tasks like translation, summarization, question answering, content creation, and code generation, making them powerful tools for various natural language processing applications. 
+LLMs, or **Large Language Models**, are a type of artificial intelligence (AI) that are trained on enormous datasets of text and code to understand, generate, and process human-like language. These deep learning models, often based on the transformer architecture, can perform tasks like translation, summarization, question answering, content creation, and code generation, making them powerful tools for various natural language processing applications. 
 
 ---
 
-We used CHATGPT and GEMINI⬇️
+We used **CHATGPT** and **GEMINI** ⬇️
 
 ChatGPT is an AI-powered conversational model created by OpenAI, built on the GPT (Generative Pretrained Transformer) architecture. It’s designed to interpret and produce human-like text. Trained on a wide range of textual data, it can engage in dialogue, create content, and support a variety of tasks.
 
