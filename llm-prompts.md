@@ -164,7 +164,10 @@ Does not strictly follow a chronological sequence, prioritizing a storytelling a
 -**Gemini**: Frames the reopening as a civic triumph and connects it to popular culture.
 
 
--**Overall**: ChatGPT’s approach is historical and factual, whereas Gemini’s is narrative and culturally rich.
+Overall⬇️: 
+**ChatGPT**’→ its approach is historical and factual.
+
+**Gemini**’→ it is narrative and culturally rich.
 
 
 ## 5️⃣ Missing information: Type of architecture
