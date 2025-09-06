@@ -54,9 +54,34 @@ Presented below is an explanation of the **SPARQL keywords** employed in the que
 </table>
 
 
-## Query 1️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo
-One of the theatres we checked was Teatro Massimo di Palermo:
+## Query 1: Checking the presence of Teatro Massimo di Palermo in ArCo
+We run a query to check if Teatro Massimo di Palermo was present on ArCo 
 
+Query:
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?site ?label
+WHERE { 
+  ?site a arco:HistoricOrArtisticProperty ;
+        rdfs:label ?label .
+  FILTER(REGEX(LCASE(STR(?label)), "teatro massimo"))
+}
+LIMIT 20
+
+```
+**📊 Results**
+
+foto 
+
+Using arco:HistoricOrArtisticProperty as class, we noticed that the results were only artistic representations of the theatre. To find the correct IRI of Teatro Massimo, we understood that we had to change class.
+
+## Query 2: Checking the presence of Teatro Massimo di Palermo in ArCo using another class
+
+We changed from arco: HistoricOrArtisticProperty to arco:CulturalInstituteOrSite.
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX cis: <http://dati.beniculturali.it/cis/>
@@ -68,15 +93,20 @@ WHERE {
         rdfs:label ?label .
   FILTER(REGEX(LCASE(STR(?label)), "teatro massimo"))
 }
+LIMIT 20
 
 ```
+
 **📊 Results**
 
+foto 
+
 While the first and the second links refer to “Archivio” and “Biblioteca”, the third link is the correct one for the Teatro Massimo and we identified it as the IRI. 
-We noticed that for Teatro Massimo in Palermo only very limited information was provided. This observation became the starting point of our investigation.
+📍IRI of Teatro Massimo 
+We noticed that only very limited information about this theatre was provided. This observation became the starting point of our investigation.
 
 
-## Query 2️⃣: Checking the information of another theatre to compare 
+## Query 3: Checking the information of another theatre to compare 
 We run the exact same query as Query 1 for other theatres, like the Teatro Comunale di Bologna, to compare the results with Teatro Massimo di Palermo and identify possibile gaps: 
 
 ```sparql
@@ -95,10 +125,11 @@ WHERE {
 ```
 **📊 Results**
 
+📍IRI of Teatro Comunale di Bologna 
 
 In this case, the description was richer compared to Teatro Massimo.
 
-## Query 3️⃣: Investigating for the properties in other theatres
+## Query 4: Investigating for the properties in other theatres
 Other than comparing to a specific theatre, we checked for the properties generally used to describe a “teatro” in ArCo:
 
 ```sparql
@@ -125,7 +156,7 @@ ORDER BY DESC(?property)
 The query generated a long list of predicates related to various theatres. We used it as reference. 
 
 ## 🔍 Gaps identified
-Considering the results of Query 2 and Query 3 the gaps we think can be added to enrich Teatro Massimo are: 
+Considering the results of Query 3 and Query 4 the gaps we thought could be added to enrich Teatro Massimo were: 
 <ul>
   <li>🏷️ <strong>The full name<strong></li>
   <li>👷‍♂️ <strong>The architects<strong></li>
@@ -135,9 +166,10 @@ Considering the results of Query 2 and Query 3 the gaps we think can be added to
   <li>🔗 <strong>Wikidata link<strong></li>
   <li>📝 <strong>Description<strong></li>
   <li>📍 <strong>Latitude and longitude<strong></li>
-  <li>📷 <strong>Official Photo<strong></li>
+  <li>📷 <strong>Official image<strong></li>
 </ul>
-Then we run some queries to ensure these information were actually not present in ArCo.
+The next step was to run some queries to ensure these information were actually not present in ArCo.   
+
 
 ## Query 🔍:
 
