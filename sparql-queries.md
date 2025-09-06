@@ -221,13 +221,13 @@ ORDER BY ?property
 LIMIT 50
 ```
 
-📝 **Analysing the query**
+📝 **Analysing the query**:
 
-- **`VALUES`**: Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.
+- **`VALUES`**: specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.
 - **`?theater ?property ?value`**: retrieves all direct properties and their corresponding values of the theater.
 - **`OPTIONAL`**: retrieves rdfs:label and cis:institutionalCISName if they exist, but the query will not fail if they are missing.
-- **`SELECT`**:specifies which variables (?label, ?institutionalName) are returned.
-- **`FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") REGEX(LCASE(STR(?value)), "emanuele", "i") )`**: filters results for values containing “massimo” or “emanuele” (case-insensitive).
+- **`SELECT`**: specifies which variables (?label, ?institutionalName) are returned.
+- **`FILTER + REGEX`**: filters results for values containing “massimo” or “emanuele” (case-insensitive).
 - **`ORDER BY ?property`**: sorts results by property.
 - **`LIMIT 50`**: limits the results to 50 rows.
     
@@ -270,13 +270,13 @@ LIMIT 10
 
 
 ```
-📝 **Analysing the query**
+📝 **Analysing the query**:
 
-- **`DISTINCT`**: Avoids duplicate architects if linked multiple times.
-- **`VALUES`**: Sets Teatro Massimo as the subject.
-- **`FILTER( !BOUND(?architectLabel) REGEX(LCASE(STR(?architectLabel)), "basile", "i") )`**: Filters results to include only architects whose label contains “basile” (case-insensitive).
-- **`OPTIONAL`**: Optionally retrieves the architect linked to the theater and, if available, the architect’s label. The query does not fail if this information is missing.
-- **`ORDER BY`**: Sorts the results alphabetically by name.
+- **`DISTINCT`**: avoids duplicate architects if linked multiple times.
+- **`VALUES`**: sets Teatro Massimo as the subject.
+- **`FILTER + REGEX`**: filters results to include only architects whose label contains “basile” (case-insensitive).
+- **`OPTIONAL`**: optionally retrieves the architect linked to the theater and, if available, the architect’s label. The query does not fail if this information is missing.
+- **`ORDER BY`**: sorts the results alphabetically by name.
 
 
 
