@@ -188,6 +188,112 @@ Considering the results of Query 3 and Query 4 the gaps we thought could be adde
     
 The next step was to run some queries to ensure these information were actually not present in ArCo.   
 
+## Query 5️⃣: Verifying the absence of the full name of the Teatro Massimo  
+
+As part of the enrichment of the ArCo knowledge graph, we submitted a SPARQL query to verify whether it contained information about the full name of the Teatro Massimo in Palermo (Teatro Massimo Vittorio Emanuele). This step was aimed at assessing the completeness of the dataset, since the graph often records only the shortened name (Teatro Massimo).
+
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cis: <http://dati.beniculturali.it/cis/>
+ 
+SELECT DISTINCT ?property ?value
+WHERE {
+  VALUES ?theater {
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+  }
+ 
+  {
+	?theater ?property ?value .
+  }
+  UNION
+  {
+	?theater ?p ?linkedResource .
+	OPTIONAL { ?linkedResource rdfs:label ?value . }
+	BIND(?p AS ?property)
+  }
+ 
+  FILTER(
+    REGEX(LCASE(STR(?value)), "massimo", "i") ||
+    REGEX(LCASE(STR(?value)), "emanuele", "i")
+  )
+}
+ORDER BY ?property
+LIMIT 50
+```
+
+📝 **Analysing the query**
+1) VALUES → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.
+
+2) ?theater ?property ?value . → retrieves all direct properties and their corresponding values of the theater
+
+3) OPTIONAL → retrieves rdfs:label and cis:institutionalCISName if they exist, but the query will not fail if they are missing.
+
+4) SELECT → specifies which variables (?label, ?institutionalName) are returned.
+
+5) FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") || REGEX(LCASE(STR(?value)), "emanuele", "i") ) → filters results for values containing “massimo” or “emanuele” (case-insensitive)
+
+6) ORDER BY ?property → sorts results by property
+
+7) LIMIT 50 → limits the results to 50 rows
+
+**📊 Results**: 
+
+foto 
+
+The query confirmed that ArCo does not contain the property that we seeked. 
+
+
+## Query 6️⃣: Verifying the absence of the full name of the Teatro Massimo
+To support the enrichment of the ArCo knowledge graph, we formulated a SPARQL query to investigate whether information about the architects of the Teatro Massimo in Palermo was already available. This step aimed to evaluate the coverage of the dataset regarding key contributors to the theatre’s design.
+
+```sparql
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ 
+SELECT DISTINCT ?architect ?architectLabel
+WHERE {
+  VALUES ?theatre {
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+  }
+ 
+
+  OPTIONAL {
+	?theatre arco:hasArchitect ?architect .
+	OPTIONAL { ?architect rdfs:label ?architectLabel . }
+  }
+ 
+
+  FILTER(
+    !BOUND(?architectLabel) ||
+    REGEX(LCASE(STR(?architectLabel)), "basile", "i")
+  )
+}
+ORDER BY ?architectLabel
+LIMIT 10
+
+
+```
+📝 **Analysing the query**
+
+DISTINCT → avoids duplicate architects if linked multiple times.
+
+
+VALUES → sets Teatro Massimo as the subject.
+
+
+FILTER( !BOUND(?architectLabel) || REGEX(LCASE(STR(?architectLabel)), "basile", "i") ) → filters results to include only architects whose label contains “basile” (case-insensitive), or allows results where the label is not defined (!BOUND(?architectLabel))
+
+OPTIONAL { ?theatre arco:hasArchitect ?architect . OPTIONAL { ?architect rdfs:label ?architectLabel . } } → optionally retrieves the architect linked to the theater (arco:hasArchitect) and, if available, the architect’s label (rdfs:label). The query does not fail if this information is missing
+
+
+ORDER BY → sorts the results alphabetically by name
+
+
+**📊 Results**: 
+
+foto 
+
+the query confirmed that ArCo does contain the property that we seeked. 
 
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
