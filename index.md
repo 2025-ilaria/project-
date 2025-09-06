@@ -22,7 +22,7 @@ The aim of our work was to investigate how information about this landmark is mo
 </p>
 
 <p>
-Through this process, we explored how <strong>AI-assisted semantic modeling</strong> can improve the representation of cultural heritage in structured datasets, bridging gaps and expanding knowledge accessibility.
+Through this process, we explored how <strong>AI-assistants</strong> can improve the representation of cultural heritage in structured datasets, bridging gaps and expanding knowledge accessibility.
 </p>
 
 
@@ -67,7 +67,7 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
     <li><span class="emoji">✅</span> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
     <li><span class="emoji">✅</span> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
     <li><span class="emoji">✅</span> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
-    <li><span class="emoji">✅</span> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
+    <li><span class="emoji">✅</span> Generate RDF triples to enrich the dataset using LLM-based assistants.</li>
     <li><span class="emoji">✅</span> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
   </ul>
 
@@ -109,7 +109,7 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
   </div>
 </div>
 
-<p>Students of the Master’s Degree in <a href="https://corsi.unibo.it/2cycle/LanguageSocietyCommunication">Language, Society and Communication at the University of Bologna</a>.</p>
+<p>Students of the Master’s Degree in <a href="https://corsi.unibo.it/2cycle/LanguageSocietyCommunication">Language, Society and Communication</a> at the University of Bologna.</p>
 
 <style>
   .team-container {
