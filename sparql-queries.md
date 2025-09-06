@@ -224,29 +224,15 @@ LIMIT 50
 📝 **Analysing the query**
 
 <ul>
-  <li>VALUES → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.</li>
-  <li>?theater ?property ?value . → retrieves all direct properties and their corresponding values of the theater.</li>
-  <li>OPTIONAL → retrieves rdfs:label and cis:institutionalCISName if they exist, but the query will not fail if they are missing.</li>
-  <li>SELECT → specifies which variables (?label, ?institutionalName) are returned.</li>
-  <li>FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") REGEX(LCASE(STR(?value)), "emanuele", "i") ) → filters results for values containing “massimo” or “emanuele” (case-insensitive).</li>
-  <li>ORDER BY ?property → sorts results by property.</li>
-  <li>LIMIT 50 → limits the results to 50 rows.</li>
+  <li>**`VALUES`** → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.</li>
+  <li>**`?theater ?property ?value .`** → retrieves all direct properties and their corresponding values of the theater.</li>
+  <li>**`OPTIONAL`** → retrieves rdfs:label and cis:institutionalCISName if they exist, but the query will not fail if they are missing.</li>
+  <li>**`SELECT`** → specifies which variables (?label, ?institutionalName) are returned.</li>
+  <li>**`FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") REGEX(LCASE(STR(?value)), "emanuele", "i") )`** → filters results for values containing “massimo” or “emanuele” (case-insensitive).</li>
+  <li>**`ORDER BY ?property`** → sorts results by property.</li>
+  <li>**`LIMIT 50`** → limits the results to 50 rows.</li>
 </ul>
 
-
-1) VALUES → Specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.
-
-2) ?theater ?property ?value . → retrieves all direct properties and their corresponding values of the theater
-
-3) OPTIONAL → retrieves rdfs:label and cis:institutionalCISName if they exist, but the query will not fail if they are missing.
-
-4) SELECT → specifies which variables (?label, ?institutionalName) are returned.
-
-5) FILTER( REGEX(LCASE(STR(?value)), "massimo", "i") REGEX(LCASE(STR(?value)), "emanuele", "i") ) → filters results for values containing “massimo” or “emanuele” (case-insensitive)
-
-6) ORDER BY ?property → sorts results by property
-
-7) LIMIT 50 → limits the results to 50 rows
 
 **📊 Results**: 
 
@@ -288,26 +274,13 @@ LIMIT 10
 📝 **Analysing the query**
 
 <ul>
-  <li><span style="color: #1f77b4; font-weight: bold;">DISTINCT</span> → Avoids duplicate architects if linked multiple times.</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">VALUES</span> → Sets Teatro Massimo as the subject.</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">FILTER( !BOUND(?architectLabel) REGEX(LCASE(STR(?architectLabel)), "basile", "i") )</span> → Filters results to include only architects whose label contains “basile” (case-insensitive), or allows results where the label is not defined (<code>!BOUND(?architectLabel)</code>).</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">OPTIONAL { ?theatre arco:hasArchitect ?architect . OPTIONAL { ?architect rdfs:label ?architectLabel . } }</span> → Optionally retrieves the architect linked to the theater (<code>arco:hasArchitect</code>) and, if available, the architect’s label (<code>rdfs:label</code>). The query does not fail if this information is missing.</li>
-  <li><span style="color: #1f77b4; font-weight: bold;">ORDER BY</span> → Sorts the results alphabetically by name.</li>
+  <li>**`DISTINCT`** → Avoids duplicate architects if linked multiple times.</li>
+  <li>**`VALUES`** → Sets Teatro Massimo as the subject.</li>
+  <li>**`FILTER( !BOUND(?architectLabel) REGEX(LCASE(STR(?architectLabel)), "basile", "i") )`**→ Filters results to include only architects whose label contains “basile” (case-insensitive).</li>
+  <li>**`OPTIONAL { ?theatre arco:hasArchitect ?architect . OPTIONAL { ?architect rdfs:label ?architectLabel . } }`** → Optionally retrieves the architect linked to the theater and, if available, the architect’s label. The query does not fail if this information is missing.</li>
+  <li>**`ORDER BY`**→ Sorts the results alphabetically by name.</li>
 </ul>
 
-
-DISTINCT → avoids duplicate architects if linked multiple times.
-
-
-VALUES → sets Teatro Massimo as the subject.
-
-
-FILTER( !BOUND(?architectLabel) || REGEX(LCASE(STR(?architectLabel)), "basile", "i") ) → filters results to include only architects whose label contains “basile” (case-insensitive), or allows results where the label is not defined (!BOUND(?architectLabel))
-
-OPTIONAL { ?theatre arco:hasArchitect ?architect . OPTIONAL { ?architect rdfs:label ?architectLabel . } } → optionally retrieves the architect linked to the theater (arco:hasArchitect) and, if available, the architect’s label (rdfs:label). The query does not fail if this information is missing
-
-
-ORDER BY → sorts the results alphabetically by name
 
 
 **📊 Results**: 
