@@ -119,7 +119,9 @@ The prompt we wrote uses a **few-shot technique** by providing Chat GPT and Gemi
 <img width="602" height="458" alt="image" src="https://github.com/user-attachments/assets/ab9341d3-4ecc-4c21-9af2-1d4d9a762cc7" />
 
 
-✅ **LLMS comparison** ➡️ Both provided right answers, but:
+✅ **LLMS comparison**: 
+
+➡️ Both provided right answers, but:
 
 -**ChatGPT**: Focuses on specific events and examples, mentioning exact opera productions with dates, notable premieres, and concrete instances of ballet and concerts.
 
@@ -148,7 +150,9 @@ Using a **chain-of-Thought** technique, the question we wrote asks for a step-by
 <img width="602" height="621" alt="image" src="https://github.com/user-attachments/assets/1d0bdd97-33c7-41e4-8c44-c8fb2053ed6a" />
 <img width="602" height="549" alt="image" src="https://github.com/user-attachments/assets/e477746e-744d-4e82-989f-3c4c5626d771" />
 
-✅ **LLMS comparison** ➡️ Cheching on Wikipedia, we noticed that both provided right answers, but:
+✅ **LLMS comparison**:
+
+➡️ Cheching on Wikipedia, we noticed that both provided right answers, but:
 
 
 -**ChatGPT**: Adds an image; presents a chronological and technical structure (it follows the timeline from construction, decline, restoration, to reopening)
@@ -183,7 +187,7 @@ Using a **few-shot prompting technique**, we asked both ChatGPT and Gemini which
 
 <img width="602" height="404" alt="image" src="https://github.com/user-attachments/assets/6c5e5d16-9331-4727-ab05-160f8c95953b" />
 
-✅ **LLMS comparison**
+✅ **LLMS comparison**:
 
 Considering both answers, we thought the best description to add was “architettura civile”. 
 
@@ -200,7 +204,7 @@ We asked both ChatGPT and Gemini whether a Wikidata page about Teatro Massimo di
 
 <img width="576" height="436" alt="image" src="https://github.com/user-attachments/assets/7bf13c12-e657-4bd9-afc3-8d74d36d706e" />
 
-✅ **LLMS comparison**
+✅ **LLMS comparison**:
 
 They both provided the correct ID for Teatro Massimo.
 
@@ -219,7 +223,7 @@ We decided to write under the property **`l0:description`** some architectural i
 <img width="602" height="417" alt="image" src="https://github.com/user-attachments/assets/8b22d416-28ab-4d98-9471-c103c8084c35" />
 <img width="602" height="287" alt="image" src="https://github.com/user-attachments/assets/f10eb756-1b20-447f-ba2e-6b9598b63e3c" />
 
-✅ **LLMS comparison**
+✅ **LLMS comparison**:
 
 -**Gemini**: More text-heavy, with fluid prose and a narrative format. It separates into Exterior, Interior, and History & Significance, but the structure is less modular. Formatting is standard (bold/italics only) and it emphasizes historical background more.
 
@@ -255,7 +259,7 @@ We asked both ChatGPT and Gemini for information about the latitude and longitud
 
 <img width="602" height="240" alt="image" src="https://github.com/user-attachments/assets/bb73b291-5eda-4a87-862a-468bb479972a" />
 
-✅ **LLMS comparison**
+✅ **LLMS comparison**:
 
 They both gave the exact same answer, but Chat GPT was more precise giving also the sources from which it gathered information (<a href="https://www.outdooractive.com/en/">Outdooractive</a> and <a href="https://mapcarta.com/">Mapcarta</a>).
 
@@ -272,7 +276,7 @@ We asked both ChatGPT and Gemini for the URL of a picture of the Teatro di Paler
 
 <img width="602" height="323" alt="image" src="https://github.com/user-attachments/assets/2a3c3b23-cec6-4174-a14d-ca76d76dee18" />
 
-✅ **LLMS comparison**
+✅ **LLMS comparison**:
 
 Checking the information reported by both the LLMs we noticed that while ChatGPT was accurate, Gemini presented a discrepancy. In fact, the Author stated by Gemini (Iacopo Nuti) did not correspond to the Autor written in Wikidata (Vitoparisi92): 
 
