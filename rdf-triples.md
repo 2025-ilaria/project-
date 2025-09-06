@@ -211,7 +211,7 @@ We asked Chat to create it using the following information:
 > 📌
 > - Subject typed as `arco:CulturalInstituteOrSite`
 > - Predicate: it links the theatre to three distinct restoration interventions.
-> - Object: it is declared as `arco:hasIntervention` and provided with `rdfs:label` describing the interven
+> - Object: it is declared as `arco:hasIntervention` and provided with `rdfs:label` describing the intervention
 
 ---
 ## 5️⃣RDF Triple for type of architecture
