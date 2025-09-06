@@ -192,6 +192,8 @@ The next step was to run some queries to ensure these information were actually 
 
 As part of the enrichment of the ArCo knowledge graph, we submitted a SPARQL query to verify whether it contained information about the full name of the Teatro Massimo in Palermo: **Teatro Massimo Vittorio Emanuele**. This step was aimed at assessing the completeness of the dataset, since the graph often records only the shortened name (Teatro Massimo).
 
+**🔍 Query**:
+
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX cis: <http://dati.beniculturali.it/cis/>
@@ -240,8 +242,10 @@ foto
 The query confirmed that ArCo does not contain the property that we seeked. 
 
 
-## Query 6️⃣: Verifying the absence of the full name of the Teatro Massimo
-To support the enrichment of the ArCo knowledge graph, we formulated a SPARQL query to investigate whether information about the architects of the Teatro Massimo in Palermo was already available. This step aimed to evaluate the coverage of the dataset regarding key contributors to the theatre’s design.
+## Query 6️⃣: Verifying the absence of the architects
+To support the enrichment of the ArCo knowledge graph, we formulated a SPARQL query to investigate whether information about the **architects** of the Teatro Massimo in Palermo was already available. This step aimed to evaluate the coverage of the dataset regarding key contributors to the theatre’s design.
+
+**🔍 Query**:
 
 ```sparql
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
@@ -285,6 +289,62 @@ LIMIT 10
 foto 
 
 the query confirmed that ArCo does contain the property that we seeked. 
+
+
+## Query 7️⃣: verifying the absence of events and performances hosted by teatro massimo 
+In continuity with the previous steps, we also created a SPARQL query to interrogate the ArCo knowledge graph about the events and performances hosted by the Teatro Massimo in Palermo. The aim was to verify whether the dataset already documented the wide range of cultural activities associated with the theatre, such as **opera productions**, **concerts**, **ballet**, and **festivals**.
+
+**🔍 Query**:
+
+```sparql
+
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ 
+SELECT DISTINCT ?activity ?activityLabel
+WHERE {
+  VALUES ?theatre {
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+  }
+ 
+  {
+	OPTIONAL {
+  	?theatre arco:hasActivity ?activity .
+  	OPTIONAL { ?activity rdfs:label ?activityLabel . }
+	}
+  }
+  UNION
+  {
+	OPTIONAL {
+  	?theatre arco:hasEvent ?activity .
+  	OPTIONAL { ?activity rdfs:label ?activityLabel . }
+	}
+  }
+ 
+  FILTER(
+    !BOUND(?activityLabel) ||
+    REGEX(LCASE(STR(?activityLabel)), "opera|concert|ballet|show", "i")
+  )
+}
+ORDER BY ?activityLabel
+LIMIT 50
+```
+📝 **Analysing the query**:
+
+
+- **`OPTIONAL`**: optionally retrieves activities linked directly to the theater via **`arco:hasActivity`**, and if available, also retrieves the label of each activity. The query does not fail if this information is missing.
+- **`OPTIONAL`**: optionally retrieves events linked to the theater via **`arco:hasEvent`**, and if available, also retrieves their label. Again, the query does not fail if this information is missing.
+- **`FILTER + REGEX`**: restricts results to labels containing opera, ballet, concert, or festival (case-insensitive).
+
+
+
+**📊 Results**: 
+foto
+The results showed blank spaces. 
+
+
+
+
 
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
