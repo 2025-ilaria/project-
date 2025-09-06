@@ -7,6 +7,7 @@ title: SPARQL queries
 
 
 ---
+In this section, we examine all the <strong>queries<strong> employed in the study of the <strong>Teatro Massimo di Palermo<strong> within the <strong>ArCo knowledge graph<strong>.
 ## Query 1️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo
 One of the theatres we checked was Teatro Massimo di Palermo:
 
