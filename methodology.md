@@ -6,7 +6,7 @@ title: Methodology
 # <strong>Methodology<strong>
 
 ---
-In this section, we present the methodology employed in the study of the Teatro Massimo di Palermo, including a **step-by-step description of the process** as well as **explanations of the tools used** .
+In this section, we present the methodology employed in the study of the Teatro Massimo di Palermo, including a **step-by-step description of the process** as well as an **explanations of the tools used** .
 
 
 ## Step-by-step process: 
