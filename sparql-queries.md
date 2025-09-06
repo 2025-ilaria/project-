@@ -73,13 +73,13 @@ WHERE {
 LIMIT 20
 
 ```
-**📊 Results**
+**📊 Results**:
 
 ![Immagine artistic](assets/css/Immagine%20artistic.jpeg)
 
 
 
-Using **`arco:HistoricOrArtisticProperty`** as class, we noticed that the results were only artistic representations of the theatre. To find the correct IRI of Teatro Massimo, we understood that we had to change class.
+Using **`arco:HistoricOrArtisticProperty`** as class, we noticed that the results were only artistic representations of the theatre. To find the correct <a href="https://it.wikipedia.org/wiki/Internationalized_Resource_Identifier">IRI</a> of Teatro Massimo, we understood that we had to change class.
 
 ## Query 2️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo using another class
 
@@ -102,11 +102,11 @@ LIMIT 20
 
 ```
 
-**📊 Results**
+**📊 Results**:
 
 foto 
 
-While the first and the second links refer to “Archivio” and “Biblioteca”, the third link is the correct one for the Teatro Massimo and we identified it as the <a href="https://it.wikipedia.org/wiki/Internationalized_Resource_Identifier">IRI</a>.
+While the first and the second links refer to “Archivio” and “Biblioteca”, the third link is the correct one for the Teatro Massimo and we identified it as the IRI.
 
 <a href="http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo"><strong>📍IRI of Teatro Massimo</strong></a> 
 We noticed that only very limited information about this theatre was provided. This observation became the starting point of our investigation.
@@ -131,7 +131,7 @@ WHERE {
 
 
 ```
-**📊 Results**
+**📊 Results**:
 
 <a href="http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/107941"><strong>📍IRI of Teatro Comunale di Bologna</strong></a> 
 
@@ -160,7 +160,7 @@ ORDER BY DESC(?property)
 
 
 ```
-**📊 Results** 
+**📊 Results**: 
 
 foto 
 
