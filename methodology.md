@@ -12,7 +12,7 @@ The step-by-step process includes:
 
 🎯 **Topic Selection**: Defined the focus of the project on Teatro Massimo Vittorio Emanuele in Palermo, with the aim of enriching the ArCo knowledge graph by combining cultural heritage data with LLM-generated knowledge.
 
-🔎 **Exploration of ArCo**: Carried out a systematic exploration of the ArCo knowledge graph [ArCo](http://wit.istc.cnr.it/arco)
+🔎 **Exploration of ArCo**: Carried out a systematic exploration of the knowledge graph [ArCo](http://wit.istc.cnr.it/arco)
  to identify what information was already available about Teatro Massimo, and to gain an initial understanding of its data coverage.
 
 📊 **Gap Analysis**: Identified missing data by comparing the ArCo page of Teatro Massimo with that of the Teatro Comunale of Bologna, which provided a more complete knowledge structure.
