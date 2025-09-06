@@ -76,6 +76,8 @@ LIMIT 20
 **📊 Results**
 
 ![Immagine artistic](assets/Immagine%20artistic.jpeg)
+![Immagine artistic](assets/Immagine_artistic.jpeg)
+
 
 
 Using **`arco:HistoricOrArtisticProperty`** as class, we noticed that the results were only artistic representations of the theatre. To find the correct IRI of Teatro Massimo, we understood that we had to change class.
