@@ -35,7 +35,7 @@ It was not easy to find the right way to ask LLMs for structured data. We needed
 
 Generating **RDF triples** also posed difficulties: identifying the correct **predicates** and crafting the right **prompts** required multiple iterations and a deepening understanding of both the ontology and the models. 
 
-**📌How we overcame it**➡️ Comparison, asking LLMs, analyzing existing triples
+**📌How we overcame it**➡️ Comparison, asking LLMs, analyzing existing triples.
 
 ---
 
