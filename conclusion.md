@@ -85,4 +85,4 @@ This not only helps close existing data gaps but also paves the way for more inc
 
 ---
 
-[Torna alla Home]({{ '/' | relative_url }})
+[⬅️Torna alla Home]({{ '/' | relative_url }})
