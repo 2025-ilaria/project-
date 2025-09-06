@@ -18,7 +18,7 @@ Our focus was the <strong>Teatro Massimo di Palermo</strong>, one of the most ic
 </p>
 
 <p>
-The aim of our work was to investigate how information about this landmark is modeled in ArCo, identify missing or incomplete data, and propose semantic enrichments. To achieve this, we combined <a href="https://en.wikipedia.org/wiki/SPARQL"><strong>SPARQL querying techniques</strong></a> with the use of <a href="https://en.wikipedia.org/wiki/Large_language_model"><strong>Large Language Models (LLMs)</strong></a>, which allowed us to generate <a href="https://en.wikipedia.org/wiki/Semantic_triple"><strong>RDF triples</strong></a> consistent with ArCo’s ontology.
+The aim of our work was to investigate how information about this landmark is modeled in ArCo, identify missing or incomplete data, and propose semantic enrichments. To achieve this, we combined <a href="https://en.wikipedia.org/wiki/SPARQL"><strong>SPARQL querying techniques</strong></a> with the use of <a href="https://en.wikipedia.org/wiki/Large_language_model"><strong>Large Language Models (LLMs)</strong></a>, which allowed us to generate <a href="https://en.wikipedia.org/wiki/Semantic_triple"><strong>RDF triples</strong></a> consistent with <a href="http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl">ArCo’s ontology</a>.
 </p>
 
 <p>
@@ -66,8 +66,8 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
   <ul class="objectives-list">
     <li><span class="emoji">✅</span> Investigate how the Teatro Massimo di Palermo is currently represented in ArCo.</li>
     <li><span class="emoji">✅</span> Identify missing pieces of information (e.g., coordinates, images, metadata).</li>
-    <li><span class="emoji">✅</span> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
     <li><span class="emoji">✅</span> Test different prompting strategies (zero-shot, few-shot, CoT) with LLMs for RDF creation.</li>
+    <li><span class="emoji">✅</span> Generate RDF triples to enrich the dataset using ontology-compliant modeling.</li>
     <li><span class="emoji">✅</span> Evaluate the benefits and limitations of integrating LLMs into cultural heritage knowledge engineering.</li>
   </ul>
 
@@ -80,11 +80,11 @@ Through this process, we explored how <strong>AI-assisted semantic modeling</str
 <section id="tools" style="margin-top: 50px;">
   <h2>Tools</h2>
   <ul>
-    <li><a href="http://wit.istc.cnr.it/arco/" target="_blank"><strong>ArCo</strong></a></li>
-    <li><a href="https://dati.cultura.gov.it/sparql" target="_blank"><strong>ArCo SPARQL endpoint</strong></a></li>
-    <li><a href="https://chat.openai.com/" target="_blank"><strong>ChatGPT</strong></a></li>
-    <li><a href="https://gemini.google.com/?hl=it" target="_blank"><strong>Gemini</strong></a></li>
-    <li><a href="https://github.com/" target="_blank"><strong>GitHub</strong></a></li>
+    <li><a href="http://wit.istc.cnr.it/arco/"><strong>ArCo</strong></a></li>
+    <li><a href="https://dati.cultura.gov.it/sparql"><strong>ArCo SPARQL endpoint</strong></a></li>
+    <li><a href="https://chat.openai.com/"><strong>ChatGPT</strong></a></li>
+    <li><a href="https://gemini.google.com/?hl=it"><strong>Gemini</strong></a></li>
+    <li><a href="https://github.com/"><strong>GitHub</strong></a></li>
   </ul>
 </section>
 
