@@ -8,8 +8,7 @@ title: Conclusion
 
 ---
 
-Our project on the **Teatro Massimo di Palermo** demonstrated the powerful synergy between **semantic web technologies** and **Large Language Models (LLMs)** in the context of cultural heritage enrichment. 
-Starting from a striking data gap in the **ArCo knowledge graph**, we applied a structured methodology to retrieve, validate, and formalize missing cultural, architectural, and historical information about one of Italy’s most iconic opera houses.
+Our project on the **Teatro Massimo di Palermo** showed how **semantic web technologies** and **Large Language Models (LLMs)** can work together to improve the way we document and understand cultural heritage. We noticed that the **ArCo knowledge graph** was missing important information about this famous opera house, so we followed a step-by-step approach to collect, check, and organize details about its history, architecture, and cultural significance.
 
 ---
 
@@ -19,17 +18,16 @@ Starting from a striking data gap in the **ArCo knowledge graph**, we applied a 
 **🧠 CHOOSING OUR TOPIC**
 
 One of the initial challenges we faced was identifying a **suitable topic** that was both **culturally significant** and **underrepresented** in the ArCo Knowledge Graph.
-While many well-known cultural heritage sites were already documented with detailed metadata, finding a meaningful gap required careful exploration. Discovering that 
-Teatro Massimo di Palermo, despite its status, lacked substantial structured data was both surprising and motivating. 
+While many well-known cultural heritage sites were already documented with detailed information, finding a meaningful gap required careful exploration. Discovering that Teatro Massimo di Palermo, despite its status, lacked substantial structured data was both surprising and motivating. 
 
-**📌 How we overcame it** ➡️ Doing research and running SPARQL queries on ArCo.
+**📌 How we overcame it** ➡️ Doing meticulous research and running SPARQL queries on ArCo.
 
 ---
 **🔍 SPARQL AND SEMANTIC EXPLORATION**
 
 Exploring the ArCo knowledge graph and comparing it with other cultural institutions, such as the Teatro Comunale of Bologna, allowed us to identify specific gaps. SPARQL
-proved to be a powerful but **complex tool**: although it was initially difficult to understand, we progressively learned how to craft more accurate queries and use them to
-verify the availability of data. A significant part of the challenge also lay in identifying the correct **ArCo properties** to use, selecting the appropriate vocabulary
+proved to be a powerful but **complex tool**: although it was initially difficult to understand, we progressively learned how to write more accurate queries and use them to
+verify the availability of data. A significant part of the challenge consisted in identifying the correct **ArCo properties** to use, selecting the appropriate vocabulary
 often required careful analysis and a deep understanding of the ontology’s structure.
 
 **📌 How we overcame it** ➡️ Reading documentation and analyzing existing SPARQL queries. 
@@ -45,7 +43,7 @@ It was not easy to find the right way to ask LLMs for structured data. We needed
 ---
 **🧩 RDF TRIPLES**
 
-Generating **RDF triples** also posed difficulties: identifying the correct **predicates** and crafting the right **prompts** required multiple iterations and a deepening understanding of both the ontology and the models. 
+Generating **RDF triples** was also challenging: identifying the correct **predicates** and creating the right **prompts** required multiple iterations and a deepening understanding of both the ontology and the models. 
 
 **📌How we overcame it** ➡️ Comparison, asking LLMs, analyzing existing triples.
 
@@ -53,8 +51,7 @@ Generating **RDF triples** also posed difficulties: identifying the correct **pr
 
 **🌐 WEBSITE DEVELOPMENT ON GITHUB**
 
-Another major challenge was building our website using **GitHub**. As first-time users, we needed time to understand how the platform works—how to organize files, use
-Markdown, and publish pages. Despite the initial learning curve, we successfully created a **functional** and **well-structured site** to present our work.
+Another major challenge was building our website using **GitHub**. As first-time users, we needed time to understand how the platform works—how to organize files and publish pages. Despite the initial difficulties, we successfully created a **functional** and **well-structured site** to present our work.
 
 **📌 How we overcame it** ➡️ Experimentation and tutorials.
 
