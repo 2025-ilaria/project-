@@ -154,7 +154,7 @@ Using the **Chain-of-Thought prompting technique**, the question we wrote asks f
 
 ✅ **LLMS comparison**:
 
-➡️ Cheching on Wikipedia, we noticed that both provided right answers, but:
+➡️ Checking on Wikipedia, we noticed that both provided right answers, but:
 
 
 -**ChatGPT**: Adds an image; presents a chronological and technical structure (it follows the timeline from construction, decline, restoration, to reopening)
