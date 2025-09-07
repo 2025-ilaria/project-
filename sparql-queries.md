@@ -345,7 +345,7 @@ LIMIT 50
 The results showed blank spaces. 
 
 ## Query 8️⃣: verifying the absence of restorations and interventions carried out on the Teatro Massimo
-As a final step, we designed a SPARQL query to interrogate the ArCo knowledge graph about the restorations and interventions carried out on the Teatro Massimo in Palermo. The goal was to assess whether the dataset already included references to the theatre’s complex conservation history, which spans closures, structural works, and reopening phases.
+As a final step, we designed a SPARQL query to interrogate the ArCo knowledge graph about the **restorations and interventions** carried out on the Teatro Massimo in Palermo. The goal was to assess whether the dataset already included references to the theatre’s complex conservation history, which spans closures, structural works, and reopening phases.
 
 **🔍 Query**:
 
@@ -403,7 +403,7 @@ Again, the results showed blank spaces.
 
 ## Query 9️⃣: verifying the absence of the type of architecture
 
-Taking into account the example of Teatro comunale di Bologna, we found the description “architettura civile” under the property **`DC:Type`**. We ran a SPARQL query to check if this property was present on ArCo for the Teatro Massimo di Palermo. 
+Taking into account the example of Teatro comunale di Bologna, we found the description **“architettura civile”** under the property **`DC:Type`**. We ran a SPARQL query to check if this property was present on ArCo for the Teatro Massimo di Palermo. 
 
 
 **🔍 Query**:
@@ -457,6 +457,8 @@ This query showed no results.
 
 **📊 Results**: 
 
+<a href=""> ❌ Table</a
+
 ## Query 1️⃣1️⃣: verifying the absence of the architectural description
 
 **🔍 Query**:
@@ -470,17 +472,37 @@ This query showed no results.
 
 **📊 Results**: 
 
+<a href=""> ❌ Table</a
+
 ## Query 1️⃣2️⃣: verifying the absence of the latitude and longitude
+We run a query to check if the **latitude and longitude**, present in the description of the Teatro Comunale di Bologna, were not present in Teatro Massimo.
 
 **🔍 Query**:
 
 ```sparql
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?lat ?long
+WHERE {
+  <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo> 
+      geo:lat ?lat ;
+      geo:long ?long .
+}
+LIMIT 5
 
 ```
 
 📝 **Analysing the query**:
 
+- **`geo:lat ?lat ;`** → matches triples where the predicate is geo:lat and stores the object in **`?lat`**.
+- **`geo:lat ?long `** → matches triples where the predicate is geo:long and stores the object in **`?long`**.
 **📊 Results**: 
+
+<a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Flat+%3Flong%0D%0AWHERE+%7B%0D%0A++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++geo%3Alat+%3Flat+%3B%0D%0A++++++geo%3Along+%3Flong+.%0D%0A%7D%0D%0ALIMIT+5%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a
+
+Again, the results showed blank spaces.
+
 
 ## Query 1️⃣3️⃣: verifying the absence of the official image
 
@@ -493,5 +515,7 @@ This query showed no results.
 📝 **Analysing the query**:
 
 **📊 Results**: 
+
+<a href=""> ❌ Table</a
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
