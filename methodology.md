@@ -16,7 +16,7 @@ In this section, we present the methodology employed in the study of the Teatro 
 
 📊 **Comparison and Gap Identification**: we explored other theaters on ArCo for comparison and saw that, for example, the Teatro Comunale di Bologna had much more information, allowing us to identify the possible gaps.
 
-🕵️ **Gap Confirmation**: we verified the validity of these possible gaps by running SPARQL queries that allowed us to confirm that this information was not present in ArCo. confirming the absence of certain cultural, architectural, and historical details.
+🕵️ **Gap Confirmation**: we verified the validity of these possible gaps by running SPARQL queries that allowed us to confirm that this information was not present in ArCo.
 
 💡 **LLM-Assisted Knowledge Retrieval**: we designed targeted prompts (zero-shot, few-shot, and chain-of-thought inspired) to gather missing information from <a href="https://chatgpt.com/">ChatGPT</a> and <a href="https://gemini.google.com/app">Gemini</a>.
 
