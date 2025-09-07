@@ -37,7 +37,7 @@ and project presentation to document the methodology, results, and the role of L
 The **ArCo Knowledge Graph** is a structured and semantically enriched representation of the Italian cultural heritage, developed by the <a href="https://it.wikipedia.org/wiki/Istituto_centrale_per_il_catalogo_e_la_documentazione">Italian Institute of Cultural Heritage (ICCD)</a> and the <a href="https://en.wikipedia.org/wiki/Ministry_of_Culture_(Italy)">Italian Ministry of Culture</a>.
 It is built using <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Open Data (LOD)</a> principles and the <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Framework (RDF)</a>, and it is based on a set of domain-specific ontologies (<a href="http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl">the ArCo Ontologies</a>) that formally describe cultural heritage entities, such as artworks, monuments, archaeological sites, museums, archives, and their relationships.
 
-The main goal of ArCo is to transform the vast catalog of Italian cultural heritage into a machine-readable, interoperable, and reusable knowledge graph. 
+The main goal of ArCo is to transform the vast catalogue of Italian cultural heritage into a machine-readable, interoperable, and reusable knowledge graph. 
 
 ---
 
