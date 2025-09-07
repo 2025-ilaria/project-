@@ -22,7 +22,7 @@ In this section, we present the methodology employed in the study of the Teatro 
 
 ⚖️ **Cross-Model Comparison**: we compared and validated the outputs from both LLMs to ensure reliability and completeness of the new cultural data.
 
-📚 **RDF Triple Generation & Knowledge Graph Enrichment**: we converted new information into RDF triples aligned with the ArCo ontology and proposed Turtle-structured triples to extend the knowledge graph.
+📚 **RDF Triple Generation & Knowledge Graph Enrichment**: we converted new information into RDF triples aligned with the ArCo ontology and proposed <a href="https://en.wikipedia.org/wiki/Turtle_(syntax)">Turtle</a>-structured triples to extend the knowledge graph.
 
 🖥️ **Website and Presentation Development**: we built a [GitHub-based website](https://github.com/2025-ilaria/project-)
 and project presentation to document the methodology, results, and the role of LLMs in enriching a cultural heritage knowledge graph.
