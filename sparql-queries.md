@@ -540,6 +540,7 @@ LIMIT 10
 The query looks for descriptions of Teatro Massimo di Palermo in two possible ways:
 
   1) Directly attached using **`l0:description`**
+        
   2) Indirectly attached via a linked description resource (**`arco:hasDescription`**), which itself has a **`l0:description`** and possibly a label
    
 For each match, it returns:
