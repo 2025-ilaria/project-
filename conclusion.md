@@ -61,9 +61,9 @@ Another major challenge was building our website using **GitHub**. As first-time
 
 **🔸 SPARQL AND ONTOLOGICAL REASONING**
 
-By querying the ArCo knowledge graph and performing a gap analysis against more thoroughly documented sites (like the Teatro Comunale of Bologna), we were able to highlight
-clear areas of **missing data**. SPARQL proved to be an essential tool for validating these gaps, confirming the importance of **precise queries** and **well-understood
-ontologies** in cultural data retrieval.
+🔸 **SPARQL Queries **
+By exploring the ArCo knowledge graph and comparing it with better-documented sites (like the Teatro Comunale of Bologna), we found clear **gaps** in the data. **SPARQL** turned out to be a key tool for checking these gaps, showing why it’s important to write **accurate queries** and understand how the **ontology** works when working with cultural heritage data. 
+
 
 ---
 **🔸 LLMS AS KNOWLEDGE ALLIES**
