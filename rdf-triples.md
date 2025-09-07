@@ -234,7 +234,7 @@ Here the result: ➡️
     dc:type "architettura civile"@it .
 ```
 ---
-We asked Chat to create it using the following information: 
+We asked ChatGPT to generate this triple using the following information:  
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `dc:type`   
@@ -309,6 +309,7 @@ It generated the following triple:
 ```
 
 We asked ChatGPT to generate this triple using the following information: 
+
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `geo:lat`   
 > **Object:**  38.120167  
@@ -327,6 +328,7 @@ Here the result:➡️
 ```
 
 We asked ChatGPT to generate this triple using the following information: 
+
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `geo:long`   
 > **Object:**   13.357151
@@ -365,7 +367,7 @@ We noticed the predicate used for Teatro Comunale di Bologna for adding a pictur
 
 ➡️ Therefore, we decided to use `arco:hasReprentative`as predicate. 
 
-We used the following information: 
+We asked ChatGPT to generate this triple using the following information: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasRepresentative`   
