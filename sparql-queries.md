@@ -7,7 +7,7 @@ title: SPARQL queries
 
 
 ---
-In this section, we examine all the <strong>queries<strong> employed in the study of the <strong>Teatro Massimo di Palermo<strong> within the <strong>ArCo knowledge graph<strong>.
+In this section, we examine all the <strong>queries</strong> employed in the study of the <strong>Teatro Massimo di Palermo</strong> within the <strong>ArCo knowledge graph</strong>.
 
 Presented below is an explanation of the **SPARQL keywords** employed in the queries:
 
