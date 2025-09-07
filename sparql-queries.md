@@ -73,6 +73,16 @@ WHERE {
 LIMIT 20
 
 ```
+📝 **Analysing the query**:
+
+- **`SELECT`** → tells SPARQL which variables you want to display in the results table (here: **`?site`** and **`?label`**?).
+- **`DISTINCT`** → ensures that duplicate rows are removed from the results, so each result appears only once.
+- **`a`** → shortcut for **`rdf:type`**. It means **`?site`** is of type **`arco:HistoricOrArtisticProperty`**.
+- **`FILTER`** +  **`REGEX`** → narrows down the results according to a condition. Here it searches inside the string for the text "teatro massimo".
+- **`LCASE`** → converts all characters to lowercase, making the search case-insensitive.
+- **`LIMIT 20`** → restricts the results to at most 20 rows.
+
+  
 **📊 Results**:
 
 ![Immagine artistic](assets/css/Immagine%20artistic.jpeg)
@@ -101,7 +111,10 @@ WHERE {
 LIMIT 20
 
 ```
+📝 **Analysing the query**:
 
+- **`cis:CulturalInstituteOrSite`** → filters the query to resources classified as cultural institutes or sites, such as museums, archives, libraries, or theatres, according to the CIS (ICCD) vocabulary (**`arco:HistoricOrArtisticProperty`**, used in the previous query, filtered resources to historic or artistic properties, such as monuments, artworks, or heritage objects, from the ArCo ontology) .
+  
 **📊 Results**:
 
 ![Immagine arch](assets/css/Immagine%20arch.jpeg)
@@ -132,6 +145,11 @@ WHERE {
 
 
 ```
+
+📝 **Analysing the query**:
+
+- **`FILTER`** +  **`REGEX`** → limits the query results to only those **`?label`** values that contain the text "teatro comunale di Bologna"
+
 **📊 Results**:
 
 ![Immagine comunale](assets/css/Immagine%20comunale.jpeg)
@@ -162,8 +180,16 @@ WHERE {
 ORDER BY DESC(?property)
 
 
-
 ```
+
+📝 **Analysing the query**:
+**`?property ?value`** → variables representing a predicate-object pair.
+**`ORDER BY DESC(?property)`** → sort the results in descending order based on the ?property variable, so predicates with “higher” values appear first.
+**`FILTER`** +  **`REGEX`** → keeps only entities whose label (?l) contains the word “teatro”.
+
+
+
+
 **📊 Results**: 
 
 ![Immagine properties](assets/css/Immagine%20properties.jpeg)
@@ -433,9 +459,7 @@ LIMIT 10
 📝 **Analysing the query**:
 
 - **`dc:type`** - **`rdfs:label`** → retrieve the distinct types associated with the Teatro Massimo di Palermo resource, along with their optional labels.
-
 - **`FILTER + REGEX`** → filters the types to include only those containing the words “architettura” or “teatro”.
-
 - **`ORDER BY ?label`** → sorts the results alphabetically by label.
 
 
@@ -474,7 +498,7 @@ This query showed no results.
 
 <a href=""> ❌ Table</a
 
-## Query 1️⃣2️⃣: verifying the absence of the latitude and longitude
+## Query 1️⃣2️⃣: Verifying the absence of the latitude and longitude
 We run a query to check if the **latitude and longitude**, present in the description of the Teatro Comunale di Bologna, were not present in Teatro Massimo.
 
 **🔍 Query**:
@@ -495,8 +519,8 @@ LIMIT 5
 
 📝 **Analysing the query**:
 
-- **`geo:lat ?lat ;`** → matches triples where the predicate is geo:lat and stores the object in **`?lat`**.
-- **`geo:lat ?long `** → matches triples where the predicate is geo:long and stores the object in **`?long`**.
+- **`geo:lat ?lat ;`** → matches triples where the predicate is **`geo:lat`** and stores the object in **`?lat`**.
+- **`geo:lat ?long .`** → matches triples where the predicate is **`geo:long`** and stores the object in **`?long`**.
   
 **📊 Results**: 
 
