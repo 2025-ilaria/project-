@@ -43,7 +43,7 @@ It was not easy to find the right way to ask LLMs for structured data. We needed
 ---
 **🧩 RDF TRIPLES**
 
-Generating **RDF triples** was also challenging: identifying the correct **predicates** and creating the right **prompts** required multiple iterations and a deepening understanding of both the ontology and the models. 
+Generating **RDF triples** was also challenging: identifying the correct **predicates** and creating the right **prompts** required multiple iterations and a deep understanding of both the ontology and the models. 
 
 **📌How we overcame it** ➡️ Comparison, asking LLMs, analyzing existing triples.
 
@@ -51,7 +51,7 @@ Generating **RDF triples** was also challenging: identifying the correct **predi
 
 **🌐 WEBSITE DEVELOPMENT ON GITHUB**
 
-Another major challenge was building our website using **GitHub**. As first-time users, we needed time to understand how the platform works—how to organize files and publish pages. Despite the initial difficulties, we successfully created a **functional** and **well-structured site** to present our work.
+Another major challenge was building our website using **GitHub**. As first-time users, we needed time to understand how the platform works—how to organize files and publish pages. Despite the initial difficulties, we successfully created a **well-structured site** to present our work.
 
 **📌 How we overcame it** ➡️ Experimentation and tutorials.
 
