@@ -233,7 +233,7 @@ Here the result: ➡️
     rdfs:label "Teatro Massimo Vittorio Emanuele, Palermo"@it ;
     dc:type "architettura civile"@it .
 ```
----
+
 We gave ChatGPT the following information to generate the RDF triple:  
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
