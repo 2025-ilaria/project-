@@ -30,7 +30,7 @@ proved to be a powerful but **complex tool**: although it was initially difficul
 verify the availability of data. A significant part of the challenge consisted in identifying the correct **ArCo properties** to use, selecting the appropriate vocabulary
 often required careful analysis and a deep understanding of the ontology’s structure.
 
-**📌 How we overcame it** ➡️ Reading documentation and analyzing existing SPARQL queries. 
+**📌 How we overcame it** ➡️ Analyzing existing SPARQL queries. 
 
 ---
 
@@ -45,7 +45,7 @@ It was not easy to find the right way to ask LLMs for structured data. We needed
 
 Generating **RDF triples** was also challenging: identifying the correct **predicates** and creating the right **prompts** required multiple iterations and a deep understanding of both the ontology and the models. 
 
-**📌How we overcame it** ➡️ Comparison, asking LLMs, analyzing existing triples.
+**📌How we overcame it** ➡️ Asking LLMs and analyzing existing triples.
 
 ---
 
