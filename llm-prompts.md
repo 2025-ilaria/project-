@@ -213,7 +213,7 @@ They both provided the correct ID for Teatro Massimo.
 ## 7️⃣ Missing information: architectural description
 
 
-We decided to write under the property **`l0:description`** some architectural information; we first started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using the **zero-shot prompting technique**: 
+We decided to write under the property **`l0:description`** some architectural information; we started by asking both ChatGpt and Gemini some architectural information about Teatro Massimo di Palermo, using the **zero-shot prompting technique**: 
 
 ### [ChatGPT](https://chat.openai.com/)
 
@@ -242,12 +242,12 @@ Overall ⬇️:
 -**ChatGPT** → Modular, visually engaging, detailed, and skimmable; stronger for presentations, quick reading, and broader coverage.
 
 
-Another thing we asked ChatGPT was the difference between arco:hasDescription and l0:description, to understand which property would be more suitable for inserting various architectural information in text form. We asked ChatGPT, which would be the best option, using a **chain-of-thought technique**:
+Another thing we asked ChatGPT was the difference between **`arco:hasDescription`** and **`l0:description`**, to understand which property would be more suitable for inserting various architectural information in text form. We asked ChatGPT, which would be the best option, using a **chain-of-thought technique**:
 
 <img width="602" height="544" alt="image" src="https://github.com/user-attachments/assets/3426f095-07b4-476d-9755-9224b9e1935b" />
 <img width="560" height="454" alt="image" src="https://github.com/user-attachments/assets/aebfcd9f-0403-4cbf-8e88-3069aa60d9d1" />
 
-In conclusion, we opted for l0:description because we thought it was the most appropriate choice given the kind of description we wanted to add. 
+In conclusion, we opted for **`l0:description`** because we thought it was the most appropriate choice given the kind of description we wanted to add. 
 
 ## 8️⃣ Missing information: latitude and longitude
 
