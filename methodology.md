@@ -41,7 +41,7 @@ The main goal of ArCo is to transform the vast catalog of Italian cultural herit
 
 ---
 
-**ArCo SPARQL** refers to the SPARQL endpoint of the ArCo knowledge graph. It is the official query service that allows users to interrogate and retrieve data from ArCo using the SPARQL query language (the W3C standard for querying RDF data).
+**ArCo SPARQL** refers to the SPARQL endpoint of the ArCo knowledge graph. It is the official query service that allows users to interrogate and retrieve data from ArCo using the SPARQL query language.
 
 Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can:
 
@@ -55,11 +55,11 @@ Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can
 
 **RDF triples** are the fundamental building blocks of the Resource Description Framework (RDF), a standard model for representing structured data on the Semantic Web. Each triple expresses a single fact or statement about a resource and is composed of three parts:
 
--**Subject** – the resource being described, usually represented as a URI.
+-**Subject** – the resource being described, usually represented as a IRI.
 
 -**Predicate** – the property or type of relationship connecting the subject to the object (in our case case from the ArCo ontology)
 
--**Object** – the value or target of the property. It can be another URI (another resource) or a literal value (string, number, date).
+-**Object** – the value or target of the property. It can be another IRI (another resource) or a literal value (string, number, date).
 
 Purpose of creation: By encoding information as triples, data becomes structured, linkable, and queryable, forming a knowledge graph that machines can reason over and humans can explore.
 
