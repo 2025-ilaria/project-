@@ -14,7 +14,7 @@ title: Home
 <h2>About the Project</h2>
 <p>
 This project was developed within the framework of the <strong>KE4H (Knowledge Engineering for the Humanities)</strong> course at the <a href="https://www.unibo.it/">University of Bologna</a>.<br>
-Our focus was the <strong>Teatro Massimo di Palermo</strong>, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in <a href="https://dati.beniculturali.it/arco/index.php"><strong>ArCo</strong></a>, the knowledge graph of Italian Cultural Heritage.
+Our focus was the <strong>Teatro Massimo di Palermo</strong>, one of the most iconic opera houses in Italy and the largest in the country. Despite its cultural, historical, and artistic importance, we noticed that the Teatro Massimo is only partially represented in <a href="https://dati.beniculturali.it/arco/index.php"><strong>ArCo</strong></a>, the <a href="https://en.wikipedia.org/wiki/Knowledge_graph"></a>knowledge graph of Italian Cultural Heritage.
 </p>
 
 <p>
