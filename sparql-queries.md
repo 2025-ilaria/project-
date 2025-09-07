@@ -471,32 +471,86 @@ This query showed no results.
 
 ## Query 1️⃣0️⃣: verifying the absence of the wikidata link
 
+I ran a SPARQL query to verify whether ArCo contains a **Wikidata link** related to the Teatro Massimo di Palermo. 
+
+
 **🔍 Query**:
 
 ```sparql
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?p ?o
+WHERE {
+  <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo> ?p ?o .
+  FILTER (STRSTARTS(STR(?o), "https://www.wikidata.org/entity/") || STRSTARTS(STR(?o), "https://www.wikidata.org/wiki/"))
+}
+
 
 ```
 
 📝 **Analysing the query**:
 
+- **`FILTER (STRSTARTS(...))`**  → Restricts results to those where the object **`(?o)`** is a string starting with a specific URL (in this case, a Wikidata entity).
+
+
 **📊 Results**: 
 
-<a href=""> ❌ Table</a
+<a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fp+%3Fo%0D%0AWHERE+%7B%0D%0A++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%3Fp+%3Fo+.%0D%0A++FILTER+%28STRSTARTS%28STR%28%3Fo%29%2C+%22https%3A%2F%2Fwww.wikidata.org%2Fentity%2F%22%29+%7C%7C+STRSTARTS%28STR%28%3Fo%29%2C+%22https%3A%2F%2Fwww.wikidata.org%2Fwiki%2F%22%29%29%0D%0A%7D%0D%0A%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a>
 
 ## Query 1️⃣1️⃣: verifying the absence of the architectural description
+The next step was to verify the absence of a **description of the architecture** of Teatro Massimo. 
 
 **🔍 Query**:
 
 ```sparql
+PREFIX l0: <https://w3id.org/italia/onto/l0/>
+PREFIX arco: <https://w3id.org/arco/ontology/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?property ?descriptionText ?descriptionLabel
+WHERE {
+  {
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+      l0:description ?descriptionText .
+    BIND("l0:description" AS ?property)
+    BIND("" AS ?descriptionLabel)
+  }
+  UNION
+  {
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>
+      arco:hasDescription ?descResource .
+    BIND("arco:hasDescription" AS ?property)
+    ?descResource l0:description ?descriptionText .
+    OPTIONAL { ?descResource rdfs:label ?descriptionLabel }
+  }
+}
+ORDER BY ?property ?descriptionText
+LIMIT 10
 
 ```
 
 
 📝 **Analysing the query**:
+The query looks for descriptions of Teatro Massimo di Palermo in two possible ways:
+<ul>
+  <li>Directly attached using **`l0:description`**</li>
+  <li>Indirectly attached via a linked description resource (**`arco:hasDescription`**), which itself has a **`l0:description`** and possibly a label</li>
+</ul>
+
+   
+For each match, it returns:
+<ul>
+<li></li>Which property was used (**`?property`**)</li>
+<li>The description text (**`?descriptionText`**)</li>
+<li>An optional label for the description (**`?descriptionLabel`**)</li>
+
+</ul>
 
 **📊 Results**: 
 
-<a href=""> ❌ Table</a
+<a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+l0%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2Fl0%2F%3E%0D%0APREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcore%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty+%3FdescriptionText+%3FdescriptionLabel%0D%0AWHERE+%7B%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E%0D%0A++++++l0%3Adescription+%3FdescriptionText+.%0D%0A++++BIND%28%22l0%3Adescription%22+AS+%3Fproperty%29%0D%0A++++BIND%28%22%22+AS+%3FdescriptionLabel%29%0D%0A++%7D%0D%0A++UNION%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E%0D%0A++++++arco%3AhasDescription+%3FdescResource+.%0D%0A++++BIND%28%22arco%3AhasDescription%22+AS+%3Fproperty%29%0D%0A++++%3FdescResource+l0%3Adescription+%3FdescriptionText+.%0D%0A++++OPTIONAL+%7B+%3FdescResource+rdfs%3Alabel+%3FdescriptionLabel+%7D%0D%0A++%7D%0D%0A%7D%0D%0AORDER+BY+%3Fproperty+%3FdescriptionText%0D%0ALIMIT+10%0D%0A%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a
 
 ## Query 1️⃣2️⃣: Verifying the absence of the latitude and longitude
 We run a query to check if the **latitude and longitude**, present in the description of the Teatro Comunale di Bologna, were not present in Teatro Massimo.
