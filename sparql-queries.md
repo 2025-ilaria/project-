@@ -497,9 +497,10 @@ LIMIT 5
 
 - **`geo:lat ?lat ;`** → matches triples where the predicate is geo:lat and stores the object in **`?lat`**.
 - **`geo:lat ?long `** → matches triples where the predicate is geo:long and stores the object in **`?long`**.
+  
 **📊 Results**: 
 
-<a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Flat+%3Flong%0D%0AWHERE+%7B%0D%0A++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++geo%3Alat+%3Flat+%3B%0D%0A++++++geo%3Along+%3Flong+.%0D%0A%7D%0D%0ALIMIT+5%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a
+<a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Flat+%3Flong%0D%0AWHERE+%7B%0D%0A++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++geo%3Alat+%3Flat+%3B%0D%0A++++++geo%3Along+%3Flong+.%0D%0A%7D%0D%0ALIMIT+5%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a>
 
 Again, the results showed blank spaces.
 
