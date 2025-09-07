@@ -61,7 +61,6 @@ Another major challenge was building our website using **GitHub**. As first-time
 
 **🔸 SPARQL AND ONTOLOGICAL REASONING**
 
-🔸 **SPARQL Queries **
 By exploring the ArCo knowledge graph and comparing it with better-documented sites (like the Teatro Comunale of Bologna), we found clear **gaps** in the data. **SPARQL** turned out to be a key tool for checking these gaps, showing why it’s important to write **accurate queries** and understand how the **ontology** works when working with cultural heritage data. 
 
 
@@ -75,8 +74,7 @@ with structured examples, underlining the importance of model-aware prompting st
 ---
 **🔸KNOWLEDGE INTEGRATION AND IMPACT**
 
-The retrieved knowledge was transformed into **RDF triples** aligned with ArCo ontologies and formatted in **Turtle syntax**, ready to be integrated into the semantic web. 
-This not only helps close existing data gaps but also paves the way for more inclusive and representative cultural heritage knowledge graphs.
+The information we collected was turned into **RDF triples** that match ArCo’s data structure and formatted in **Turtle syntax**, ready to be added to the semantic web. This helps fill in missing data and makes cultural heritage knowledge graphs more complete and representative.
 
 
 
