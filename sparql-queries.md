@@ -9,10 +9,10 @@ title: SPARQL queries
 ---
 In this section, we examine all the <strong>queries</strong> employed in the study of the <strong>Teatro Massimo di Palermo</strong> within the <strong>ArCo knowledge graph</strong>.
 
-Presented below is an explanation of the **SPARQL keywords** employed in the queries:
-
 
 <h2>SPARQL Keywords Explained</h2>
+
+Presented below is an explanation of the **SPARQL keywords** employed in the queries:
 
 <table style="width:100%;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">
   <thead>
@@ -24,38 +24,38 @@ Presented below is an explanation of the **SPARQL keywords** employed in the que
   <tbody>
     <tr>
       <td style="padding:8px;font-weight:700;">DISTINCT</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Ensures that the results returned are unique (no duplicates).</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Ensures that the results returned are unique (no duplicates)</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">FILTER</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Restricts the results to those that satisfy a certain condition.</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Restricts the results to those that satisfy a certain condition</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">REGEX</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">A type of filter for matching text using regular expressions.</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">A type of filter for matching text using regular expressions</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">OPTIONAL</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Includes extra information if available, without excluding results when data is missing.</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Includes extra information if available, without excluding results when data is missing</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">UNION</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Combines results from multiple query patterns.</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Combines results from multiple query patterns</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">LIMIT</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Restricts the maximum number of results returned by the query.</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Restricts the maximum number of results returned by the query</td>
     </tr>
     <tr>
       <td style="padding:8px;font-weight:700;">ORDER BY</td>
-      <td style="padding:8px;border-bottom:1px solid #ddd;">Sorts results by a variable.</td>
+      <td style="padding:8px;border-bottom:1px solid #ddd;">Sorts results by a variable</td>
     </tr>
   </tbody>
 </table>
 
 
-## Query 1️⃣: checking the presence of Teatro Massimo di Palermo in ArCo
-We run a query to check if Teatro Massimo di Palermo was present on ArCo. 
+## Query 1️⃣: Checking the presence of the Teatro Massimo di Palermo in ArCo
+We run a query to check if Teatro Massimo di Palermo was present in ArCo. 
 
 **🔍 Query**:
 
@@ -81,7 +81,7 @@ LIMIT 20
 
 Using **`arco:HistoricOrArtisticProperty`** as class, we noticed that the results were only artistic representations of the theatre. To find the correct <a href="https://it.wikipedia.org/wiki/Internationalized_Resource_Identifier">IRI</a> of Teatro Massimo, we understood that we had to change class.
 
-## Query 2️⃣: checking the presence of Teatro Massimo di Palermo in ArCo using another class
+## Query 2️⃣: Checking the presence of Teatro Massimo di Palermo in ArCo using another class
 
 We changed from **`arco:HistoricOrArtisticProperty`** to **`cis:CulturalInstituteOrSite`**.
 
@@ -113,8 +113,8 @@ While the first and the second links refer to “Archivio” and “Biblioteca�
 We noticed that only very limited information about this theatre was provided. This observation became the starting point of our investigation.
 
 
-## Query 3️⃣: checking the information of another theatre to compare 
-We run the exact same query as Query 2 for other theatres, like the <a href= "https://it.wikipedia.org/wiki/Teatro_Comunale_(Bologna)">Teatro Comunale di Bologna</a>, to compare the results with Teatro Massimo di Palermo and identify possibile gaps.
+## Query 3️⃣: Checking the information of another theatre to compare 
+We run the exact same query as Query 2 for other theatres, like the <a href= "https://it.wikipedia.org/wiki/Teatro_Comunale_(Bologna)">Teatro Comunale di Bologna</a>, to compare the results with the Teatro Massimo di Palermo and identify possibile gaps.
 
 **🔍 Query**:
 
@@ -139,9 +139,9 @@ WHERE {
 
 <a href="http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/107941"><strong>📍IRI of Teatro Comunale di Bologna</strong></a> 
 
-In this case, the description was richer compared to Teatro Massimo.
+In this case, the description was richer compared to the one of the Teatro Massimo.
 
-## Query 4️⃣: investigating for the properties in other theatres
+## Query 4️⃣: Investigating for the properties in other theatres
 Other than comparing to a specific theatre, we checked for the properties generally used to describe a “teatro” in ArCo.
 
 **🔍 Query**:
@@ -186,11 +186,11 @@ Considering the results of Query 3 and Query 4 the gaps we thought could be adde
 </ul>
 
     
-The next step was to run some queries to ensure these information were actually not present in ArCo.   
+📌 The next step was to run some queries to ensure these information were actually not present in ArCo 📌   
 
 ## Query 5️⃣: verifying the absence of the full name of the Teatro Massimo  
 
-As part of the enrichment of the ArCo knowledge graph, we submitted a SPARQL query to verify whether it contained information about the full name of the Teatro Massimo in Palermo: **Teatro Massimo Vittorio Emanuele**. This step was aimed at assessing the completeness of the dataset, since the graph often records only the shortened name (Teatro Massimo).
+As part of the enrichment of the ArCo knowledge graph, we submitted a SPARQL query to verify whether it contained information about the full name of the Teatro Massimo di Palermo: **Teatro Massimo Vittorio Emanuele**. This step was aimed at assessing the completeness of the dataset, since the graph often records only the shortened name (Teatro Massimo).
 
 **🔍 Query**:
 
@@ -227,9 +227,9 @@ LIMIT 50
 
 - **`VALUES`** → specifies the theatre we are querying, setting the Teatro Massimo IRI as the subject.
 - **`?theater ?property ?value`** → retrieves all direct properties and their corresponding values of the theater.
-- **`OPTIONAL`** → retrieves rdfs:label and cis:institutionalCISName if they exist, but the query will not fail if they are missing.
-- **`SELECT`** → specifies which variables are returned.
-- **`FILTER + REGEX`** → filters results for values containing “massimo” or “emanuele” (case-insensitive).
+- **`OPTIONAL`** → tries to retrieve extra information (like **`rdfs:label`** for a linked resource). If that data doesn’t exist, the result is still returned without it.
+- **`UNION`** combines two different query patterns. Results matching either the first or the second block are included.
+- **`FILTER + REGEX`** → filters results for values containing “massimo” or “emanuele”.
 - **`ORDER BY ?property`** → sorts results by property.
 - **`LIMIT 50`** → limits the results to 50 rows.
     
@@ -242,7 +242,7 @@ LIMIT 50
 The query confirmed that ArCo does not contain the property that we seeked. 
 
 
-## Query 6️⃣: verifying the absence of the architects
+## Query 6️⃣: Verifying the absence of the architects
 To support the enrichment of the ArCo knowledge graph, we formulated a SPARQL query to investigate whether information about the **architects** of the Teatro Massimo in Palermo was already available. This step aimed to evaluate the coverage of the dataset regarding key contributors to the theatre’s design.
 
 **🔍 Query**:
@@ -278,7 +278,7 @@ LIMIT 10
 
 - **`DISTINCT`** → avoids duplicate architects if linked multiple times.
 - **`VALUES`** → sets Teatro Massimo as the subject.
-- **`FILTER + REGEX`** → filters results to include only architects whose label contains “basile” (case-insensitive).
+- **`FILTER + REGEX`** → filters results to include only architects whose label contains “basile”.
 - **`OPTIONAL`** → optionally retrieves the architect linked to the theater and, if available, the architect’s label. The query does not fail if this information is missing.
 - **`ORDER BY`** → sorts the results alphabetically by name.
 
@@ -291,8 +291,8 @@ LIMIT 10
 The query confirmed that ArCo does contain the property that we seeked. 
 
 
-## Query 7️⃣: verifying the absence of events and performances hosted by teatro massimo 
-In continuity with the previous steps, we also created a SPARQL query to interrogate the ArCo knowledge graph about the **events and performances** hosted by the Teatro Massimo in Palermo. The aim was to verify whether the dataset already documented the wide range of cultural activities associated with the theatre, such as opera productions, concerts, ballet, and festivals.
+## Query 7️⃣: Verifying the absence of events and performances hosted by teatro massimo 
+In continuity with the previous steps, we also created a SPARQL query to interrogate the ArCo knowledge graph about the **events and performances** hosted by the Teatro Massimo di Palermo. The aim was to verify whether the dataset already documented the wide range of cultural activities associated with the theatre, such as opera productions, concerts, ballet, and festivals.
 
 **🔍 Query**:
 
@@ -334,7 +334,7 @@ LIMIT 50
 
 - **`OPTIONAL`** → optionally retrieves activities linked directly to the theater via **`arco:hasActivity`**, and if available, also retrieves the label of each activity. The query does not fail if this information is missing.
 - **`OPTIONAL`** → optionally retrieves events linked to the theater via **`arco:hasEvent`**, and if available, also retrieves their label. Again, the query does not fail if this information is missing.
-- **`FILTER + REGEX`** → restricts results to labels containing opera, ballet, concert, or festival (case-insensitive).
+- **`FILTER + REGEX`** → restricts results to labels containing opera, ballet, concert, or festival.
 
 
 
@@ -344,8 +344,8 @@ LIMIT 50
 
 The results showed blank spaces. 
 
-## Query 8️⃣: verifying the absence of restorations and interventions carried out on the Teatro Massimo
-As a final step, we designed a SPARQL query to interrogate the ArCo knowledge graph about the **restorations and interventions** carried out on the Teatro Massimo in Palermo. The goal was to assess whether the dataset already included references to the theatre’s complex conservation history, which spans closures, structural works, and reopening phases.
+## Query 8️⃣: Verifying the absence of restorations and interventions carried out on the Teatro Massimo
+Next, we designed a SPARQL query to interrogate the ArCo knowledge graph about the **restorations and interventions** carried out on the Teatro Massimo in Palermo. The goal was to assess whether the dataset already included references to the theatre’s complex conservation history, which spans closures, structural works, and reopening phases.
 
 **🔍 Query**:
 
@@ -388,9 +388,9 @@ LIMIT 50
 ```
 📝 **Analysing the query**:
 
-- **`OPTIONAL`** → optionally retrieves interventions linked to the theater via **`arco:Intervention`**, and if available, also retrieves the label (rdfs:label) of each intervention. The query does not fail if this information is missing.
-- **`OPTIONAL`** → optionally retrieves restoration descriptions linked to the theater via **`arco:Restoration`**. It also binds the theater itself to ?intervention so the variable is always defined.
-- **`FILTER + REGEX`** → filters results to include only labels containing “restoration”, “restauro”, “intervention”, or “consolidation” (case-insensitive), or allows results where the label is not defined.
+- **`OPTIONAL`** → optionally retrieves interventions linked to the theater via **`arco:Intervention`**, and if available, also retrieves the label (**`rdfs:label`**) of each intervention. The query does not fail if this information is missing.
+- **`OPTIONAL`** → optionally retrieves restoration descriptions linked to the theater via **`arco:Restoration`**.
+- **`FILTER + REGEX`** → filters results to include only labels containing “restoration”, “restauro”, “intervention”, or “consolidation”, or allows results where the label is not defined.
 
 
 
@@ -401,9 +401,9 @@ LIMIT 50
 Again, the results showed blank spaces.
 
 
-## Query 9️⃣: verifying the absence of the type of architecture
+## Query 9️⃣: Verifying the absence of the type of architecture
 
-Taking into account the example of Teatro comunale di Bologna, we found the description **“architettura civile”** under the property **`DC:Type`**. We ran a SPARQL query to check if this property was present on ArCo for the Teatro Massimo di Palermo. 
+Taking into account the example of Teatro comunale di Bologna, we found the description **“architettura civile”** under the property **`dc:type`**. We ran a SPARQL query to check if this property was present on ArCo for the Teatro Massimo di Palermo. 
 
 
 **🔍 Query**:
@@ -432,9 +432,9 @@ LIMIT 10
 ```
 📝 **Analysing the query**:
 
-- **`dc:type`** - **`rdfs:label`** → This query retrieves the distinct types associated with the Teatro Massimo di Palermo resource, along with their optional labels.
+- **`dc:type`** - **`rdfs:label`** → retrieve the distinct types associated with the Teatro Massimo di Palermo resource, along with their optional labels.
 
-- **`FILTER + REGEX`** → filters the types to include only those containing the words “architettura” or “teatro” (case-insensitive).
+- **`FILTER + REGEX`** → filters the types to include only those containing the words “architettura” or “teatro”.
 
 - **`ORDER BY ?label`** → sorts the results alphabetically by label.
 
