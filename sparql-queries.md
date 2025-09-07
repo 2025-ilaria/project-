@@ -215,7 +215,7 @@ Considering the results of Query 3 and Query 4 the gaps we thought could be adde
     
 📌 The next step was to run some queries to ensure these information were actually not present in ArCo: ⬇️   
 
-## Query 5️⃣: verifying the absence of the full name of the Teatro Massimo  
+## Query 5️⃣: Verifying the absence of the full name of the Teatro Massimo  
 
 As part of the enrichment of the ArCo knowledge graph, we submitted a SPARQL query to verify whether it contained information about the full name of the Teatro Massimo di Palermo: **Teatro Massimo Vittorio Emanuele**. This step was aimed at assessing the completeness of the dataset, since the graph often records only the shortened name (Teatro Massimo).
 
@@ -318,7 +318,7 @@ LIMIT 10
 The query confirmed that ArCo does contain the property that we seeked. 
 
 
-## Query 7️⃣: Verifying the absence of events and performances hosted by teatro massimo 
+## Query 7️⃣: Verifying the absence of events and performances hosted by Teatro Massimo 
 In continuity with the previous steps, we also created a SPARQL query to interrogate the ArCo knowledge graph about the **events and performances** hosted by the Teatro Massimo di Palermo. The aim was to verify whether the dataset already documented the wide range of cultural activities associated with the theatre, such as opera productions, concerts, ballet, and festivals.
 
 **🔍 Query**:
@@ -470,7 +470,7 @@ LIMIT 10
 
 This query showed no results.
 
-## Query 1️⃣0️⃣: verifying the absence of the wikidata link
+## Query 1️⃣0️⃣: Verifying the absence of the wikidata link
 
 We ran a SPARQL query to verify whether ArCo contains a **Wikidata link** related to the Teatro Massimo di Palermo. 
 
@@ -499,6 +499,8 @@ WHERE {
 **📊 Results**: 
 
 <a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fp+%3Fo%0D%0AWHERE+%7B%0D%0A++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%3Fp+%3Fo+.%0D%0A++FILTER+%28STRSTARTS%28STR%28%3Fo%29%2C+%22https%3A%2F%2Fwww.wikidata.org%2Fentity%2F%22%29+%7C%7C+STRSTARTS%28STR%28%3Fo%29%2C+%22https%3A%2F%2Fwww.wikidata.org%2Fwiki%2F%22%29%29%0D%0A%7D%0D%0A%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a>
+
+This query showed no results.
 
 ## Query 1️⃣1️⃣: verifying the absence of the architectural description
 The next step was to verify the absence of a **description of the architecture** of Teatro Massimo. 
@@ -535,7 +537,7 @@ LIMIT 10
 
 📝 **Analysing the query**:
 
-- The query looks for descriptions of Teatro Massimo di Palermo in two possible ways:
+The query looks for descriptions of Teatro Massimo di Palermo in two possible ways:
 
   1) Directly attached using **`l0:description`**
   2) Indirectly attached via a linked description resource (**`arco:hasDescription`**), which itself has a **`l0:description`** and possibly a label
@@ -550,6 +552,8 @@ For each match, it returns:
 **📊 Results**: 
 
 <a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+l0%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2Fl0%2F%3E%0D%0APREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcore%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty+%3FdescriptionText+%3FdescriptionLabel%0D%0AWHERE+%7B%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E%0D%0A++++++l0%3Adescription+%3FdescriptionText+.%0D%0A++++BIND%28%22l0%3Adescription%22+AS+%3Fproperty%29%0D%0A++++BIND%28%22%22+AS+%3FdescriptionLabel%29%0D%0A++%7D%0D%0A++UNION%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E%0D%0A++++++arco%3AhasDescription+%3FdescResource+.%0D%0A++++BIND%28%22arco%3AhasDescription%22+AS+%3Fproperty%29%0D%0A++++%3FdescResource+l0%3Adescription+%3FdescriptionText+.%0D%0A++++OPTIONAL+%7B+%3FdescResource+rdfs%3Alabel+%3FdescriptionLabel+%7D%0D%0A++%7D%0D%0A%7D%0D%0AORDER+BY+%3Fproperty+%3FdescriptionText%0D%0ALIMIT+10%0D%0A%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a>
+
+This query showed no results.
 
 ## Query 1️⃣2️⃣: Verifying the absence of the latitude and longitude
 We run a query to check if the **latitude and longitude**, present in the description of the Teatro Comunale di Bologna, were not present in Teatro Massimo.
@@ -582,7 +586,7 @@ LIMIT 5
 Again, the results showed blank spaces.
 
 
-## Query 1️⃣3️⃣: verifying the absence of the official image
+## Query 1️⃣3️⃣: Verifying the absence of the official image
 
 **🔍 Query**:
 
@@ -614,11 +618,11 @@ LIMIT 10
 
 📝 **Analysing the query**:
 
-- The three properties used in the query to check for images of the **Teatro Massimo di Palermo** are:
+The three properties used in the query to check for images of the **Teatro Massimo di Palermo** are:
 
-1. **`foaf:depiction`** – from the FOAF (Friend of a Friend) vocabulary; links a resource to an image that depicts it.
-2. **`arco:hasRepresentative`** – from the ArCo ontology; usually points to a representative image of the cultural entity.
-3. **`arco:hasDigitalRepresentation`** – from the ArCo ontology; links to any digital representation of the resource, including images.
+- **`foaf:depiction`** – from the FOAF (Friend of a Friend) vocabulary; links a resource to an image that depicts it.
+- **`arco:hasRepresentative`** – from the ArCo ontology; usually points to a representative image of the cultural entity.
+- **`arco:hasDigitalRepresentation`** – from the ArCo ontology; links to any digital representation of the resource, including images.
 
 These cover all the common ways images might be stored in ArCo for a Cultural Institute or Site.
 
@@ -627,7 +631,7 @@ These cover all the common ways images might be stored in ArCo for a Cultural In
 
 **📊 Results**: 
 
-<a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fimage%0D%0AWHERE+%7B%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++foaf%3Adepiction+%3Fimage+.%0D%0A++%7D%0D%0A++UNION%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++arco%3AhasRepresentative+%3Fimage+.%0D%0A++%7D%0D%0A++UNION%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++arco%3AhasDigitalRepresentation+%3Fimage+.%0D%0A++%7D%0D%0A%7D%0D%0ALIMIT+10%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a
+<a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fimage%0D%0AWHERE+%7B%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++foaf%3Adepiction+%3Fimage+.%0D%0A++%7D%0D%0A++UNION%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++arco%3AhasRepresentative+%3Fimage+.%0D%0A++%7D%0D%0A++UNION%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++arco%3AhasDigitalRepresentation+%3Fimage+.%0D%0A++%7D%0D%0A%7D%0D%0ALIMIT+10%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a>
 
 Again, the results showed blank spaces.
 
