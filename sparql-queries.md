@@ -432,9 +432,7 @@ LIMIT 10
 ```
 📝 **Analysing the query**:
 
-- **`dc:type`** → retrieves the distinct types associated with the Teatro Massimo resource.
-
-- **`rdfs:label`** → optionally retrieves the labels of each type; the query does not fail if a label is missing.
+- **`dc:type`** - **`rdfs:label`** → This query retrieves the distinct types associated with the Teatro Massimo di Palermo resource, along with their optional labels.
 
 - **`FILTER + REGEX`** → filters the types to include only those containing the words “architettura” or “teatro” (case-insensitive).
 
@@ -447,5 +445,53 @@ LIMIT 10
 
 This query showed no results.
 
+## Query 1️⃣0️⃣: verifying the absence of the wikidata link
+
+**🔍 Query**:
+
+```sparql
+
+```
+
+📝 **Analysing the query**:
+
+**📊 Results**: 
+
+## Query 1️⃣1️⃣: verifying the absence of the architectural description
+
+**🔍 Query**:
+
+```sparql
+
+```
+
+
+📝 **Analysing the query**:
+
+**📊 Results**: 
+
+## Query 1️⃣2️⃣: verifying the absence of the latitude and longitude
+
+**🔍 Query**:
+
+```sparql
+
+```
+
+📝 **Analysing the query**:
+
+**📊 Results**: 
+
+## Query 1️⃣3️⃣: verifying the absence of the official image
+
+**🔍 Query**:
+
+```sparql
+
+```
+
+📝 **Analysing the query**:
+
+**📊 Results**: 
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
