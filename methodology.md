@@ -14,7 +14,7 @@ In this section, we present the methodology employed in the study of the Teatro 
 
 🔍 **Exploration on ArCo**: we executed a SPARQL query on the [ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql), in order to verify the presence of Teatro Massimo on <a href="https://dati.beniculturali.it/arco/index.php">ArCo</a>. Even though it was present, we noticed that there was very little information available.
 
-📊 **Comparison and Gap Identification**: we explored other theaters on ArCo for comparison and saw that, for example, the Teatro Comunale in Bologna had much more information, allowing us to identify the possible gaps.
+📊 **Comparison and Gap Identification**: we explored other theaters on ArCo for comparison and saw that, for example, the Teatro Comunale di Bologna had much more information, allowing us to identify the possible gaps.
 
 🕵️ **Gap Confirmation**: we verified the validity of these possible gaps by running SPARQL queries that allowed us to confirm that this information was not present in ArCo. confirming the absence of certain cultural, architectural, and historical details.
 
