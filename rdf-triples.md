@@ -28,7 +28,7 @@ Here the result: ➡️
     cis:institutionalCISName "Teatro Massimo Vittorio Emanuele"@it .
 ```
 ---
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `cis:institutionalCISName`  
@@ -66,7 +66,7 @@ It generated the following triple: ➡️
     rdfs:label "Ernesto Basile"@it .
 ```
 
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple:  
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasArchitect`  
@@ -167,7 +167,7 @@ ex:FestivalEvent
     rdfs:comment "Seasonal festivals and special cultural events, including the Summer Programme at Teatro di Verdura and educational outreach programs such as Massimo's Young Musicians and Children at the Opera."@en .
 ```
 
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasEvent`  
@@ -204,7 +204,7 @@ It generated the following triple: ➡️
     a arco:Intervention ;
     rdfs:label "Reopening and modernization completed (1980s–1997)"@en .
 ```
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasIntervention`   
@@ -234,7 +234,7 @@ Here the result: ➡️
     dc:type "architettura civile"@it .
 ```
 ---
-We asked ChatGPT to generate this triple using the following information:  
+We gave ChatGPT the following information to generate the RDF triple:  
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `dc:type`   
@@ -259,7 +259,7 @@ Here the result: ➡️
     owl:sameAs <https://www.wikidata.org/entity/Q261439> .
 ```
 
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `owl:sameAs`   
@@ -285,7 +285,7 @@ Here the result: ➡️
 The symbolic wooden ceiling consists of 11 panels that open like petals for natural ventilation. Interior decorations include red velvet, gilded woodwork, mirrors, stuccoes, and frescoes. The furnishings were designed by Vittorio Ducrot under the direction of Ernesto Basile. Notable rooms include the mahogany-and-brocade Royal Box, the Mirror Room, and the Pompeian Hall, all reflecting classical and liberty aesthetics."""@en .
 ```
 
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `l0:description`   
@@ -308,7 +308,7 @@ It generated the following triple:
     geo:lat "38.120167" .
 ```
 
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `geo:lat`   
@@ -327,7 +327,7 @@ Here the result:➡️
     geo:long "13.357151" .
 ```
 
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `geo:long`   
@@ -367,7 +367,7 @@ We noticed the predicate used for Teatro Comunale di Bologna for adding a pictur
 
 ➡️ Therefore, we decided to use `arco:hasReprentative`as predicate. 
 
-We asked ChatGPT to generate this triple using the following information: 
+We gave ChatGPT the following information to generate the RDF triple: 
 
 > **Subject:**  Teatro Massimo di Palermo, IRI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo>.   
 > **Predicate:** `arco:hasRepresentative`   
