@@ -536,19 +536,16 @@ LIMIT 10
 📝 **Analysing the query**:
 
 - The query looks for descriptions of Teatro Massimo di Palermo in two possible ways:
-<ul>
-  <li>Directly attached using **`l0:description`**</li>
-  <li>Indirectly attached via a linked description resource (**`arco:hasDescription`**), which itself has a **`l0:description`** and possibly a label</li>
-</ul>
 
+  1) Directly attached using **`l0:description`**
+  2) Indirectly attached via a linked description resource (**`arco:hasDescription`**), which itself has a **`l0:description`** and possibly a label
    
 For each match, it returns:
 
-<li></li>Which property was used (**`?property`**)</li>
-<li>The description text (**`?descriptionText`**)</li>
-<li>An optional label for the description (**`?descriptionLabel`**)</li>
+- Which property was used (**`?property`**)
+- The description text (**`?descriptionText`**)
+- An optional label for the description (**`?descriptionLabel`**)
 
-</ul>
 
 **📊 Results**: 
 
@@ -590,13 +587,48 @@ Again, the results showed blank spaces.
 **🔍 Query**:
 
 ```sparql
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT ?image
+WHERE {
+  {
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo> 
+        foaf:depiction ?image .
+  }
+  UNION
+  {
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo> 
+        arco:hasRepresentative ?image .
+  }
+  UNION
+  {
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S012166_Teatro_Massimo> 
+        arco:hasDigitalRepresentation ?image .
+  }
+}
+LIMIT 10
+
 
 ```
 
 📝 **Analysing the query**:
 
+- The three properties used in the query to check for images of the **Teatro Massimo di Palermo** are:
+
+1. **`foaf:depiction`** – from the FOAF (Friend of a Friend) vocabulary; links a resource to an image that depicts it.
+2. **`arco:hasRepresentative`** – from the ArCo ontology; usually points to a representative image of the cultural entity.
+3. **`arco:hasDigitalRepresentation`** – from the ArCo ontology; links to any digital representation of the resource, including images.
+
+These cover all the common ways images might be stored in ArCo for a Cultural Institute or Site.
+
+- **`UNION`** --> ensures that any image linked through any of the three properties will be returned.
+
+
 **📊 Results**: 
 
-<a href=""> ❌ Table</a
+<a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fimage%0D%0AWHERE+%7B%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++foaf%3Adepiction+%3Fimage+.%0D%0A++%7D%0D%0A++UNION%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++arco%3AhasRepresentative+%3Fimage+.%0D%0A++%7D%0D%0A++UNION%0D%0A++%7B%0D%0A++++%3Chttp%3A%2F%2Fdati.beniculturali.it%2Ficcd%2Fschede%2Fresource%2FCulturalInstituteOrSite%2FS012166_Teatro_Massimo%3E+%0D%0A++++++++arco%3AhasDigitalRepresentation+%3Fimage+.%0D%0A++%7D%0D%0A%7D%0D%0ALIMIT+10%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on"> ❌ Table</a
+
+Again, the results showed blank spaces.
 
 [⬅️ Torna alla home]({{ '/' | relative_url }})
