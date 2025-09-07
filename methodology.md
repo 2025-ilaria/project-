@@ -29,13 +29,13 @@ and project presentation to document the methodology, results, and the role of L
 
 ---
 
-📌  _Let's take a closer look at the specific tools we used throughout the project_  📌 :
+📌  _Let's take a closer look at the specific tools we used throughout the project_: ⬇️
 
 
 ## 1️⃣ ArCo and ArCo SPARQL endpoint: what are they?
 
-The **ArCo Knowledge Graph** is a structured and semantically enriched representation of the Italian cultural heritage, developed by the Italian Institute of Cultural Heritage (ICCD) and the Italian Ministry of Culture.
-It is built using Linked Open Data (LOD) principles and the Resource Description Framework (RDF), and it is based on a set of domain-specific ontologies (the ArCo Ontologies) that formally describe cultural heritage entities, such as artworks, monuments, archaeological sites, museums, archives, and their relationships.
+The **ArCo Knowledge Graph** is a structured and semantically enriched representation of the Italian cultural heritage, developed by the <a href="https://it.wikipedia.org/wiki/Istituto_centrale_per_il_catalogo_e_la_documentazione">Italian Institute of Cultural Heritage (ICCD)</a> and the <a href="https://en.wikipedia.org/wiki/Ministry_of_Culture_(Italy)">Italian Ministry of Culture</a>.
+It is built using <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Open Data (LOD)</a> principles and the <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Framework (RDF)</a>, and it is based on a set of domain-specific ontologies (<a href="http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl">the ArCo Ontologies</a>) that formally describe cultural heritage entities, such as artworks, monuments, archaeological sites, museums, archives, and their relationships.
 
 The main goal of ArCo is to transform the vast catalog of Italian cultural heritage into a machine-readable, interoperable, and reusable knowledge graph. 
 
@@ -53,9 +53,9 @@ Through the ArCo SPARQL endpoint, researchers, developers, and practitioners can
 
 ## 2️⃣ And RDF Triples: what are they?
 
-**RDF triples** are the fundamental building blocks of the Resource Description Framework (RDF), a standard model for representing structured data on the Semantic Web. Each triple expresses a single fact or statement about a resource and is composed of three parts:
+**RDF triples** are the fundamental building blocks of the Resource Description Framework (RDF), a standard model for representing structured data on the <a href= "https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a>. Each triple expresses a single fact or statement about a resource and is composed of three parts:
 
--**Subject** – the resource being described, usually represented as a IRI.
+-**Subject** – the resource being described, usually represented as a <a href="https://it.wikipedia.org/wiki/Internationalized_Resource_Identifier">IRI</a>.
 
 -**Predicate** – the property or type of relationship connecting the subject to the object (in our case case from the ArCo ontology)
 
@@ -66,18 +66,18 @@ Purpose of creation: By encoding information as triples, data becomes structured
 
 ## 3️⃣ What about LLMs (Large Language Models)?
 
-LLMs, or **Large Language Models**, are a type of artificial intelligence (AI) that are trained on enormous datasets of text and code to understand, generate, and process human-like language. These deep learning models, often based on the transformer architecture, can perform tasks like translation, summarization, question answering, content creation, and code generation, making them powerful tools for various natural language processing applications. 
+LLMs, or **Large Language Models**, are a type of <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">artificial intelligence (AI)</a> that are trained on enormous <a href="https://en.wikipedia.org/wiki/Data_set">datasets</a> of text and code to understand, generate, and process human-like language. These deep learning models, often based on the transformer architecture, can perform tasks like translation, summarization, question answering, content creation, and code generation, making them powerful tools for various natural language processing applications. 
 
 ---
 
 We used **CHATGPT** and **GEMINI** ⬇️
 
-ChatGPT is an AI-powered conversational model created by OpenAI, built on the GPT (Generative Pretrained Transformer) architecture. It’s designed to interpret and produce human-like text. Trained on a wide range of textual data, it can engage in dialogue, create content, and support a variety of tasks.
+ChatGPT is an AI-powered conversational model created by OpenAI, built on the <a href="https://en.wikipedia.org/wiki/Generative_pre-trained_transformer">GPT (Generative Pretrained Transformer)</a> architecture. It’s designed to interpret and produce human-like text. Trained on a wide range of textual data, it can engage in dialogue, create content, and support a variety of tasks.
 
-Gemini is a collection of AI models developed by Google DeepMind, aimed at combining the strengths of large language models with advanced reasoning and problem-solving skills. It leverages state-of-the-art techniques to improve the model’s capacity to generate nuanced, context-aware responses across a wide range of topics.
+Gemini is a collection of AI models developed by <a href="https://en.wikipedia.org/wiki/Google_DeepMind">Google DeepMind</a>, aimed at combining the strengths of large language models with advanced reasoning and problem-solving skills. It leverages <a href="https://en.wikipedia.org/wiki/State_of_the_art">state-of-the-art</a> techniques to improve the model’s capacity to generate nuanced, context-aware responses across a wide range of topics.
 
 ## 4️⃣ And finally, what is GitHub?
-**GitHub** is an online platform that allows developers to store, manage, and collaborate on code projects using a system called Git, which tracks changes to files over time. It functions as both a repository and a social workspace, letting programmers work together on the same project without overwriting each other’s work. Every change is recorded, so previous versions can be reviewed or restored, making it easier to manage complex projects. GitHub also enables collaboration through features like branching, pull requests, and issue tracking, which allow multiple contributors to propose changes, discuss improvements, and merge updates safely.
+**GitHub** is an online platform that allows developers to store, manage, and collaborate on code projects using a system called <a href="https://en.wikipedia.org/wiki/Git">Git</a>, which tracks changes to files over time. It functions as both a <a href="https://en.wikipedia.org/wiki/Repository">repository</a> and a social workspace, letting programmers work together on the same project without overwriting each other’s work. Every change is recorded, so previous versions can be reviewed or restored, making it easier to manage complex projects.
 
 
 
